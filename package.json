@@ -1,0 +1,14 @@
+{
+  "name": "tights",
+  "version": "1.0.0",
+  "description": "A component library for React.",
+  "main": "index.js",
+  "repository": "https://github.com/ksylvest/tights",
+  "author": "Kevin Sylvestre <kevin@ksylvest.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
