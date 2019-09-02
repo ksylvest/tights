@@ -1,0 +1,11 @@
+name: Lint
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-node@master
+    - run: yarn install
+    - run: yarn run tslint ./src/**/*
