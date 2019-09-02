@@ -3,6 +3,7 @@
   "version": "1.2.0",
   "description": "A component library for React.",
   "main": "lib/index.js",
+  "types": "lib/index.d.js",
   "files": [
     "lib/**/*"
   ],
