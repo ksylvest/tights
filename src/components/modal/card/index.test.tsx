@@ -1,11 +1,7 @@
-import { shallow } from "enzyme";
-import * as React from "react";
+import { renders } from "../../../support";
 
 import { Card } from ".";
 
 describe(Card, () => {
-  it("renders", () => {
-    const wrapper = shallow(<Card>Hello!</Card>);
-    expect(wrapper.find(".modal-card").text()).toEqual("Hello!");
-  });
+  renders(Card, ".modal-card");
 });

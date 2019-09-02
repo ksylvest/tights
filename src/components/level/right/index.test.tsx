@@ -1,11 +1,7 @@
-import { shallow } from "enzyme";
-import * as React from "react";
+import { renders } from "../../../support";
 
 import { Right } from ".";
 
 describe(Right, () => {
-  it("renders", () => {
-    const wrapper = shallow(<Right>Hello!</Right>);
-    expect(wrapper.find(".level-right").text()).toEqual("Hello!");
-  });
+  renders(Right, ".level-right");
 });

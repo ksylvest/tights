@@ -1,16 +1,10 @@
-import { shallow } from "enzyme";
-import * as React from "react";
+import { renders } from "../../../support";
+import { property } from "../../../support";
 
 import { Field } from ".";
 
 describe(Field, () => {
-  it("renders", () => {
-    const wrapper = shallow(<Field>Hello!</Field>);
-    expect(wrapper.find(".field").text()).toEqual("Hello!");
-  });
-
-  it("renders with 'grouped'", () => {
-    const wrapper = shallow(<Field grouped />);
-    expect(wrapper.exists(".field.is-grouped")).toBeTruthy();
-  });
+  renders(Field, ".field");
+  property("grouped", Field, { grouped: true }, ".is-grouped");
+  property("grouped", Field, { grouped: false }, ":not(.is-grouped)");
 });

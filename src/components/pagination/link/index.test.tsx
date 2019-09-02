@@ -1,16 +1,9 @@
-import { shallow } from "enzyme";
-import * as React from "react";
+import { renders } from "../../../support";
+import { is } from "../../../support";
 
 import { Link } from ".";
 
 describe(Link, () => {
-  it("renders", () => {
-    const wrapper = shallow(<Link href="#">Hello!</Link>);
-    expect(wrapper.find(".pagination-link").text()).toEqual("Hello!");
-  });
-
-  it("renders with 'current'", () => {
-    const wrapper = shallow(<Link current />);
-    expect(wrapper.exists(".pagination-link.is-current")).toBeTruthy();
-  });
+  renders(Link, ".pagination-link");
+  is(Link, "current");
 });

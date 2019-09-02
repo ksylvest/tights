@@ -1,11 +1,7 @@
-import { shallow } from "enzyme";
-import * as React from "react";
+import { renders } from "../../../support";
 
 import { Ellipsis } from ".";
 
 describe(Ellipsis, () => {
-  it("renders", () => {
-    const wrapper = shallow(<Ellipsis />);
-    expect(wrapper.find(".pagination-ellipsis").text()).toEqual("…");
-  });
+  renders(Ellipsis, ".pagination-ellipsis");
 });

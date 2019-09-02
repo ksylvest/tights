@@ -1,6 +1,8 @@
 import cn from "classnames";
 import * as React from "react";
 
+type Alignment = "left" | "right";
+
 type Color =
   | "white"
   | "light"
@@ -17,11 +19,17 @@ type Color =
 type Size = "small" | "medium" | "large";
 
 export const Icon: React.FC<{
+  alignment?: Alignment;
   color?: Color;
   size?: Size;
-}> = ({ color, size, ...props }) => (
+}> = ({ alignment, color, size, ...props }) => (
   <span
     {...props}
-    className={cn("icon", color && `has-text-${color}`, size && `is-${size}`)}
+    className={cn(
+      "icon",
+      alignment && `is-${alignment}`,
+      color && `has-text-${color}`,
+      size && `is-${size}`,
+    )}
   />
 );

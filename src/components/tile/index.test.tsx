@@ -1,41 +1,19 @@
-import { shallow } from "enzyme";
-import * as React from "react";
+import { renders } from "../../support";
+import { tag } from "../../support";
+import { property } from "../../support";
 
 import { Tile } from ".";
 
 describe(Tile, () => {
-  it("renders", () => {
-    const wrapper = shallow(<Tile>Hello!</Tile>);
-    expect(wrapper.find(".tile").text()).toEqual("Hello!");
-  });
-
-  it("renders with 'tag'", () => {
-    const wrapper = shallow(<Tile tag="p" />);
-    expect(wrapper.exists("p.tile")).toBeTruthy();
-  });
-
-  it("renders with 'ancestor'", () => {
-    const wrapper = shallow(<Tile ancestor>Hello!</Tile>);
-    expect(wrapper.exists(".tile.is-ancestor")).toBeTruthy();
-  });
-
-  it("renders with 'parent'", () => {
-    const wrapper = shallow(<Tile parent>Hello!</Tile>);
-    expect(wrapper.exists(".tile.is-parent")).toBeTruthy();
-  });
-
-  it("renders with 'child'", () => {
-    const wrapper = shallow(<Tile child>Hello!</Tile>);
-    expect(wrapper.exists(".tile.is-child")).toBeTruthy();
-  });
-
-  it("renders with 'vertical'", () => {
-    const wrapper = shallow(<Tile vertical />);
-    expect(wrapper.exists(".tile.is-vertical")).toBeTruthy();
-  });
-
-  it("renders a 'size'", () => {
-    const wrapper = shallow(<Tile size={2}>Hello!</Tile>);
-    expect(wrapper.exists(".tile.is-2")).toBeTruthy();
-  });
+  renders(Tile, ".tile");
+  tag(Tile);
+  property("ancestor", Tile, { ancestor: true }, ".is-ancestor");
+  property("ancestor", Tile, { ancestor: false }, ":not(.is-ancestor)");
+  property("parent", Tile, { parent: true }, ".is-parent");
+  property("parent", Tile, { parent: false }, ":not(.is-parent)");
+  property("child", Tile, { child: true }, ".is-child");
+  property("child", Tile, { child: false }, ":not(.is-child)");
+  property("vertical", Tile, { vertical: true }, ".is-vertical");
+  property("vertical", Tile, { vertical: false }, ":not(.is-vertical)");
+  property("size", Tile, { size: 2 }, ".is-2");
 });

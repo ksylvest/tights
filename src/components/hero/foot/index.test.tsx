@@ -1,11 +1,7 @@
-import { shallow } from "enzyme";
-import * as React from "react";
+import { renders } from "../../../support";
 
 import { Foot } from ".";
 
 describe(Foot, () => {
-  it("renders", () => {
-    const wrapper = shallow(<Foot>Hello!</Foot>);
-    expect(wrapper.find(".hero-foot").text()).toEqual("Hello!");
-  });
+  renders(Foot, ".hero-foot");
 });

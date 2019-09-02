@@ -1,12 +1,7 @@
-import { shallow } from "enzyme";
-import * as React from "react";
+import { renders } from "../../support";
 
 import { Box } from ".";
 
 describe(Box, () => {
-  it("renders", () => {
-    const wrapper = shallow(<Box>Hello!</Box>);
-    const text = wrapper.find(".box").text();
-    expect(text).toEqual("Hello!");
-  });
+  renders(Box, ".box");
 });

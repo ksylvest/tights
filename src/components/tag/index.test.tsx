@@ -1,31 +1,16 @@
-import { shallow } from "enzyme";
-import * as React from "react";
+import { renders } from "../../support";
+import { is } from "../../support";
+import { color } from "../../support";
+import { size } from "../../support";
+import { property } from "../../support";
 
 import { Tag } from ".";
 
 describe(Tag, () => {
-  it("renders", () => {
-    const wrapper = shallow(<Tag>Hello!</Tag>);
-    expect(wrapper.find(".tag").text()).toEqual("Hello!");
-  });
-
-  it("renders with 'delete'", () => {
-    const wrapper = shallow(<Tag delete />);
-    expect(wrapper.exists(".tag.is-delete")).toBeTruthy();
-  });
-
-  it("renders with 'rounded'", () => {
-    const wrapper = shallow(<Tag rounded />);
-    expect(wrapper.exists(".tag.is-rounded")).toBeTruthy();
-  });
-
-  it("renders with 'color'", () => {
-    const wrapper = shallow(<Tag color="info" />);
-    expect(wrapper.exists(".tag.is-info")).toBeTruthy();
-  });
-
-  it("renders with 'size'", () => {
-    const wrapper = shallow(<Tag size="medium" />);
-    expect(wrapper.exists(".tag.is-medium")).toBeTruthy();
-  });
+  renders(Tag, ".tag");
+  is(Tag, "rounded");
+  color(Tag);
+  size(Tag);
+  property("delete", Tag, { delete: true }, ".is-delete");
+  property("delete", Tag, { delete: false }, ":not(.is-delete)");
 });

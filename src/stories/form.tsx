@@ -5,6 +5,7 @@ import * as React from "react";
 
 import { Button } from "../components";
 import { Form } from "../components";
+import { Icon } from "../components";
 
 const stories = storiesOf("Form", module);
 
@@ -14,12 +15,12 @@ stories.add("Basic", () => (
       <Form.Label>Name:</Form.Label>
       <Form.Control icons="both">
         <Form.Input type="text" />
-        <Form.Icon alignment="left">
+        <Icon alignment="left">
           <FontAwesomeIcon icon={faUser} />
-        </Form.Icon>
-        <Form.Icon alignment="right">
+        </Icon>
+        <Icon alignment="right">
           <FontAwesomeIcon icon={faHeart} />
-        </Form.Icon>
+        </Icon>
       </Form.Control>
       <Form.Help>Lorem Ipsum</Form.Help>
     </Form.Field>

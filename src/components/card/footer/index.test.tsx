@@ -1,11 +1,7 @@
-import { shallow } from "enzyme";
-import * as React from "react";
+import { renders } from "../../../support";
 
 import { Footer } from ".";
 
 describe(Footer, () => {
-  it("renders", () => {
-    const wrapper = shallow(<Footer>Hello!</Footer>);
-    expect(wrapper.find(".card-footer").text()).toEqual("Hello!");
-  });
+  renders(Footer, ".card-footer");
 });

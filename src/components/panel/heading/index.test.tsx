@@ -1,11 +1,7 @@
-import { shallow } from "enzyme";
-import * as React from "react";
+import { renders } from "../../../support";
 
 import { Heading } from ".";
 
 describe(Heading, () => {
-  it("renders", () => {
-    const wrapper = shallow(<Heading>Hello!</Heading>);
-    expect(wrapper.find(".panel-heading").text()).toEqual("Hello!");
-  });
+  renders(Heading, ".panel-heading");
 });

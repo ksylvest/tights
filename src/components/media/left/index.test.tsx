@@ -1,11 +1,7 @@
-import { shallow } from "enzyme";
-import * as React from "react";
+import { renders } from "../../../support";
 
 import { Left } from ".";
 
 describe(Left, () => {
-  it("renders", () => {
-    const wrapper = shallow(<Left>Hello!</Left>);
-    expect(wrapper.find(".media-left").text()).toEqual("Hello!");
-  });
+  renders(Left, ".media-left");
 });
