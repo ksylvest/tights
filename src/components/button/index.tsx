@@ -18,9 +18,20 @@ type Size = "small" | "normal" | "medium" | "large";
 
 const DEFAULT_TAG = "button";
 
+type AnchorElementProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
+  tag: "a";
+};
+
+type ButtonElementProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+  tag?: "button";
+};
+
+type InputElementProps = React.InputHTMLAttributes<HTMLInputElement> & {
+  tag: "input";
+};
+
 export const Button: React.FC<
   {
-    tag?: "a" | "button" | "input";
     color?: Color;
     size?: Size;
     fullwidth?: boolean;
@@ -29,9 +40,8 @@ export const Button: React.FC<
     outlined?: boolean;
     rounded?: boolean;
     selected?: boolean;
-  } & React.HTMLAttributes<HTMLElement>
+  } & (ButtonElementProps | AnchorElementProps | InputElementProps)
 > = ({
-  tag: Tag = DEFAULT_TAG,
   color,
   size,
   fullwidth,
@@ -41,10 +51,11 @@ export const Button: React.FC<
   rounded,
   selected,
   className,
+  tag: Tag = DEFAULT_TAG,
   ...props
 }) => (
   <Tag
-    {...props}
+    {...(props as React.HTMLAttributes<HTMLElement>)}
     className={cn(
       "button",
       color && `is-${color}`,
