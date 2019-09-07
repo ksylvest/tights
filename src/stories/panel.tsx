@@ -1,5 +1,7 @@
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { action } from "@storybook/addon-actions";
+import { text } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
 
@@ -9,22 +11,16 @@ const stories = storiesOf("Components|Panel", module);
 
 stories.add("Basic", () => (
   <Panel>
-    <Panel.Heading>Panel</Panel.Heading>
+    <Panel.Heading>{text("Heading", "Heading")}</Panel.Heading>
     <Panel.Tabs>
-      <a>Lorem</a>
-      <a>Ipsum</a>
+      <a onClick={action("like")}>Like</a>
+      <a onClick={action("save")}>Save</a>
     </Panel.Tabs>
     <Panel.Block>
       <Panel.Icon>
         <FontAwesomeIcon icon={faStar} />
       </Panel.Icon>
-      Lorem
-    </Panel.Block>
-    <Panel.Block>
-      <Panel.Icon>
-        <FontAwesomeIcon icon={faStar} />
-      </Panel.Icon>
-      Ipsum
+      {text("Block", "Block")}
     </Panel.Block>
   </Panel>
 ));
