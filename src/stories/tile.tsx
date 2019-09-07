@@ -12,35 +12,27 @@ stories.add("Basic", () => (
   <>
     <Tile ancestor>
       <Tile parent>
-        <Tile child>
-          <Box>
-            <Title>One</Title>
-            <Subtitle>Subtitle</Subtitle>
-          </Box>
+        <Tile child tag={Box}>
+          <Title>One</Title>
+          <Subtitle>Subtitle</Subtitle>
         </Tile>
       </Tile>
       <Tile parent>
-        <Tile child>
-          <Box>
-            <Title>Two</Title>
-            <Subtitle>Subtitle</Subtitle>
-          </Box>
+        <Tile child tag={Box}>
+          <Title>Two</Title>
+          <Subtitle>Subtitle</Subtitle>
         </Tile>
       </Tile>
       <Tile parent>
-        <Tile child>
-          <Box>
-            <Title>Three</Title>
-            <Subtitle>Subtitle</Subtitle>
-          </Box>
+        <Tile child tag={Box}>
+          <Title>Three</Title>
+          <Subtitle>Subtitle</Subtitle>
         </Tile>
       </Tile>
       <Tile parent>
-        <Tile child>
-          <Box>
-            <Title>Four</Title>
-            <Subtitle>Subtitle</Subtitle>
-          </Box>
+        <Tile child tag={Box}>
+          <Title>Four</Title>
+          <Subtitle>Subtitle</Subtitle>
         </Tile>
       </Tile>
     </Tile>
@@ -49,77 +41,75 @@ stories.add("Basic", () => (
       <Tile vertical size={9}>
         <Tile>
           <Tile parent>
-            <article className="tile is-child box">
+            <Tile child tag={Box}>
               <Title>Five</Title>
               <Subtitle>Subtitle</Subtitle>
-            </article>
+            </Tile>
           </Tile>
           <Tile vertical size={8}>
             <Tile>
               <Tile parent>
-                <article className="tile is-child box">
+                <Tile child tag={Box}>
                   <Title>Six</Title>
                   <Subtitle>Subtitle</Subtitle>
-                </article>
+                </Tile>
               </Tile>
               <Tile parent>
-                <article className="tile is-child box">
+                <Tile child tag={Box}>
                   <Title>Seven</Title>
                   <Subtitle>Subtitle</Subtitle>
-                </article>
+                </Tile>
               </Tile>
             </Tile>
             <Tile parent>
-              <article className="tile is-child box">
+              <Tile child tag={Box}>
                 <Title>Eight</Title>
                 <Subtitle>Subtitle</Subtitle>
-              </article>
+              </Tile>
             </Tile>
           </Tile>
         </Tile>
         <Tile>
           <Tile parent size={8}>
-            <article className="tile is-child box">
+            <Tile child tag={Box}>
               <Title>Nine</Title>
               <Subtitle>Subtitle</Subtitle>
-            </article>
+            </Tile>
           </Tile>
           <Tile parent>
-            <article className="tile is-child box">
+            <Tile child tag={Box}>
               <Title>Ten</Title>
               <Subtitle>Subtitle</Subtitle>
-            </article>
+            </Tile>
           </Tile>
         </Tile>
       </Tile>
       <Tile parent>
-        <article className="tile is-child box">
-          <div className="content">
-            <Title>Eleven</Title>
-            <Subtitle>Subtitle</Subtitle>
-          </div>
-        </article>
+        <Tile child tag={Box}>
+          <Title>Eleven</Title>
+          <Subtitle>Subtitle</Subtitle>
+        </Tile>
       </Tile>
     </Tile>
 
     <Tile ancestor>
       <Tile parent>
-        <article className="tile is-child box">
+        <Tile child tag={Box}>
           <Title>Twelve</Title>
           <Subtitle>Subtitle</Subtitle>
-        </article>
+        </Tile>
       </Tile>
       <Tile parent size={6}>
-        <article className="tile is-child box">
+        <Tile child tag={Box}>
           <Title>Thirteen</Title>
           <Subtitle>Subtitle</Subtitle>
-        </article>
+        </Tile>
       </Tile>
       <Tile parent>
-        <article className="tile is-child box">
+        <Tile child tag={Box}>
           <Title>Fourteen</Title>
           <Subtitle>Subtitle</Subtitle>
-        </article>
+        </Tile>
       </Tile>
     </Tile>
   </>

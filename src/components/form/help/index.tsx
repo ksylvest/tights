@@ -1,7 +1,7 @@
 import cn from "classnames";
 import * as React from "react";
 
-type Color = "info" | "success" | "danger";
+import { Color } from "../../../types";
 
 export const Help: React.FC<{
   color?: Color;

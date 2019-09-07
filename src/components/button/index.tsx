@@ -1,20 +1,7 @@
 import cn from "classnames";
 import * as React from "react";
 
-type Color =
-  | "white"
-  | "light"
-  | "dark"
-  | "black"
-  | "text"
-  | "primary"
-  | "link"
-  | "info"
-  | "success"
-  | "warning"
-  | "danger";
-
-type Size = "small" | "normal" | "medium" | "large";
+import { Color, Size } from "../../types";
 
 const DEFAULT_TAG = "button";
 

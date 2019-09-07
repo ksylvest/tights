@@ -4,9 +4,7 @@ import * as React from "react";
 import { Item } from "./item";
 import { List } from "./list";
 
-type Alignment = "centered" | "left" | "right";
-type Size = "small" | "medium" | "large";
-type Style = "boxed" | "toggle";
+import { Alignment, Size, Style } from "../../types";
 
 const Tabs: React.FC<{
   alignment?: Alignment;

@@ -4,19 +4,7 @@ import * as React from "react";
 import { Body } from "./body";
 import { Header } from "./header";
 
-type Color =
-  | "white"
-  | "light"
-  | "dark"
-  | "black"
-  | "text"
-  | "primary"
-  | "link"
-  | "info"
-  | "success"
-  | "warning"
-  | "danger";
-type Size = "small" | "normal" | "medium" | "large";
+import { Color, Size } from "../../types";
 
 const Message: React.FC<{
   color?: Color;

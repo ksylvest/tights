@@ -1,7 +1,7 @@
 import cn from "classnames";
 import * as React from "react";
 
-type Size = "small" | "medium" | "large";
+import { Size } from "../../../types";
 
 export const Close: React.FC<
   React.ButtonHTMLAttributes<HTMLButtonElement> & {

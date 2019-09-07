@@ -1,22 +1,7 @@
 import cn from "classnames";
 import * as React from "react";
 
-type Alignment = "left" | "right";
-
-type Color =
-  | "white"
-  | "light"
-  | "dark"
-  | "black"
-  | "text"
-  | "primary"
-  | "link"
-  | "info"
-  | "success"
-  | "warning"
-  | "danger";
-
-type Size = "small" | "medium" | "large";
+import { Alignment, Color, Size } from "../../types";
 
 export const Icon: React.FC<{
   alignment?: Alignment;

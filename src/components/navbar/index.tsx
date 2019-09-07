@@ -11,17 +11,7 @@ import { Link } from "./link";
 import { Menu } from "./menu";
 import { Start } from "./start";
 
-type Color =
-  | "primary"
-  | "link"
-  | "info"
-  | "success"
-  | "warning"
-  | "danger"
-  | "black"
-  | "dark"
-  | "light"
-  | "white";
+import { Color } from "../../types";
 
 const Navbar: React.FC<{
   color?: Color;

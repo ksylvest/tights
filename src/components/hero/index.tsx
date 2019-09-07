@@ -5,20 +5,7 @@ import { Body } from "./body";
 import { Foot } from "./foot";
 import { Head } from "./head";
 
-type Color =
-  | "primary"
-  | "info"
-  | "success"
-  | "warning"
-  | "danger"
-  | "light"
-  | "dark";
-type Size =
-  | "small"
-  | "medium"
-  | "large"
-  | "fullheight"
-  | "fullheight-with-navbar";
+import { Color, Size } from "../../types";
 
 const Hero: React.FC<{
   color?: Color;

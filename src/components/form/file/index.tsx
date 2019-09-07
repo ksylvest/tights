@@ -7,19 +7,7 @@ import { Input } from "./input";
 import { Label } from "./label";
 import { Name } from "./name";
 
-type Alignment = "left" | "centered" | "right";
-type Size = "small" | "medium" | "large";
-type Color =
-  | "white"
-  | "black"
-  | "light"
-  | "dark"
-  | "primary"
-  | "link"
-  | "info"
-  | "success"
-  | "warning"
-  | "danger";
+import { Alignment, Color, Size } from "../../../types";
 
 const File: React.FC<{
   name?: string;

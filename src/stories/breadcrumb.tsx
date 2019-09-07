@@ -1,3 +1,5 @@
+import { action } from "@storybook/addon-actions";
+import { boolean, select, text } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
 
@@ -9,16 +11,10 @@ stories.add("Basic", () => (
   <Breadcrumb>
     <Breadcrumb.List>
       <Breadcrumb.Item>
-        <a href="#">Home</a>
-      </Breadcrumb.Item>
-      <Breadcrumb.Item>
         <a href="#">Documentation</a>
       </Breadcrumb.Item>
-      <Breadcrumb.Item>
-        <a href="#">Components</a>
-      </Breadcrumb.Item>
       <Breadcrumb.Item active>
-        <a href="#">Breadcrumb</a>
+        <a href="#">Components</a>
       </Breadcrumb.Item>
     </Breadcrumb.List>
   </Breadcrumb>

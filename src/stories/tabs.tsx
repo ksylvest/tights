@@ -1,79 +1,32 @@
+import { action } from "@storybook/addon-actions";
+import { boolean, select } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
 
 import { Tabs } from "../components";
 
+import { ALIGNMENTS, SIZES, STYLES } from "./knobs";
+
 const stories = storiesOf("Components|Tabs", module);
 
 stories.add("Basic", () => (
-  <Tabs alignment="centered">
+  <Tabs
+    alignment={select("Alignment", ALIGNMENTS, "centered")}
+    fullwidth={boolean("Fullwidth", false)}
+    size={select("Size", SIZES, "normal")}
+    style={select("Style", STYLES, "boxed")}
+  >
     <Tabs.List>
       <Tabs.Item>
-        <a>Lorem</a>
+        <a href="#" onClick={action("photos")}>
+          Photos
+        </a>
       </Tabs.Item>
       <Tabs.Item>
-        <a>Ipsum</a>
+        <a href="#" onClick={action("photos")}>
+          Videos
+        </a>
       </Tabs.Item>
     </Tabs.List>
   </Tabs>
-));
-
-stories.add("Sizes", () => (
-  <>
-    <Tabs alignment="centered" size="small">
-      <Tabs.List>
-        <Tabs.Item>
-          <a>Lorem</a>
-        </Tabs.Item>
-        <Tabs.Item>
-          <a>Ipsum</a>
-        </Tabs.Item>
-      </Tabs.List>
-    </Tabs>
-    <Tabs alignment="centered" size="medium">
-      <Tabs.List>
-        <Tabs.Item>
-          <a>Lorem</a>
-        </Tabs.Item>
-        <Tabs.Item>
-          <a>Ipsum</a>
-        </Tabs.Item>
-      </Tabs.List>
-    </Tabs>
-    <Tabs alignment="centered" size="large">
-      <Tabs.List>
-        <Tabs.Item>
-          <a>Lorem</a>
-        </Tabs.Item>
-        <Tabs.Item>
-          <a>Ipsum</a>
-        </Tabs.Item>
-      </Tabs.List>
-    </Tabs>
-  </>
-));
-
-stories.add("Styles", () => (
-  <>
-    <Tabs alignment="centered" style="boxed">
-      <Tabs.List>
-        <Tabs.Item>
-          <a>Lorem</a>
-        </Tabs.Item>
-        <Tabs.Item>
-          <a>Ipsum</a>
-        </Tabs.Item>
-      </Tabs.List>
-    </Tabs>
-    <Tabs alignment="centered" style="toggle">
-      <Tabs.List>
-        <Tabs.Item>
-          <a>Lorem</a>
-        </Tabs.Item>
-        <Tabs.Item>
-          <a>Ipsum</a>
-        </Tabs.Item>
-      </Tabs.List>
-    </Tabs>
-  </>
 ));
