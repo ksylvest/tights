@@ -25,6 +25,12 @@ stories.add("Basic", () => (
       <Form.Help>Lorem Ipsum</Form.Help>
     </Form.Field>
     <Form.Field>
+      <Form.Label>About:</Form.Label>
+      <Form.Control>
+        <Form.Textarea />
+      </Form.Control>
+    </Form.Field>
+    <Form.Field>
       <Form.Label>Avatar:</Form.Label>
       <Form.Control>
         <Form.File name="File.zip">
