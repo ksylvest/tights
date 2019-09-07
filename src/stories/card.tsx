@@ -10,15 +10,15 @@ import { Image } from "../components";
 
 const stories = storiesOf("Components|Card", module);
 
-const SAMPLES = [
-  { unsplashID: "ACt8ycSzpdE" },
-  { unsplashID: "dqXiw7nCb9Q" },
-  { unsplashID: "fMUIVein7Ng" },
-  { unsplashID: "PzYiCWOHtfU" },
-  { unsplashID: "Ld5yiQggpS0" },
-  { unsplashID: "pbrQvuKJQf8" },
-  { unsplashID: "uVdOLNJpxA0" },
-  { unsplashID: "VjmlDjePHjE" },
+const UNSPLASH_IDS = [
+  "ACt8ycSzpdE",
+  "dqXiw7nCb9Q",
+  "fMUIVein7Ng",
+  "PzYiCWOHtfU",
+  "Ld5yiQggpS0",
+  "pbrQvuKJQf8",
+  "uVdOLNJpxA0",
+  "VjmlDjePHjE",
 ];
 
 const Sample: React.FC<{
@@ -49,9 +49,9 @@ const Sample: React.FC<{
 
 stories.add("Basic", () => (
   <Columns multiline mobile tablet desktop>
-    {SAMPLES.map((sample, key) => (
+    {UNSPLASH_IDS.map((unsplashID, key) => (
       <Column key={key} mobile={6} tablet={4} desktop={3}>
-        <Sample {...sample} />
+        <Sample unsplashID={unsplashID} />
       </Column>
     ))}
   </Columns>
