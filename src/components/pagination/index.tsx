@@ -8,7 +8,7 @@ import { List } from "./list";
 import { Next } from "./next";
 import { Prev } from "./prev";
 
-type Size = "small" | "medium" | "large";
+import { Size } from "../../types";
 
 const Pagination: React.FC<{
   rounded?: boolean;

@@ -1,7 +1,7 @@
 import cn from "classnames";
 import * as React from "react";
 
-type Alignment = "left" | "centered" | "right";
+import { Alignment } from "../../types";
 
 export const Buttons: React.FC<{
   addons?: boolean;

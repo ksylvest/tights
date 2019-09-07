@@ -1,3 +1,4 @@
+import { boolean, select, text } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
 
@@ -6,17 +7,23 @@ import { Hero } from "../components";
 import { Subtitle } from "../components";
 import { Title } from "../components";
 
+import { COLORS, SIZES } from "./knobs";
+
 const stories = storiesOf("Layout|Hero", module);
 
 stories.add("Basic", () => (
-  <Hero bold color="primary" size="medium">
-    <Hero.Head>Head</Hero.Head>
+  <Hero
+    bold={boolean("Bold", false)}
+    color={select("Color", COLORS, "info")}
+    size={select("Size", SIZES, "medium")}
+  >
+    <Hero.Head children={text("Head", "Head")} />
     <Hero.Body>
       <Container>
-        <Title>Title</Title>
-        <Subtitle>Subtitle</Subtitle>
+        <Title children={text("Title", "Title")} />
+        <Subtitle children={text("Subtitle", "Subtitle")} />
       </Container>
     </Hero.Body>
-    <Hero.Foot>Foot</Hero.Foot>
+    <Hero.Head children={text("Foot", "Foot")} />
   </Hero>
 ));

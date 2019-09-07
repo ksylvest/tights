@@ -1,18 +1,7 @@
 import cn from "classnames";
 import * as React from "react";
 
-type Color =
-  | "white"
-  | "light"
-  | "dark"
-  | "black"
-  | "text"
-  | "primary"
-  | "link"
-  | "info"
-  | "success"
-  | "warning"
-  | "danger";
+import { Color } from "../../types";
 
 export const Notification: React.FC<{
   color?: Color;

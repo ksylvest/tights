@@ -1,18 +1,7 @@
 import cn from "classnames";
 import * as React from "react";
 
-type Color =
-  | "white"
-  | "light"
-  | "dark"
-  | "black"
-  | "primary"
-  | "link"
-  | "info"
-  | "success"
-  | "warning"
-  | "danger";
-type Size = "normal" | "medium" | "large";
+import { Color, Size } from "../../types";
 
 export const Tag: React.FC<{
   delete?: boolean;

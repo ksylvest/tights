@@ -1,38 +1,35 @@
+import { action } from "@storybook/addon-actions";
+import { boolean, select, text } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
 
-import { Button } from "../components";
-import { Buttons } from "../components";
+import { Button, Buttons } from "../components";
+
+import { ALIGNMENTS, COLORS, SIZES } from "./knobs";
 
 const stories = storiesOf("Elements|Button", module);
 
-stories.add("Basic", () => <Button>Button</Button>);
-
-stories.add("Colors", () => (
-  <>
-    <Buttons>
-      <Button color="white">White</Button>
-      <Button color="light">Light</Button>
-      <Button color="dark">Dark</Button>
-      <Button color="black">Black</Button>
-      <Button color="text">Text</Button>
-      <Button color="primary">Primary</Button>
-      <Button color="link">Link</Button>
-      <Button color="info">Info</Button>
-      <Button color="success">Success</Button>
-      <Button color="warning">Warning</Button>
-      <Button color="danger">Danger</Button>
-    </Buttons>
-  </>
+stories.add("Basic", () => (
+  <Button
+    children={text("Text", "Button")}
+    color={select("Color", COLORS, "info")}
+    fullwidth={boolean("Fullwidth", false)}
+    inverted={boolean("Inverted", false)}
+    loading={boolean("Loading", false)}
+    outlined={boolean("Outlined", false)}
+    rounded={boolean("Rounded", false)}
+    selected={boolean("Selected", false)}
+    size={select("Size", SIZES, "medium")}
+    onClick={action("clicked")}
+  />
 ));
 
-stories.add("Sizes", () => (
-  <>
-    <Buttons>
-      <Button size="small">Small</Button>
-      <Button size="normal">Normal</Button>
-      <Button size="medium">Medium</Button>
-      <Button size="large">Large</Button>
-    </Buttons>
-  </>
+stories.add("List", () => (
+  <Buttons
+    addons={boolean("Addons", false)}
+    alignment={select("Alignment", ALIGNMENTS, "centered")}
+  >
+    <Button children="Lorem" />
+    <Button children="Ipsum" />
+  </Buttons>
 ));

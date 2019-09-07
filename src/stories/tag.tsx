@@ -1,36 +1,28 @@
+import { boolean, select, text } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
 import * as React from "react";
 
-import { Tag } from "../components";
-import { Tags } from "../components";
+import { Tag, Tags } from "../components";
+
+import { COLORS, SIZES } from "./knobs";
 
 const stories = storiesOf("Elements|Tag", module);
 
-stories.add("Basic", () => <Tag>Tag</Tag>);
-
-stories.add("Colors", () => (
-  <>
-    <Tags>
-      <Tag color="white">White</Tag>
-      <Tag color="light">Light</Tag>
-      <Tag color="dark">Dark</Tag>
-      <Tag color="black">Black</Tag>
-      <Tag color="primary">Primary</Tag>
-      <Tag color="link">Link</Tag>
-      <Tag color="info">Info</Tag>
-      <Tag color="success">Success</Tag>
-      <Tag color="warning">Warning</Tag>
-      <Tag color="danger">Danger</Tag>
-    </Tags>
-  </>
+stories.add("Basic", () => (
+  <Tag
+    children={text("Text", "Tag")}
+    color={select("Color", COLORS, "info")}
+    delete={boolean("Delete", false)}
+    rounded={boolean("Rounded", false)}
+    size={select("Size", SIZES, "normal")}
+  />
 ));
 
-stories.add("Sizes", () => (
+stories.add("List", () => (
   <>
-    <Tags>
-      <Tag size="normal">Normal</Tag>
-      <Tag size="medium">Medium</Tag>
-      <Tag size="large">Large</Tag>
+    <Tags addons={boolean("Addons", false)}>
+      <Tag children="Lorem" />
+      <Tag children="Ipsum" />
     </Tags>
   </>
 ));

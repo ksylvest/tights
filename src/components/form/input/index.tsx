@@ -1,8 +1,7 @@
 import cn from "classnames";
 import * as React from "react";
 
-type Color = "primary" | "info" | "success" | "warning" | "danger";
-type Size = "small" | "medium" | "large";
+import { Color, Size } from "../../../types";
 
 export const Input: React.FC<
   React.InputHTMLAttributes<HTMLInputElement> & {

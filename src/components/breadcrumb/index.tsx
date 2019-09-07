@@ -4,9 +4,9 @@ import * as React from "react";
 import { Item } from "./item";
 import { List } from "./list";
 
-type Alignment = "left" | "centered" | "right";
-type Separator = "arrow" | "bullet" | "dot" | "succeeds";
-type Size = "small" | "medium" | "large";
+import { Alignment } from "../../types";
+import { Size } from "../../types";
+import { Separator } from "../../types";
 
 const Breadcrumb: React.FC<{
   alignment?: Alignment;

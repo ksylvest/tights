@@ -27,13 +27,3 @@ stories.add("Basic", () => (
     ))}
   </Columns>
 ));
-
-stories.add("Gapless", () => (
-  <Columns multiline mobile tablet desktop gap="gapless">
-    {SAMPLES.map(({ unsplashID }, key) => (
-      <Column key={key} mobile={6} tablet={4} desktop={3}>
-        <Image src={`https://source.unsplash.com/${unsplashID}/800x800`} />
-      </Column>
-    ))}
-  </Columns>
-));
