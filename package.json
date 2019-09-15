@@ -8,6 +8,11 @@
     "lib/**/*"
   ],
   "repository": "https://github.com/ksylvest/tights",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint ./src/**/*",
+    "test": "jest"
+  },
   "author": "Kevin Sylvestre <kevin@ksylvest.com>",
   "license": "MIT",
   "private": false,
