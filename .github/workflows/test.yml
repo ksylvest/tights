@@ -13,7 +13,7 @@ jobs:
         run: yarn install
       -
         name: Test
-        run: yarn run jest --ci --coverage
+        run: yarn test --ci --coverage
       -
         name: Report
         run: |
