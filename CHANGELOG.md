@@ -1,3 +1,7 @@
+# v1.4.1
+
+ - fix workflow publish action
+
 # v1.4.0
 
  - publish workflow
