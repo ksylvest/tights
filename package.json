@@ -11,7 +11,8 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint ./src/**/*",
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "yarn run lint && yarn run test && yarn run build"
   },
   "author": "Kevin Sylvestre <kevin@ksylvest.com>",
   "license": "MIT",
