@@ -1,3 +1,7 @@
+# v1.4.2
+
+ - use picture tag with image tag
+
 # v1.4.1
 
  - fix workflow publish action
