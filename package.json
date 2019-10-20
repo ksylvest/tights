@@ -1,6 +1,6 @@
 {
   "name": "tights",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "A component library for React.",
   "main": "lib/index.js",
   "types": "lib/index.d.js",

@@ -1,3 +1,7 @@
+# v1.4.4
+
+ - fix publish github action
+
 # v1.4.3
 
  - support for color on panel
