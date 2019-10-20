@@ -1,3 +1,4 @@
+import cn from "classnames";
 import * as React from "react";
 
 import { Block } from "./block";
@@ -5,7 +6,13 @@ import { Heading } from "./heading";
 import { Icon } from "./icon";
 import { Tabs } from "./tabs";
 
-const Panel: React.FC = (props) => <nav {...props} className="panel" />;
+import { Color } from "../../types";
+
+const Panel: React.FC<{
+  color?: Color;
+}> = ({ color, ...props }) => (
+  <nav {...props} className={cn("panel", color && `is-${color}`)} />
+);
 
 const Combined = Object.assign(Panel, {
   Block,
