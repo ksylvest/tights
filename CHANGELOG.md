@@ -1,3 +1,7 @@
+# v1.4.3
+
+ - support for color on panel
+
 # v1.4.2
 
  - use picture tag with image tag
