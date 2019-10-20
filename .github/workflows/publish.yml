@@ -21,4 +21,4 @@ jobs:
         name: Publish
         run: yarn publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+          YARN_AUTH_TOKEN: ${{ secrets.YARN_AUTH_TOKEN }}
