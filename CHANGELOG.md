@@ -1,3 +1,7 @@
+# v1.4.5
+
+ - forward class name for button
+
 # v1.4.4
 
  - fix publish github action
