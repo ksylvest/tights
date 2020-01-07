@@ -3,13 +3,11 @@ import * as React from "react";
 
 import { Color, Size } from "../../../types";
 
-export const Input: React.FC<
-  React.InputHTMLAttributes<HTMLInputElement> & {
-    color?: Color;
-    size?: Size;
-    rounded?: boolean;
-  }
-> = ({ color, size, rounded, ...props }) => (
+export const Input: React.FC<React.InputHTMLAttributes<HTMLInputElement> & {
+  color?: Color;
+  size?: Size;
+  rounded?: boolean;
+}> = ({ color, size, rounded, ...props }) => (
   <input
     {...props}
     className={cn(
