@@ -8,13 +8,14 @@ export const Image: React.FC<
     square?: boolean;
     ratio?: string;
   }
-> = ({ dimensions, rounded, square, ratio, children, ...props }) => (
+> = ({ dimensions, rounded, square, ratio, children, className, ...props }) => (
   <figure
     className={cn(
       "image",
       ratio && `is-${ratio}`,
       square && "is-square",
       dimensions && `is-${dimensions}x${dimensions}`,
+      className,
     )}
   >
     <picture>
