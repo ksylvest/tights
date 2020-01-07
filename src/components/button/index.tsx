@@ -17,18 +17,16 @@ type InputElementProps = React.InputHTMLAttributes<HTMLInputElement> & {
   tag: "input";
 };
 
-export const Button: React.FC<
-  {
-    color?: Color;
-    size?: Size;
-    fullwidth?: boolean;
-    inverted?: boolean;
-    loading?: boolean;
-    outlined?: boolean;
-    rounded?: boolean;
-    selected?: boolean;
-  } & (ButtonElementProps | AnchorElementProps | InputElementProps)
-> = ({
+export const Button: React.FC<{
+  color?: Color;
+  size?: Size;
+  fullwidth?: boolean;
+  inverted?: boolean;
+  loading?: boolean;
+  outlined?: boolean;
+  rounded?: boolean;
+  selected?: boolean;
+} & (ButtonElementProps | AnchorElementProps | InputElementProps)> = ({
   color,
   size,
   fullwidth,
