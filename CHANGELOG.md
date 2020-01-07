@@ -1,3 +1,7 @@
+# v1.5.0
+
+ - re-run prettier
+
 # v1.4.5
 
  - forward class name for button
