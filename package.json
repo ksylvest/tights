@@ -11,7 +11,8 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint ./src/**/*",
-    "test": "jest"
+    "test": "jest",
+    "now-build": "build-storybook -c .storybook -o public"
   },
   "author": "Kevin Sylvestre <kevin@ksylvest.com>",
   "license": "MIT",
