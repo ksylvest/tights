@@ -64,8 +64,6 @@ const Confirmation: React.FC<{
 [![Maintainability](https://api.codeclimate.com/v1/badges/c6045e533438f4e08b02/maintainability)](https://codeclimate.com/github/ksylvest/tights/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/c6045e533438f4e08b02/test_coverage)](https://codeclimate.com/github/ksylvest/tights/test_coverage)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/689d6a50-3d00-472e-bde3-ca4a652f3eba/deploy-status)](https://app.netlify.com/sites/tights/deploys)
-
 ## Copyright
 
 Copyright (c) 2019 [Kevin Sylvestre](https://ksylvest.com). See LICENSE for details.
