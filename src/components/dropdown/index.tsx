@@ -18,7 +18,7 @@ const Dropdown: React.FC<{
       "dropdown",
       active && "is-active",
       hoverable && "is-hoverable",
-      alignment && `is-${alignment}`,
+      alignment && `is-${alignment}`
     )}
   />
 );

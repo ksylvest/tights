@@ -16,7 +16,7 @@ export const Tag: React.FC<{
       color && `is-${color}`,
       size && `is-${size}`,
       rounded && "is-rounded",
-      deleting && "is-delete",
+      deleting && "is-delete"
     )}
   />
 );

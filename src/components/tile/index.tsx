@@ -27,7 +27,7 @@ export const Tile: React.FC<{
       parent && "is-parent",
       child && "is-child",
       size && `is-${size}`,
-      vertical && "is-vertical",
+      vertical && "is-vertical"
     )}
   />
 );

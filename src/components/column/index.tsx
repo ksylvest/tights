@@ -18,7 +18,7 @@ export const Column: React.FC<{
       mobile && `is-${mobile}-mobile`,
       tablet && `is-${tablet}-tablet`,
       desktop && `is-${desktop}-desktop`,
-      narrow && "is-narrow",
+      narrow && "is-narrow"
     )}
   />
 );

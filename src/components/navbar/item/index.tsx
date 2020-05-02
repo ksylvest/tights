@@ -12,7 +12,7 @@ export const Item: React.FC<{
       "navbar-item",
       hoverable && "is-hoverable",
       active && "is-active",
-      dropdown && "has-dropdown",
+      dropdown && "has-dropdown"
     )}
   />
 );

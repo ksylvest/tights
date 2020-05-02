@@ -13,7 +13,7 @@ export const Control: React.FC<{
       "control",
       expanded && "is-expanded",
       (icons === "left" || icons === "both") && "has-icons-left",
-      (icons === "right" || icons === "both") && "has-icons-right",
+      (icons === "right" || icons === "both") && "has-icons-right"
     )}
   />
 );

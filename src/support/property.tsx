@@ -5,7 +5,7 @@ export const property = <T extends {}>(
   name: string,
   Component: React.FC<T>,
   props: T,
-  selector: string,
+  selector: string
 ): void => {
   it(`renders with '${name}' using '${props}'`, () => {
     const wrapper = shallow(<Component {...props} />);
