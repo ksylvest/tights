@@ -10,7 +10,7 @@ export const Dropdown: React.FC<{
     className={cn(
       "navbar-dropdown",
       boxed && "is-boxed",
-      direction && `is-${direction}`,
+      direction && `is-${direction}`
     )}
   />
 );

@@ -26,7 +26,7 @@ const File: React.FC<{
       name && "has-name",
       alignment && `is-${alignment}`,
       color && `is-${color}`,
-      size && `is-${size}`,
+      size && `is-${size}`
     )}
   />
 );

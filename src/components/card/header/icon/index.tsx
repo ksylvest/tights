@@ -1,5 +1,5 @@
 import * as React from "react";
 
 export const Icon: React.FC<React.HTMLAttributes<HTMLAnchorElement>> = (
-  props,
+  props
 ) => <a {...props} className="card-header-icon" />;

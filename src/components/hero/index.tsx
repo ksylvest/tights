@@ -18,7 +18,7 @@ const Hero: React.FC<{
       "hero",
       color && `is-${color}`,
       size && `is-${size}`,
-      bold && "is-bold",
+      bold && "is-bold"
     )}
   />
 );

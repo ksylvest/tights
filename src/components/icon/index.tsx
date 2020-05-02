@@ -14,7 +14,7 @@ export const Icon: React.FC<{
       "icon",
       alignment && `is-${alignment}`,
       color && `has-text-${color}`,
-      size && `is-${size}`,
+      size && `is-${size}`
     )}
   />
 );

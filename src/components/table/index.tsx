@@ -16,7 +16,7 @@ const Table: React.FC<{
       bordered && "is-bordered",
       fullwidth && "is-fullwidth",
       hoverable && "is-hoverable",
-      striped && "is-striped",
+      striped && "is-striped"
     )}
   />
 );

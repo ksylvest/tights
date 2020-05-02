@@ -12,7 +12,7 @@ export const Buttons: React.FC<{
     className={cn(
       "buttons",
       addons && "has-addons",
-      alignment && `is-${alignment}`,
+      alignment && `is-${alignment}`
     )}
   />
 );

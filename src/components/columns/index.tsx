@@ -29,7 +29,7 @@ export const Columns: React.FC<{
       desktop && "is-desktop",
       multiline && "is-multiline",
       centered && "is-centered",
-      vcentered && "is-vcentered",
+      vcentered && "is-vcentered"
     )}
   />
 );

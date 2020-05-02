@@ -19,7 +19,7 @@ const Tabs: React.FC<{
       alignment && `is-${alignment}`,
       size && `is-${size}`,
       style && `is-${style}`,
-      fullwidth && "is-fullwidth",
+      fullwidth && "is-fullwidth"
     )}
   />
 );
