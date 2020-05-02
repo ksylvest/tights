@@ -1,3 +1,7 @@
+# v1.6.0
+
+ - switch from tslint to eslint
+
 # v1.5.0
 
  - re-run prettier
