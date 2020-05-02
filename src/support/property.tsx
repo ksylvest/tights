@@ -6,7 +6,7 @@ export const property = <T extends {}>(
   Component: React.FC<T>,
   props: T,
   selector: string,
-) => {
+): void => {
   it(`renders with '${name}' using '${props}'`, () => {
     const wrapper = shallow(<Component {...props} />);
     expect(wrapper.exists(selector)).toBe(true);

@@ -1,5 +1,6 @@
+import * as React from "react";
 import { property } from "./property";
 
-export const color = (Component: React.FC<{ color?: any }>) => {
+export const color = (Component: React.FC<{ color?: string }>): void => {
   property("color", Component, { color: "info" }, ".is-info");
 };
