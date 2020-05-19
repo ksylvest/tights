@@ -55,6 +55,6 @@
     "react-docgen-typescript-loader": "^3.2.0",
     "react-dom": "^16.9.0",
     "ts-loader": "^7.0.4",
-    "typescript": "^3.9.2"
+    "typescript": "^3.9.3"
   }
 }
