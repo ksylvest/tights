@@ -22,7 +22,7 @@
     "@babel/preset-env": "^7.6.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.6.0",
-    "@babel/types": "^7.6.1",
+    "@babel/types": "^7.10.0",
     "@fortawesome/fontawesome-free": "^5.10.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
     "@fortawesome/free-solid-svg-icons": "^5.10.2",
