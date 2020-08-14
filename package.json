@@ -30,7 +30,7 @@
     "@storybook/addon-actions": "^6.0.6",
     "@storybook/addon-knobs": "^6.0.6",
     "@storybook/preset-typescript": "^3.0.0",
-    "@storybook/react": "^6.0.6",
+    "@storybook/react": "^6.0.7",
     "@types/classnames": "^2.2.9",
     "@types/enzyme": "^3.10.3",
     "@types/jest": "^26.0.9",
