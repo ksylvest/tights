@@ -24,7 +24,7 @@
     "@babel/preset-typescript": "^7.10.4",
     "@babel/types": "^7.11.0",
     "@fortawesome/fontawesome-free": "^5.14.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/fontawesome-svg-core": "^1.2.31",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@storybook/addon-actions": "^6.0.22",
