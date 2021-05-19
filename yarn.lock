@@ -10614,10 +10614,10 @@ ts-essentials@^2.0.3:
   resolved "https://registry.yarnpkg.com/ts-essentials/-/ts-essentials-2.0.12.tgz#c9303f3d74f75fa7528c3d49b80e089ab09d8745"
   integrity sha512-3IVX4nI6B5cc31/GFFE+i8ey/N2eA0CZDbo6n0yrz0zDX8ZJ8djmU1p+XRz7G3is0F3bB3pu2pAroFdAWQKU3w==
 
-ts-loader@^9.2.0:
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-9.2.0.tgz#0d9feeef60081729ab999af7c322651158de2a0c"
-  integrity sha512-9MlaeNNEk5juw5YL3Xfkvz2gGTsRcXMqfTEAW2mLFWNVsuQEa4jZc4lFB1UZjmA5cyPriCRmOFx+XKV47p5OZg==
+ts-loader@^9.2.1:
+  version "9.2.1"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-9.2.1.tgz#5699af8d10aa3a763aadfced1d4b275a432b76eb"
+  integrity sha512-BLfLa4paMQyf819haKxxbZqA1aLDqsk8XEZLmd7E1eBa0NsEHYFcTWlUlPmYMGhvD/IMi0NcIW3A/G7vzr3oiA==
   dependencies:
     chalk "^4.1.0"
     enhanced-resolve "^5.0.0"
