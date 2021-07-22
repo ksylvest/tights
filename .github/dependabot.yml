@@ -1,0 +1,59 @@
+version: 2
+registries:
+  npm-registry-npm-fontawesome-com:
+    type: npm-registry
+    url: https://npm.fontawesome.com
+    token: "${{secrets.NPM_REGISTRY_NPM_FONTAWESOME_COM_TOKEN}}"
+
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:00"
+  open-pull-requests-limit: 10
+  versioning-strategy: increase
+  ignore:
+  - dependency-name: "@types/node"
+    versions:
+    - 15.0.0
+  - dependency-name: ts-loader
+    versions:
+    - 9.0.0
+    - 9.0.2
+  - dependency-name: "@babel/types"
+    versions:
+    - 7.13.16
+  - dependency-name: "@typescript-eslint/parser"
+    versions:
+    - 4.15.2
+    - 4.21.0
+    - 4.22.0
+  - dependency-name: "@typescript-eslint/eslint-plugin"
+    versions:
+    - 4.15.1
+    - 4.15.2
+    - 4.22.0
+  - dependency-name: "@storybook/react"
+    versions:
+    - 6.2.0
+    - 6.2.2
+    - 6.2.6
+  - dependency-name: "@storybook/addon-knobs"
+    versions:
+    - 6.2.2
+    - 6.2.6
+  - dependency-name: classnames
+    versions:
+    - 2.3.0
+  - dependency-name: "@storybook/addon-actions"
+    versions:
+    - 6.2.2
+  - dependency-name: eslint
+    versions:
+    - 7.20.0
+  - dependency-name: react
+    versions:
+    - 17.0.1
+  registries:
+  - npm-registry-npm-fontawesome-com
