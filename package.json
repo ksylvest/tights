@@ -34,7 +34,7 @@
     "@types/classnames": "^2.3.1",
     "@types/enzyme": "^3.10.9",
     "@types/jest": "^26.0.24",
-    "@types/node": "^16.4.3",
+    "@types/node": "^16.4.4",
     "@types/react": "^17.0.15",
     "@types/react-fontawesome": "^1.6.5",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
