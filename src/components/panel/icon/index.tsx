@@ -1,5 +1,5 @@
 import * as React from "react";
 
-export const Icon: React.FC = (props) => (
-  <span {...props} className="panel-icon" />
-);
+export const Icon: React.FC<{
+  children?: React.ReactNode;
+}> = (props) => <span {...props} className="panel-icon" />;

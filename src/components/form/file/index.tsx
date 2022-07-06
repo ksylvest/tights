@@ -16,6 +16,7 @@ const File: React.FC<{
   size?: Size;
   boxed?: boolean;
   fullwidth?: boolean;
+  children?: React.ReactNode;
 }> = ({ name, alignment, color, size, boxed, fullwidth, ...props }) => (
   <div
     {...props}

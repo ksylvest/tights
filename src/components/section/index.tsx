@@ -1,5 +1,5 @@
 import * as React from "react";
 
-export const Section: React.FC = (props) => (
-  <div {...props} className="section" />
-);
+export const Section: React.FC<{
+  children?: React.ReactNode;
+}> = (props) => <div {...props} className="section" />;

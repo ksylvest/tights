@@ -8,9 +8,11 @@ import { Input } from "./input";
 import { Label } from "./label";
 import { Textarea } from "./textarea";
 
-const Form: React.FC<React.FormHTMLAttributes<HTMLFormElement>> = (props) => (
-  <form {...props} />
-);
+const Form: React.FC<
+  React.FormHTMLAttributes<HTMLFormElement> & {
+    children?: React.ReactNode;
+  }
+> = (props) => <form {...props} />;
 
 const Combined = Object.assign(Form, {
   Control,

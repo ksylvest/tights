@@ -13,6 +13,7 @@ import { Size } from "../../types";
 const Pagination: React.FC<{
   rounded?: boolean;
   size?: Size;
+  children?: React.ReactNode;
 }> = ({ rounded, size, ...props }) => (
   <nav
     {...props}

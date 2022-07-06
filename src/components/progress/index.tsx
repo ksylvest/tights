@@ -7,6 +7,7 @@ export const Progress: React.FC<
   React.ProgressHTMLAttributes<HTMLProgressElement> & {
     color?: Color;
     size?: Size;
+    children?: React.ReactNode;
   }
 > = ({ color, size, ...props }) => (
   <progress

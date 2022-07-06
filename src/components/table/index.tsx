@@ -8,6 +8,7 @@ const Table: React.FC<{
   fullwidth?: boolean;
   hoverable?: boolean;
   striped?: boolean;
+  children?: React.ReactNode;
 }> = ({ bordered, fullwidth, hoverable, striped, ...props }) => (
   <table
     {...props}

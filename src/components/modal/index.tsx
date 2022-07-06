@@ -10,6 +10,7 @@ const DEFAULT_ACTIVE = true;
 
 const Modal: React.FC<{
   active?: boolean;
+  children?: React.ReactNode;
 }> = ({ active = DEFAULT_ACTIVE, ...props }) => (
   <div {...props} className={cn("modal", active && "is-active")} />
 );

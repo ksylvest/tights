@@ -1,5 +1,5 @@
 import * as React from "react";
 
-export const Body: React.FC = (props) => (
-  <div {...props} className="hero-body" />
-);
+export const Body: React.FC<{
+  children?: React.ReactNode;
+}> = (props) => <div {...props} className="hero-body" />;

@@ -6,6 +6,7 @@ import { Size } from "../../../types";
 export const Close: React.FC<
   React.ButtonHTMLAttributes<HTMLButtonElement> & {
     size?: Size;
+    children?: React.ReactNode;
   }
 > = ({ size, ...props }) => (
   <button

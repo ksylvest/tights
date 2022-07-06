@@ -15,6 +15,7 @@ import { Color } from "../../types";
 
 const Navbar: React.FC<{
   color?: Color;
+  children?: React.ReactNode;
 }> = ({ color, ...props }) => (
   <nav {...props} className={cn("navbar", color && `is-${color}`)} />
 );

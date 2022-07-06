@@ -9,6 +9,7 @@ import { Color, Size } from "../../types";
 const Message: React.FC<{
   color?: Color;
   size?: Size;
+  children?: React.ReactNode;
 }> = ({ color, size, ...props }) => (
   <article
     {...props}

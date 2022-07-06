@@ -6,6 +6,7 @@ import { Size } from "../../types";
 export const Delete: React.FC<
   React.ButtonHTMLAttributes<HTMLButtonElement> & {
     size?: Size;
+    children?: React.ReactNode;
   }
 > = ({ size, ...props }) => (
   <button

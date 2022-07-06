@@ -10,6 +10,7 @@ import { Color } from "../../types";
 
 const Panel: React.FC<{
   color?: Color;
+  children?: React.ReactNode;
 }> = ({ color, ...props }) => (
   <nav {...props} className={cn("panel", color && `is-${color}`)} />
 );

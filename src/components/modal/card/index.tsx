@@ -5,7 +5,9 @@ import { Foot } from "./foot";
 import { Head } from "./head";
 import { Title } from "./title";
 
-const Card: React.FC = (props) => <div {...props} className="modal-card" />;
+const Card: React.FC<{
+  children?: React.ReactNode;
+}> = (props) => <div {...props} className="modal-card" />;
 
 const Combined = Object.assign(Card, {
   Body,

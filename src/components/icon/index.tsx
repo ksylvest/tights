@@ -7,6 +7,7 @@ export const Icon: React.FC<{
   alignment?: Alignment;
   color?: Color;
   size?: Size;
+  children?: React.ReactNode;
 }> = ({ alignment, color, size, ...props }) => (
   <span
     {...props}
