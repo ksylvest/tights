@@ -6,6 +6,7 @@ type Icons = "left" | "right" | "both";
 export const Control: React.FC<{
   expanded?: boolean;
   icons?: Icons;
+  children?: React.ReactNode;
 }> = ({ expanded, icons, ...props }) => (
   <div
     {...props}
