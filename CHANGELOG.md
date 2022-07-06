@@ -1,3 +1,11 @@
+# v1.9.0
+
+- fix tsc for card
+
+# v1.8.0
+
+- fix tsc for card
+
 # v1.7.0
 
 - fix tsc errors
