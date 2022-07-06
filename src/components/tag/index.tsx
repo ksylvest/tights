@@ -8,6 +8,7 @@ export const Tag: React.FC<{
   rounded?: boolean;
   color?: Color;
   size?: Size;
+  children?: React.ReactNode;
 }> = ({ delete: deleting, rounded, color, size, ...props }) => (
   <span
     {...props}

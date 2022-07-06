@@ -9,6 +9,7 @@ export const Textarea: React.FC<
     color?: Color;
     size?: Size;
     rounded?: boolean;
+    children?: React.ReactNode;
   }
 > = ({ color, size, rounded, ...props }) => (
   <textarea

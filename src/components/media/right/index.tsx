@@ -1,5 +1,5 @@
 import * as React from "react";
 
-export const Right: React.FC = (props) => (
-  <div {...props} className="media-right" />
-);
+export const Right: React.FC<{
+  children?: React.ReactNode;
+}> = (props) => <div {...props} className="media-right" />;

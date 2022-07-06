@@ -1,5 +1,5 @@
 import * as React from "react";
 
-export const Foot: React.FC = (props) => (
-  <div {...props} className="hero-foot" />
-);
+export const Foot: React.FC<{
+  children?: React.ReactNode;
+}> = (props) => <div {...props} className="hero-foot" />;

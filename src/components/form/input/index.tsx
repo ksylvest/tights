@@ -8,6 +8,7 @@ export const Input: React.FC<
     color?: Color;
     size?: Size;
     rounded?: boolean;
+    children?: React.ReactNode;
   }
 > = ({ color, size, rounded, ...props }) => (
   <input

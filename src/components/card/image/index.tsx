@@ -1,5 +1,5 @@
 import * as React from "react";
 
-export const Image: React.FC = (props) => (
-  <div {...props} className="card-image" />
-);
+export const Image: React.FC<{
+  children?: React.ReactNode;
+}> = (props) => <div {...props} className="card-image" />;

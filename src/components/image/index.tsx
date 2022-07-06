@@ -7,6 +7,7 @@ export const Image: React.FC<
     rounded?: boolean;
     square?: boolean;
     ratio?: string;
+    children?: React.ReactNode;
   }
 > = ({ dimensions, rounded, square, ratio, children, className, ...props }) => (
   <figure

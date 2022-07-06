@@ -9,6 +9,7 @@ export const Column: React.FC<{
   mobile?: Size;
   tablet?: Size;
   desktop?: Size;
+  children?: React.ReactNode;
 }> = ({ size, mobile, tablet, desktop, narrow, ...props }) => (
   <div
     {...props}

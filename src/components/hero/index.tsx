@@ -11,6 +11,7 @@ const Hero: React.FC<{
   color?: Color;
   size?: Size;
   bold?: boolean;
+  children?: React.ReactNode;
 }> = ({ color, size, bold, ...props }) => (
   <section
     {...props}

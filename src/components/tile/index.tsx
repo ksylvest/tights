@@ -10,6 +10,7 @@ export const Tile: React.FC<{
   child?: boolean;
   size?: Size;
   vertical?: boolean;
+  children?: React.ReactNode;
 }> = ({
   tag: Tag = "div",
   ancestor,

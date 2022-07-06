@@ -11,6 +11,7 @@ const Dropdown: React.FC<{
   alignment?: "right" | "left";
   active?: boolean;
   hoverable?: boolean;
+  children?: React.ReactNode;
 }> = ({ alignment, active, hoverable, ...props }) => (
   <div
     {...props}

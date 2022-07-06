@@ -1,5 +1,5 @@
 import * as React from "react";
 
-export const Content: React.FC = (props) => (
-  <div {...props} className="modal-content" />
-);
+export const Content: React.FC<{
+  children?: React.ReactNode;
+}> = (props) => <div {...props} className="modal-content" />;

@@ -1,5 +1,5 @@
 import * as React from "react";
 
-export const Menu: React.FC = (props) => (
-  <div {...props} className="dropdown-menu" />
-);
+export const Menu: React.FC<{
+  children?: React.ReactNode;
+}> = (props) => <div {...props} className="dropdown-menu" />;

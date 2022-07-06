@@ -11,6 +11,7 @@ const Tabs: React.FC<{
   size?: Size;
   style?: Style;
   fullwidth?: boolean;
+  children?: React.ReactNode;
 }> = ({ alignment, size, style, fullwidth, ...props }) => (
   <div
     {...props}

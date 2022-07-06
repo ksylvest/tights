@@ -6,6 +6,7 @@ import { Alignment } from "../../types";
 export const Buttons: React.FC<{
   addons?: boolean;
   alignment?: Alignment;
+  children?: React.ReactNode;
 }> = ({ addons, alignment, ...props }) => (
   <div
     {...props}

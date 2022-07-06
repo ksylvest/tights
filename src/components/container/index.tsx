@@ -1,5 +1,5 @@
 import * as React from "react";
 
-export const Container: React.FC = (props) => (
-  <div {...props} className="container" />
-);
+export const Container: React.FC<{
+  children?: React.ReactNode;
+}> = (props) => <div {...props} className="container" />;

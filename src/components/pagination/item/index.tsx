@@ -1,3 +1,5 @@
 import * as React from "react";
 
-export const Item: React.FC = ({ ...props }) => <li {...props} />;
+export const Item: React.FC<{
+  children?: React.ReactNode;
+}> = ({ ...props }) => <li {...props} />;

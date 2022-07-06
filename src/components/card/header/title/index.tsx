@@ -1,5 +1,5 @@
 import * as React from "react";
 
-export const Title: React.FC = (props) => (
-  <p {...props} className="card-header-title" />
-);
+export const Title: React.FC<{
+  children?: React.ReactNode;
+}> = (props) => <p {...props} className="card-header-title" />;

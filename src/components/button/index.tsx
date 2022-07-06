@@ -27,6 +27,7 @@ export const Button: React.FC<
     outlined?: boolean;
     rounded?: boolean;
     selected?: boolean;
+    children?: React.ReactNode;
   } & (ButtonElementProps | AnchorElementProps | InputElementProps)
 > = ({
   color,

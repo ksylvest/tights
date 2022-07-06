@@ -12,6 +12,7 @@ const Breadcrumb: React.FC<{
   alignment?: Alignment;
   separator?: Separator;
   size?: Size;
+  children?: React.ReactNode;
 }> = ({ alignment, separator, size, ...props }) => (
   <nav
     {...props}
