@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 import { Content } from "./content";
 import { Left } from "./left";

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 import { Body } from "./body";
 import { Foot } from "./foot";

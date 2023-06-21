@@ -1,5 +1,5 @@
 import cn from "classnames";
-import * as React from "react";
+import React from "react";
 
 export const Tags: React.FC<{
   addons?: boolean;

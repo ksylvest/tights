@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 export const Head: React.FC<{
   children?: React.ReactNode;

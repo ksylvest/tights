@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 export const CTA: React.FC<{
   children?: React.ReactNode;

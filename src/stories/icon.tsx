@@ -2,7 +2,7 @@ import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { select } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
-import * as React from "react";
+import React from "react";
 
 import { Icon } from "../components";
 

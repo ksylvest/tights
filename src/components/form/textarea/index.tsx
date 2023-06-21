@@ -1,5 +1,5 @@
 import cn from "classnames";
-import * as React from "react";
+import React from "react";
 
 type Color = "primary" | "info" | "success" | "warning" | "danger";
 type Size = "small" | "medium" | "large";

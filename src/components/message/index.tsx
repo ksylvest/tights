@@ -1,5 +1,5 @@
 import cn from "classnames";
-import * as React from "react";
+import React from "react";
 
 import { Body } from "./body";
 import { Header } from "./header";

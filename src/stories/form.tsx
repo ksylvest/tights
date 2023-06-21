@@ -1,7 +1,7 @@
 import { faHeart, faUpload, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { storiesOf } from "@storybook/react";
-import * as React from "react";
+import React from "react";
 
 import { Button } from "../components";
 import { Form } from "../components";

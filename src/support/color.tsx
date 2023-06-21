@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { property } from "./property";
 
 export const color = (Component: React.FC<{ color?: string }>): void => {

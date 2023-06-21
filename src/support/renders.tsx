@@ -1,5 +1,5 @@
 import { shallow } from "enzyme";
-import * as React from "react";
+import React from "react";
 
 export const renders = (Component: React.FC, selector: string): void => {
   it("renders", () => {
