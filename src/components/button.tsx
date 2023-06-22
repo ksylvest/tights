@@ -1,8 +1,8 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import type { Color } from "@src/types/color";
-import type { Size } from "@src/types/size";
+import type { Color } from "../types/color";
+import type { Size } from "../types/size";
 
 type ComponentProps = {
   color?: Color;

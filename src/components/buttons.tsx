@@ -1,7 +1,7 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import type { Alignment } from "@src/types/alignment";
+import type { Alignment } from "../types/alignment";
 
 type Props = {
   addons?: boolean;

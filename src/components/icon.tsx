@@ -1,9 +1,9 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import type { Alignment } from "@src/types/alignment";
-import type { Color } from "@src/types/color";
-import type { Size } from "@src/types/size";
+import type { Alignment } from "../types/alignment";
+import type { Color } from "../types/color";
+import type { Size } from "../types/size";
 
 type Props = {
   alignment?: Alignment;
