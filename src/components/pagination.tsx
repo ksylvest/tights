@@ -3,12 +3,12 @@ import type { FC } from "react";
 
 import type { Size } from "@src/types/size";
 
-import { PaginationEllipsis } from "./ellipsis";
-import { PaginationItem } from "./item";
-import { PaginationLink } from "./link";
-import { PaginationList } from "./list";
-import { PaginationNext } from "./next";
-import { PaginationPrev } from "./prev";
+import { PaginationEllipsis } from "./pagination_ellipsis";
+import { PaginationItem } from "./pagination_item";
+import { PaginationLink } from "./pagination_link";
+import { PaginationList } from "./pagination_list";
+import { PaginationNext } from "./pagination_next";
+import { PaginationPrev } from "./pagination_prev";
 
 type Props = {
   rounded?: boolean;

@@ -1,6 +1,6 @@
-import { renders } from "../../../support";
+import { renders } from "../support";
 
-import { MediaLeft } from "./index";
+import { MediaLeft } from "./media_left";
 
 describe(MediaLeft, () => {
   renders(MediaLeft, ".media-left");

@@ -1,6 +1,6 @@
-import { renders } from "../../../support";
+import { renders } from "../support";
 
-import { DropdownTrigger } from "./index";
+import { DropdownTrigger } from "./dropdown_trigger";
 
 describe(DropdownTrigger, () => {
   renders(DropdownTrigger, ".dropdown-trigger");

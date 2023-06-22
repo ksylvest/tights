@@ -1,7 +1,7 @@
-import { property } from "../../support";
-import { renders } from "../../support";
+import { property } from "../support";
+import { renders } from "../support";
 
-import { Column } from "./index";
+import { Column } from "./column";
 
 describe(Column, () => {
   renders(Column, ".column");

@@ -1,6 +1,6 @@
-import { renders } from "../../support";
+import { renders } from "../support";
 
-import { Form } from "./index";
+import { Form } from "./form";
 
 describe(Form, () => {
   renders(Form, "form");

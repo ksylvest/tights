@@ -1,6 +1,6 @@
-import { renders } from "../../../support";
+import { renders } from "../support";
 
-import { PanelIcon } from "./index";
+import { PanelIcon } from "./panel_icon";
 
 describe(PanelIcon, () => {
   renders(PanelIcon, ".panel-icon");

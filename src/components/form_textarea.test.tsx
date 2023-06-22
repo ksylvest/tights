@@ -1,9 +1,9 @@
-import { renders } from "../../../support";
-import { color } from "../../../support";
-import { size } from "../../../support";
-import { is } from "../../../support";
+import { renders } from "../support";
+import { color } from "../support";
+import { size } from "../support";
+import { is } from "../support";
 
-import { Textarea } from "./index";
+import { Textarea } from "./form_textarea";
 
 describe(Textarea, () => {
   renders(Textarea, ".textarea");

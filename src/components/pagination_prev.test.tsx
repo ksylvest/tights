@@ -1,6 +1,6 @@
-import { renders } from "../../../support";
+import { renders } from "../support";
 
-import { PaginationPrev } from "./index";
+import { PaginationPrev } from "./pagination_prev";
 
 describe(PaginationPrev, () => {
   renders(PaginationPrev, ".pagination-previous");

@@ -4,9 +4,9 @@ import type { FC } from "react";
 import type { Color } from "@src/types/color";
 import type { Size } from "@src/types/size";
 
-import { HeroBody } from "./body";
-import { HeroFoot } from "./foot";
-import { HeroHead } from "./head";
+import { HeroBody } from "./hero_body";
+import { HeroFoot } from "./hero_foot";
+import { HeroHead } from "./hero_head";
 
 type Props = {
   color?: Color;

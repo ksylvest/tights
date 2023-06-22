@@ -1,10 +1,10 @@
-import { renders } from "../../support";
-import { alignment } from "../../support";
-import { size } from "../../support";
-import { is } from "../../support";
-import { property } from "../../support";
+import { renders } from "../support";
+import { alignment } from "../support";
+import { size } from "../support";
+import { is } from "../support";
+import { property } from "../support";
 
-import { Tabs } from "./index";
+import { Tabs } from "./tabs";
 
 describe(Tabs, () => {
   renders(Tabs, ".tabs");

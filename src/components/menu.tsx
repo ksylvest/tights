@@ -1,12 +1,12 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { MenuItem } from "./item";
-import { MenuLabel } from "./label";
-import { MenuList } from "./list";
+import { MenuItem } from "./menu_item";
+import { MenuLabel } from "./menu_label";
+import { MenuList } from "./menu_list";
 
-const Menu: FC<JSX.IntrinsicElements["aside"]> = (props) => (
-  <aside {...props} className="menu" />
+const Menu: FC<JSX.IntrinsicElements["aside"]> = ({ className, ...props }) => (
+  <aside {...props} className={cn("menu", className)} />
 );
 
 const Combined = Object.assign(Menu, {

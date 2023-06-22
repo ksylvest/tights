@@ -1,7 +1,7 @@
-import { is } from "../../../support";
-import { renders } from "../../../support";
+import { is } from "../support";
+import { renders } from "../support";
 
-import { TabsItem } from "./index";
+import { TabsItem } from "./tabs_item";
 
 describe(TabsItem, () => {
   renders(TabsItem, "li");

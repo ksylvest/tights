@@ -1,8 +1,8 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { TabsItem } from "./item";
-import { TabsList } from "./list";
+import { TabsItem } from "./tabs_item";
+import { TabsList } from "./tabs_list";
 
 import type { Alignment } from "@src/types/alignment";
 import type { Size } from "@src/types/size";

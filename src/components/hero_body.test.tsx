@@ -1,6 +1,6 @@
-import { renders } from "../../../support";
+import { renders } from "../support";
 
-import { HeroBody } from "./index";
+import { HeroBody } from "./hero_body";
 
 describe(HeroBody, () => {
   renders(HeroBody, ".hero-body");

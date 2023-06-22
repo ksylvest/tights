@@ -1,9 +1,9 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { MediaContent } from "./content";
-import { MediaLeft } from "./left";
-import { MediaRight } from "./right";
+import { MediaContent } from "./media_content";
+import { MediaLeft } from "./media_left";
+import { MediaRight } from "./media_right";
 
 const Media: FC<JSX.IntrinsicElements["article"]> = ({
   className,

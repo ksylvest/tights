@@ -1,9 +1,9 @@
-import { renders } from "../../../support";
-import { color } from "../../../support";
-import { size } from "../../../support";
-import { is } from "../../../support";
+import { renders } from "../support";
+import { color } from "../support";
+import { size } from "../support";
+import { is } from "../support";
 
-import { Input } from "./index";
+import { Input } from "./form_input";
 
 describe(Input, () => {
   renders(Input, ".input");

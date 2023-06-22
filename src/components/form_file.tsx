@@ -5,11 +5,11 @@ import type { Alignment } from "@src/types/alignment";
 import type { Color } from "@src/types/color";
 import type { Size } from "@src/types/size";
 
-import { FileCTA } from "./cta";
-import { FileIcon } from "./icon";
-import { FileInput } from "./input";
-import { FileLabel } from "./label";
-import { FileName } from "./name";
+import { FileCTA } from "./form_file_cta";
+import { FileIcon } from "./form_file_icon";
+import { FileInput } from "./form_file_input";
+import { FileLabel } from "./form_file_label";
+import { FileName } from "./form_file_name";
 
 type Props = {
   name?: string;

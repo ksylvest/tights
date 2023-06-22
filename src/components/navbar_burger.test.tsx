@@ -1,7 +1,7 @@
-import { renders } from "../../../support";
-import { is } from "../../../support";
+import { renders } from "../support";
+import { is } from "../support";
 
-import { NavbarBurger } from "./index";
+import { NavbarBurger } from "./navbar_burger";
 
 describe(NavbarBurger, () => {
   renders(NavbarBurger, ".navbar-burger");

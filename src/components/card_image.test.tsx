@@ -1,6 +1,6 @@
-import { renders } from "../../../support";
+import { renders } from "../support";
 
-import { CardImage } from "./index";
+import { CardImage } from "./card_image";
 
 describe(CardImage, () => {
   renders(CardImage, ".card-image");

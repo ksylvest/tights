@@ -1,6 +1,6 @@
-import { renders } from "../../support";
+import { renders } from "../support";
 
-import { Menu } from "./index";
+import { Menu } from "./menu";
 
 describe(Menu, () => {
   renders(Menu, ".menu");

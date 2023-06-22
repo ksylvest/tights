@@ -1,6 +1,6 @@
-import { renders } from "../../../support";
+import { renders } from "../support";
 
-import { CardContent } from "./index";
+import { CardContent } from "./card_content";
 
 describe(CardContent, () => {
   renders(CardContent, ".card-content");

@@ -1,7 +1,7 @@
-import { is } from "../../../support";
-import { renders } from "../../../support";
+import { is } from "../support";
+import { renders } from "../support";
 
-import { BreadcrumbItem } from "./index";
+import { BreadcrumbItem } from "./breadcrumb_item";
 
 describe(BreadcrumbItem, () => {
   renders(BreadcrumbItem, "li");

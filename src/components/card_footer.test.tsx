@@ -1,6 +1,6 @@
-import { renders } from "../../../support";
+import { renders } from "../support";
 
-import { CardFooter } from "./index";
+import { CardFooter } from "./card_footer";
 
 describe(CardFooter, () => {
   renders(CardFooter, ".card-footer");

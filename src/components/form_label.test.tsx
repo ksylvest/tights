@@ -1,6 +1,6 @@
-import { renders } from "../../../support";
+import { renders } from "../support";
 
-import { Label } from "./index";
+import { Label } from "./form_label";
 
 describe(Label, () => {
   renders(Label, ".label");

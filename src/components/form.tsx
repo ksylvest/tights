@@ -1,12 +1,12 @@
 import type { FC } from "react";
 
-import { Control } from "./control";
-import { Field } from "./field";
-import { File } from "./file";
-import { Help } from "./help";
-import { Input } from "./input";
-import { Label } from "./label";
-import { Textarea } from "./textarea";
+import { Control } from "./form_control";
+import { Field } from "./form_field";
+import { File } from "./form_file";
+import { Help } from "./form_help";
+import { Input } from "./form_input";
+import { Label } from "./form_label";
+import { Textarea } from "./form_textarea";
 
 const Form: FC<JSX.IntrinsicElements["form"]> = (props) => <form {...props} />;
 

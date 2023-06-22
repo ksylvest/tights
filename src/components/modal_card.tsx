@@ -1,10 +1,10 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { ModalCardBody } from "./body";
-import { ModalCardFoot } from "./foot";
-import { ModalCardHead } from "./head";
-import { ModalCardTitle } from "./title";
+import { ModalCardBody } from "./modal_card_body";
+import { ModalCardFoot } from "./modal_card_foot";
+import { ModalCardHead } from "./modal_card_head";
+import { ModalCardTitle } from "./modal_card_title";
 
 const ModalCard: FC<JSX.IntrinsicElements["div"]> = ({
   className,

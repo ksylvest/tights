@@ -1,11 +1,11 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { DropdownContent } from "./content";
-import { DropdownDivider } from "./divider";
-import { DropdownItem } from "./item";
-import { DropdownMenu } from "./menu";
-import { DropdownTrigger } from "./trigger";
+import { DropdownContent } from "./dropdown_content";
+import { DropdownDivider } from "./dropdown_divider";
+import { DropdownItem } from "./dropdown_item";
+import { DropdownMenu } from "./dropdown_menu";
+import { DropdownTrigger } from "./dropdown_trigger";
 
 type Props = {
   alignment?: "right" | "left";

@@ -1,8 +1,8 @@
-import { has } from "../../support";
-import { alignment } from "../../support";
-import { renders } from "../../support";
+import { has } from "../support";
+import { alignment } from "../support";
+import { renders } from "../support";
 
-import { Buttons } from "./index";
+import { Buttons } from "./buttons";
 
 describe(Buttons, () => {
   renders(Buttons, ".buttons");

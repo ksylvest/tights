@@ -1,7 +1,7 @@
-import { renders } from "../../support";
-import { has } from "../../support";
+import { renders } from "../support";
+import { has } from "../support";
 
-import { Tags } from "./index";
+import { Tags } from "./tags";
 
 describe(Tags, () => {
   renders(Tags, ".tags");

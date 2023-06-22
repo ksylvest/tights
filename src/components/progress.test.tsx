@@ -1,8 +1,8 @@
-import { renders } from "../../support";
-import { color } from "../../support";
-import { size } from "../../support";
+import { renders } from "../support";
+import { color } from "../support";
+import { size } from "../support";
 
-import { Progress } from "./index";
+import { Progress } from "./progress";
 
 describe(Progress, () => {
   renders(Progress, ".progress");

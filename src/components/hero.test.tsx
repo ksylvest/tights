@@ -1,9 +1,9 @@
-import { renders } from "../../support";
-import { color } from "../../support";
-import { size } from "../../support";
-import { is } from "../../support";
+import { renders } from "../support";
+import { color } from "../support";
+import { size } from "../support";
+import { is } from "../support";
 
-import { Hero } from "./index";
+import { Hero } from "./hero";
 
 describe(Hero, () => {
   renders(Hero, ".hero");

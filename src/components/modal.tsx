@@ -1,10 +1,10 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { ModalBackground } from "./background";
-import { ModalCard } from "./card";
-import { ModalClose } from "./close";
-import { ModalContent } from "./content";
+import { ModalBackground } from "./modal_background";
+import { ModalCard } from "./modal_card";
+import { ModalClose } from "./modal_close";
+import { ModalContent } from "./modal_content";
 
 const DEFAULT_ACTIVE = true;
 

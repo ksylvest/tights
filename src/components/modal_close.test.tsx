@@ -1,7 +1,7 @@
-import { renders } from "../../../support";
-import { size } from "../../../support";
+import { renders } from "../support";
+import { size } from "../support";
 
-import { ModalClose } from "./index";
+import { ModalClose } from "./modal_close";
 
 describe(ModalClose, () => {
   renders(ModalClose, ".modal-close");

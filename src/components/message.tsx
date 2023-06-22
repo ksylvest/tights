@@ -1,8 +1,8 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { MessageBody } from "./body";
-import { MessageHeader } from "./header";
+import { MessageBody } from "./message_body";
+import { MessageHeader } from "./message_header";
 
 import { Color } from "@src/types/color";
 import { Size } from "@src/types/size";

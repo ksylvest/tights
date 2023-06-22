@@ -1,10 +1,10 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { CardContent } from "./content";
-import { CardFooter } from "./footer";
-import { CardHeader } from "./header";
-import { CardImage } from "./image";
+import { CardContent } from "./card_content";
+import { CardFooter } from "./card_footer";
+import { CardHeader } from "./card_header";
+import { CardImage } from "./card_image";
 
 const Card: FC<JSX.IntrinsicElements["div"]> = ({ className, ...props }) => (
   <div {...props} className={cn("card", className)} />

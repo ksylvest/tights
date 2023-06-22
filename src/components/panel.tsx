@@ -3,10 +3,10 @@ import type { FC } from "react";
 
 import type { Color } from "@src/types/color";
 
-import { PanelBlock } from "./block";
-import { PanelHeading } from "./heading";
-import { PanelIcon } from "./icon";
-import { PanelTabs } from "./tabs";
+import { PanelBlock } from "./panel_block";
+import { PanelHeading } from "./panel_heading";
+import { PanelIcon } from "./panel_icon";
+import { PanelTabs } from "./panel_tabs";
 
 type Props = {
   color?: Color;

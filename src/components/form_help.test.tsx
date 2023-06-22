@@ -1,7 +1,7 @@
-import { renders } from "../../../support";
-import { color } from "../../../support";
+import { renders } from "../support";
+import { color } from "../support";
 
-import { Help } from "./index";
+import { Help } from "./form_help";
 
 describe(Help, () => {
   renders(Help, ".help");

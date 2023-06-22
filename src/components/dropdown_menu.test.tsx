@@ -1,6 +1,6 @@
-import { renders } from "../../../support";
+import { renders } from "../support";
 
-import { DropdownMenu } from "./index";
+import { DropdownMenu } from "./dropdown_menu";
 
 describe(DropdownMenu, () => {
   renders(DropdownMenu, ".dropdown-menu");
