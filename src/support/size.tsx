@@ -1,4 +1,3 @@
-import cn from "classnames";
 import type { FC } from "react";
 import { property } from "./property";
 
