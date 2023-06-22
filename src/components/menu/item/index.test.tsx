@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Item } from ".";
+import { MenuItem } from "./index";
 
-describe(Item, () => {
-  renders(Item, "li");
+describe(MenuItem, () => {
+  renders(MenuItem, "li");
 });

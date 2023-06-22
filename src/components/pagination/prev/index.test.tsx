@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Prev } from ".";
+import { PaginationPrev } from "./index";
 
-describe(Prev, () => {
-  renders(Prev, ".pagination-previous");
+describe(PaginationPrev, () => {
+  renders(PaginationPrev, ".pagination-previous");
 });

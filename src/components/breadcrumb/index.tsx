@@ -1,8 +1,8 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { Item } from "./item";
-import { List } from "./list";
+import { BreadcrumbItem } from "./item";
+import { BreadcrumbList } from "./list";
 
 import { Alignment } from "@src/types/alignment";
 import { Size } from "@src/types/size";
@@ -29,8 +29,8 @@ const Breadcrumb: FC<
 );
 
 const Combined = Object.assign(Breadcrumb, {
-  Item,
-  List,
+  Item: BreadcrumbItem,
+  List: BreadcrumbList,
 });
 
 export { Combined as Breadcrumb };

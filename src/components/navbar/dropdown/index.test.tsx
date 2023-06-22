@@ -2,10 +2,10 @@ import { renders } from "../../../support";
 import { is } from "../../../support";
 import { direction } from "../../../support";
 
-import { Dropdown } from ".";
+import { NavbarDropdown } from "./index";
 
-describe(Dropdown, () => {
-  renders(Dropdown, ".navbar-dropdown");
-  is(Dropdown, "boxed");
-  direction(Dropdown);
+describe(NavbarDropdown, () => {
+  renders(NavbarDropdown, ".navbar-dropdown");
+  is(NavbarDropdown, "boxed");
+  direction(NavbarDropdown);
 });

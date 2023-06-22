@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 import { color } from "../../../support";
 
-import { Help } from ".";
+import { Help } from "./index";
 
 describe(Help, () => {
   renders(Help, ".help");

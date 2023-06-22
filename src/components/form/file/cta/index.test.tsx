@@ -1,7 +1,7 @@
 import { renders } from "../../../../support";
 
-import { CTA } from ".";
+import { FileCTA } from "./index";
 
-describe(CTA, () => {
-  renders(CTA, ".file-cta");
+describe(FileCTA, () => {
+  renders(FileCTA, ".file-cta");
 });

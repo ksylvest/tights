@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Tabs } from ".";
+import { PanelTabs } from "./index";
 
-describe(Tabs, () => {
-  renders(Tabs, ".panel-tabs");
+describe(PanelTabs, () => {
+  renders(PanelTabs, ".panel-tabs");
 });

@@ -5,7 +5,7 @@ type Props = {
   active?: boolean;
 };
 
-export const Item: FC<
+export const BreadcrumbItem: FC<
   Omit<JSX.IntrinsicElements["li"], keyof Props> & Props
 > = ({ active, className, ...props }) => (
   <li {...props} className={cn(active && "is-active", className)} />

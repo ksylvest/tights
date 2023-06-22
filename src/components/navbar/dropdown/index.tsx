@@ -6,7 +6,7 @@ type Props = {
   direction?: "right" | "left";
 };
 
-export const Dropdown: FC<
+export const NavbarDropdown: FC<
   Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
 > = ({ boxed, direction, className, ...props }) => (
   <div

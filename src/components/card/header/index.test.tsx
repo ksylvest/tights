@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Header } from ".";
+import { CardHeader } from "./index";
 
-describe(Header, () => {
-  renders(Header, ".card-header");
+describe(CardHeader, () => {
+  renders(CardHeader, ".card-header");
 });

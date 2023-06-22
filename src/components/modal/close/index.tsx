@@ -7,7 +7,7 @@ type Props = {
   size?: Size;
 };
 
-export const Close: FC<
+export const ModalClose: FC<
   Omit<JSX.IntrinsicElements["button"], keyof Props> & Props
 > = ({ size, className, ...props }) => (
   <button

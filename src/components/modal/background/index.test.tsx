@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Background } from ".";
+import { ModalBackground } from "./index";
 
-describe(Background, () => {
-  renders(Background, ".modal-background");
+describe(ModalBackground, () => {
+  renders(ModalBackground, ".modal-background");
 });

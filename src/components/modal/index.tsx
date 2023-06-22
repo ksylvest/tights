@@ -1,10 +1,10 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { Background } from "./background";
-import { Card } from "./card";
-import { Close } from "./close";
-import { Content } from "./content";
+import { ModalBackground } from "./background";
+import { ModalCard } from "./card";
+import { ModalClose } from "./close";
+import { ModalContent } from "./content";
 
 const DEFAULT_ACTIVE = true;
 
@@ -21,10 +21,10 @@ const Modal: FC<Omit<JSX.IntrinsicElements["div"], keyof Props> & Props> = ({
 );
 
 const Combined = Object.assign(Modal, {
-  Background,
-  Card,
-  Close,
-  Content,
+  Background: ModalBackground,
+  Card: ModalCard,
+  Close: ModalClose,
+  Content: ModalContent,
 });
 
 export { Combined as Modal };

@@ -1,9 +1,9 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { Content } from "./content";
-import { Left } from "./left";
-import { Right } from "./right";
+import { MediaContent } from "./content";
+import { MediaLeft } from "./left";
+import { MediaRight } from "./right";
 
 const Media: FC<JSX.IntrinsicElements["article"]> = ({
   className,
@@ -11,9 +11,9 @@ const Media: FC<JSX.IntrinsicElements["article"]> = ({
 }) => <article {...props} className={cn("media", className)} />;
 
 const Combined = Object.assign(Media, {
-  Content,
-  Left,
-  Right,
+  Content: MediaContent,
+  Left: MediaLeft,
+  Right: MediaRight,
 });
 
 export { Combined as Media };

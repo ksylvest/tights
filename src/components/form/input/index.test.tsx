@@ -3,7 +3,7 @@ import { color } from "../../../support";
 import { size } from "../../../support";
 import { is } from "../../../support";
 
-import { Input } from ".";
+import { Input } from "./index";
 
 describe(Input, () => {
   renders(Input, ".input");

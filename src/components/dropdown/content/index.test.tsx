@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Content } from ".";
+import { DropdownContent } from "./index";
 
-describe(Content, () => {
-  renders(Content, ".dropdown-content");
+describe(DropdownContent, () => {
+  renders(DropdownContent, ".dropdown-content");
 });

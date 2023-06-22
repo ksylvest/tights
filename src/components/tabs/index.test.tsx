@@ -4,7 +4,7 @@ import { size } from "../../support";
 import { is } from "../../support";
 import { property } from "../../support";
 
-import { Tabs } from ".";
+import { Tabs } from "./index";
 
 describe(Tabs, () => {
   renders(Tabs, ".tabs");

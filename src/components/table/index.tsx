@@ -1,7 +1,7 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { Container } from "./container";
+import { PanelContainer } from "./container";
 
 type Props = {
   bordered?: boolean;
@@ -30,7 +30,7 @@ const Table: FC<Omit<JSX.IntrinsicElements["table"], keyof Props> & Props> = ({
 );
 
 const Combined = Object.assign(Table, {
-  Container,
+  Container: PanelContainer,
 });
 
 export { Combined as Table };

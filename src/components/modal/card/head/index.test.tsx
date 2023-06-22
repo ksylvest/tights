@@ -1,7 +1,7 @@
 import { renders } from "../../../../support";
 
-import { Head } from ".";
+import { ModalCardHead } from "./index";
 
-describe(Head, () => {
-  renders(Head, ".modal-card-head");
+describe(ModalCardHead, () => {
+  renders(ModalCardHead, ".modal-card-head");
 });

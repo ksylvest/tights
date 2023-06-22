@@ -3,7 +3,7 @@ import { renders } from "../../support";
 import { separator } from "../../support";
 import { size } from "../../support";
 
-import { Breadcrumb } from ".";
+import { Breadcrumb } from "./index";
 
 describe(Breadcrumb, () => {
   renders(Breadcrumb, ".breadcrumb");

@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Body } from ".";
+import { MessageBody } from "./index";
 
-describe(Body, () => {
-  renders(Body, ".message-body");
+describe(MessageBody, () => {
+  renders(MessageBody, ".message-body");
 });

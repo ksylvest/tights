@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Header } from ".";
+import { MessageHeader } from "./index";
 
-describe(Header, () => {
-  renders(Header, ".message-header");
+describe(MessageHeader, () => {
+  renders(MessageHeader, ".message-header");
 });

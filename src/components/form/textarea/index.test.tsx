@@ -3,7 +3,7 @@ import { color } from "../../../support";
 import { size } from "../../../support";
 import { is } from "../../../support";
 
-import { Textarea } from ".";
+import { Textarea } from "./index";
 
 describe(Textarea, () => {
   renders(Textarea, ".textarea");

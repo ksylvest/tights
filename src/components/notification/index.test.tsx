@@ -1,7 +1,7 @@
 import { renders } from "../../support";
 import { color } from "../../support";
 
-import { Notification } from ".";
+import { Notification } from "./index";
 
 describe(Notification, () => {
   renders(Notification, ".notification");

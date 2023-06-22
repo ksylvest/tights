@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Image } from ".";
+import { CardImage } from "./index";
 
-describe(Image, () => {
-  renders(Image, ".card-image");
+describe(CardImage, () => {
+  renders(CardImage, ".card-image");
 });

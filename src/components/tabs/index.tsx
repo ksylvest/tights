@@ -1,8 +1,8 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { Item } from "./item";
-import { List } from "./list";
+import { TabsItem } from "./item";
+import { TabsList } from "./list";
 
 import type { Alignment } from "@src/types/alignment";
 import type { Size } from "@src/types/size";
@@ -37,8 +37,8 @@ const Tabs: FC<Omit<JSX.IntrinsicElements["div"], keyof Props> & Props> = ({
 );
 
 const Combined = Object.assign(Tabs, {
-  Item,
-  List,
+  Item: TabsItem,
+  List: TabsList,
 });
 
 export { Combined as Tabs };

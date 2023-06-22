@@ -3,7 +3,7 @@ import { color } from "../../support";
 import { size } from "../../support";
 import { is } from "../../support";
 
-import { Hero } from ".";
+import { Hero } from "./index";
 
 describe(Hero, () => {
   renders(Hero, ".hero");

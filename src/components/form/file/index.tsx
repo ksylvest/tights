@@ -5,11 +5,11 @@ import type { Alignment } from "@src/types/alignment";
 import type { Color } from "@src/types/color";
 import type { Size } from "@src/types/size";
 
-import { CTA } from "./cta";
-import { Icon } from "./icon";
-import { Input } from "./input";
-import { Label } from "./label";
-import { Name } from "./name";
+import { FileCTA } from "./cta";
+import { FileIcon } from "./icon";
+import { FileInput } from "./input";
+import { FileLabel } from "./label";
+import { FileName } from "./name";
 
 type Props = {
   name?: string;
@@ -46,11 +46,11 @@ const File: FC<Omit<JSX.IntrinsicElements["div"], keyof Props> & Props> = ({
 );
 
 const Combined = Object.assign(File, {
-  CTA,
-  Icon,
-  Input,
-  Label,
-  Name,
+  CTA: FileCTA,
+  Icon: FileIcon,
+  Input: FileInput,
+  Label: FileLabel,
+  Name: FileName,
 });
 
 export { Combined as File };

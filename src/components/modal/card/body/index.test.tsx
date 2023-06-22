@@ -1,7 +1,7 @@
 import { renders } from "../../../../support";
 
-import { Body } from ".";
+import { ModalCardBody } from "./index";
 
-describe(Body, () => {
-  renders(Body, ".modal-card-body");
+describe(ModalCardBody, () => {
+  renders(ModalCardBody, ".modal-card-body");
 });

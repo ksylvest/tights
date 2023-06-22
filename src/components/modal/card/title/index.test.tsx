@@ -1,7 +1,7 @@
 import { renders } from "../../../../support";
 
-import { Title } from ".";
+import { ModalCardTitle } from "./index";
 
-describe(Title, () => {
-  renders(Title, ".modal-card-title");
+describe(ModalCardTitle, () => {
+  renders(ModalCardTitle, ".modal-card-title");
 });

@@ -4,9 +4,9 @@ import type { FC } from "react";
 import type { Color } from "@src/types/color";
 import type { Size } from "@src/types/size";
 
-import { Body } from "./body";
-import { Foot } from "./foot";
-import { Head } from "./head";
+import { HeroBody } from "./body";
+import { HeroFoot } from "./foot";
+import { HeroHead } from "./head";
 
 type Props = {
   color?: Color;
@@ -34,9 +34,9 @@ const Hero: FC<Omit<JSX.IntrinsicElements["section"], keyof Props> & Props> = ({
 );
 
 const Combined = Object.assign(Hero, {
-  Body,
-  Foot,
-  Head,
+  Body: HeroBody,
+  Foot: HeroFoot,
+  Head: HeroHead,
 });
 
 export { Combined as Hero };

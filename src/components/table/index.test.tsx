@@ -1,7 +1,7 @@
 import { renders } from "../../support";
 import { is } from "../../support";
 
-import { Table } from ".";
+import { Table } from "./index";
 
 describe(Table, () => {
   renders(Table, ".table");

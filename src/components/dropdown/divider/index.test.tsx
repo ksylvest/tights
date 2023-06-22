@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Divider } from ".";
+import { DropdownDivider } from "./index";
 
-describe(Divider, () => {
-  renders(Divider, "hr.dropdown-divider");
+describe(DropdownDivider, () => {
+  renders(DropdownDivider, "hr.dropdown-divider");
 });

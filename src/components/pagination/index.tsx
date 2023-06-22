@@ -3,12 +3,12 @@ import type { FC } from "react";
 
 import type { Size } from "@src/types/size";
 
-import { Ellipsis } from "./ellipsis";
-import { Item } from "./item";
-import { Link } from "./link";
-import { List } from "./list";
-import { Next } from "./next";
-import { Prev } from "./prev";
+import { PaginationEllipsis } from "./ellipsis";
+import { PaginationItem } from "./item";
+import { PaginationLink } from "./link";
+import { PaginationList } from "./list";
+import { PaginationNext } from "./next";
+import { PaginationPrev } from "./prev";
 
 type Props = {
   rounded?: boolean;
@@ -31,12 +31,12 @@ const Pagination: FC<
 );
 
 const Combined = Object.assign(Pagination, {
-  Ellipsis,
-  Item,
-  Link,
-  List,
-  Next,
-  Prev,
+  Ellipsis: PaginationEllipsis,
+  Item: PaginationItem,
+  Link: PaginationLink,
+  List: PaginationList,
+  Next: PaginationNext,
+  Prev: PaginationPrev,
 });
 
 export { Combined as Pagination };

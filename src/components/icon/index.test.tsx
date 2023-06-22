@@ -2,7 +2,7 @@ import { renders } from "../../support";
 import { property } from "../../support";
 import { size } from "../../support";
 
-import { Icon } from ".";
+import { Icon } from "./index";
 
 describe(Icon, () => {
   renders(Icon, ".icon");

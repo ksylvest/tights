@@ -1,7 +1,7 @@
 import { renders } from "../../../../support";
 
-import { Label } from ".";
+import { FileLabel } from "./index";
 
-describe(Label, () => {
-  renders(Label, ".file-label");
+describe(FileLabel, () => {
+  renders(FileLabel, ".file-label");
 });

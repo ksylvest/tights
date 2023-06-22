@@ -3,7 +3,7 @@ import { is } from "../../support";
 import { renders } from "../../support";
 import { size } from "../../support";
 
-import { Button } from ".";
+import { Button } from "./index";
 
 describe(Button, () => {
   renders(Button, ".button");
