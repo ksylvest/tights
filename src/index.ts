@@ -89,6 +89,7 @@ export * from "./panel_tabs";
 export * from "./panel";
 export * from "./progress";
 export * from "./section";
+export * from "./select";
 export * from "./subtitle";
 export * from "./table_container";
 export * from "./table";
