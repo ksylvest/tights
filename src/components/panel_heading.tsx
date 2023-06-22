@@ -1,7 +1,7 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
-export const PanelHeading: FC<JSX.IntrinsicElements["p"]> = ({
+export const PanelHeading: FC<ComponentProps<"p">> = ({
   className,
   ...props
 }) => <p {...props} className={cn("panel-heading", className)} />;

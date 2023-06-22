@@ -1,10 +1,7 @@
-import type { FC } from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { faHeart, faUpload, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-const Form: FC = (props) => <form {...props} />;
 
 import { Button } from "./button";
 import { Control } from "./control";
@@ -23,7 +20,7 @@ import { Textarea } from "./textarea";
 
 const meta = {
   title: "Form",
-  component: Form,
+  component: ({ children }) => <form>{children}</form>,
   tags: ["autodocs"],
 } satisfies Meta<typeof Form>;
 

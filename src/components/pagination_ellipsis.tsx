@@ -1,7 +1,7 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
-export const PaginationEllipsis: FC<JSX.IntrinsicElements["span"]> = ({
+export const PaginationEllipsis: FC<ComponentProps<"span">> = ({
   className,
   ...props
 }) => (

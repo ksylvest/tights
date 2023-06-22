@@ -1,5 +1,5 @@
 import cn from "classnames";
-import type { FC } from "react";
+import { ComponentProps, FC } from "react";
 
 import type { Alignment } from "../types/alignment";
 import type { Color } from "../types/color";
@@ -11,9 +11,13 @@ type Props = {
   size?: Size;
 };
 
-export const Icon: FC<
-  Omit<JSX.IntrinsicElements["span"], keyof Props> & Props
-> = ({ alignment, color, size, className, ...props }) => (
+export const Icon: FC<Omit<ComponentProps<"span">, keyof Props> & Props> = ({
+  alignment,
+  color,
+  size,
+  className,
+  ...props
+}) => (
   <span
     {...props}
     className={cn(

@@ -1,5 +1,5 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
 type Color = "primary" | "info" | "success" | "warning" | "danger";
 type Size = "small" | "medium" | "large";
@@ -11,7 +11,7 @@ type Props = {
 };
 
 export const Textarea: FC<
-  Omit<JSX.IntrinsicElements["textarea"], keyof Props> & Props
+  Omit<ComponentProps<"textarea">, keyof Props> & Props
 > = ({ color, size, rounded, className, ...props }) => (
   <textarea
     {...props}

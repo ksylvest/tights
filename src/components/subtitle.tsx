@@ -1,22 +1,15 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, ElementType, FC } from "react";
 
-type Props = {
-  tag?: "div" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p";
+type Props<T extends ElementType> = {
+  tag?: T;
 };
 
-type Element =
-  | JSX.IntrinsicElements["div"]
-  | JSX.IntrinsicElements["h1"]
-  | JSX.IntrinsicElements["h2"]
-  | JSX.IntrinsicElements["h3"]
-  | JSX.IntrinsicElements["h4"]
-  | JSX.IntrinsicElements["h5"]
-  | JSX.IntrinsicElements["h6"]
-  | JSX.IntrinsicElements["p"];
-
-export const Subtitle: FC<Omit<Element, keyof Props> & Props> = ({
-  tag: Tag = "p",
+export const Subtitle = <T extends ElementType = "p">({
   className,
+  tag,
   ...props
-}) => <Tag {...props} className={cn("subtitle", className)} />;
+}: Props<T> & Omit<ComponentProps<T>, keyof Props<T>>) => {
+  const Tag = tag ?? "p";
+  return <Tag {...props} className={cn("subtitle", className)} />;
+};

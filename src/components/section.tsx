@@ -1,7 +1,6 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
-export const Section: FC<JSX.IntrinsicElements["div"]> = ({
-  className,
-  ...props
-}) => <div {...props} className={cn("section", className)} />;
+export const Section: FC<ComponentProps<"div">> = ({ className, ...props }) => (
+  <div {...props} className={cn("section", className)} />
+);

@@ -1,5 +1,5 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
 type Icons = "left" | "right" | "both";
 
@@ -8,9 +8,12 @@ type Props = {
   icons?: Icons;
 };
 
-export const Control: FC<
-  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
-> = ({ expanded, icons, className, ...props }) => (
+export const Control: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
+  expanded,
+  icons,
+  className,
+  ...props
+}) => (
   <div
     {...props}
     className={cn(

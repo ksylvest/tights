@@ -1,5 +1,5 @@
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
-export const FileCTA: FC<JSX.IntrinsicElements["span"]> = (props) => (
+export const FileCTA: FC<ComponentProps<"span">> = (props) => (
   <span {...props} className="file-cta" />
 );

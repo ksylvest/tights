@@ -1,5 +1,5 @@
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
-export const BreadcrumbList: FC<JSX.IntrinsicElements["ul"]> = (props) => (
+export const BreadcrumbList: FC<ComponentProps<"ul">> = (props) => (
   <ul {...props} />
 );

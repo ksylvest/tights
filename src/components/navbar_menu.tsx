@@ -1,12 +1,12 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
 type Props = {
   active?: boolean;
 };
 
 export const NavbarMenu: FC<
-  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
+  Omit<ComponentProps<"div">, keyof Props> & Props
 > = ({ active, className, ...props }) => (
   <div
     {...props}

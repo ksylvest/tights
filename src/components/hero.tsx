@@ -1,5 +1,5 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
 import type { Color } from "../types/color";
 import type { Size } from "../types/size";
@@ -10,9 +10,13 @@ type Props = {
   bold?: boolean;
 };
 
-export const Hero: FC<
-  Omit<JSX.IntrinsicElements["section"], keyof Props> & Props
-> = ({ color, size, bold, className, ...props }) => (
+export const Hero: FC<Omit<ComponentProps<"section">, keyof Props> & Props> = ({
+  color,
+  size,
+  bold,
+  className,
+  ...props
+}) => (
   <section
     {...props}
     className={cn(

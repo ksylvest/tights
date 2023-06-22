@@ -1,5 +1,5 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
 import type { Alignment } from "../types/alignment";
 import type { Color } from "../types/color";
@@ -20,9 +20,7 @@ type Props = {
   fullwidth?: boolean;
 };
 
-export const File: FC<
-  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
-> = ({
+export const File: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
   name,
   alignment,
   color,

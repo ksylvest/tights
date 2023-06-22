@@ -1,7 +1,6 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
-export const Level: FC<JSX.IntrinsicElements["nav"]> = ({
-  className,
-  ...props
-}) => <nav {...props} className={cn("level", className)} />;
+export const Level: FC<ComponentProps<"nav">> = ({ className, ...props }) => (
+  <nav {...props} className={cn("level", className)} />
+);

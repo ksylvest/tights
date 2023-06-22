@@ -1,7 +1,7 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
-export const LevelItem: FC<JSX.IntrinsicElements["div"]> = ({
+export const LevelItem: FC<ComponentProps<"div">> = ({
   className,
   ...props
 }) => <div {...props} className={cn("level-item", className)} />;

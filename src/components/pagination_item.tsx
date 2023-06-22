@@ -1,5 +1,5 @@
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
-export const PaginationItem: FC<JSX.IntrinsicElements["li"]> = ({
-  ...props
-}) => <li {...props} />;
+export const PaginationItem: FC<ComponentProps<"li">> = ({ ...props }) => (
+  <li {...props} />
+);

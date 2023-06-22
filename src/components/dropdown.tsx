@@ -1,5 +1,5 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
 type Props = {
   alignment?: "right" | "left";
@@ -7,9 +7,13 @@ type Props = {
   hoverable?: boolean;
 };
 
-export const Dropdown: FC<
-  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
-> = ({ alignment, active, hoverable, className, ...props }) => (
+export const Dropdown: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
+  alignment,
+  active,
+  hoverable,
+  className,
+  ...props
+}) => (
   <div
     {...props}
     className={cn(

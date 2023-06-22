@@ -1,5 +1,5 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
 import type { Color } from "../types/color";
 import type { Size } from "../types/size";
@@ -10,9 +10,13 @@ type Props = {
   rounded?: boolean;
 };
 
-export const Input: FC<
-  Omit<JSX.IntrinsicElements["input"], keyof Props> & Props
-> = ({ color, size, rounded, className, ...props }) => (
+export const Input: FC<Omit<ComponentProps<"input">, keyof Props> & Props> = ({
+  color,
+  size,
+  rounded,
+  className,
+  ...props
+}) => (
   <input
     {...props}
     className={cn(

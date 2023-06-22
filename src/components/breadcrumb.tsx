@@ -1,5 +1,5 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
 import type { Alignment } from "../types/alignment";
 import type { Size } from "../types/size";
@@ -12,7 +12,7 @@ type Props = {
 };
 
 export const Breadcrumb: FC<
-  Omit<JSX.IntrinsicElements["nav"], keyof Props> & Props
+  Omit<ComponentProps<"nav">, keyof Props> & Props
 > = ({ alignment, separator, size, ...props }) => (
   <nav
     {...props}
