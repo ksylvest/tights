@@ -4,9 +4,9 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { faHeart, faUpload, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { Form } from "..";
-import { Icon } from "..";
-import { Button } from "..";
+import { Form } from "./form";
+import { Icon } from "./icon";
+import { Button } from "./button";
 
 const meta = {
   title: "Form",

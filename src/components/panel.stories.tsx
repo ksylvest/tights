@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-import { Panel } from "..";
+import { Panel } from "./panel";
 
 const meta = {
   title: "Panel",

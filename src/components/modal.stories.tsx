@@ -1,9 +1,9 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Button } from "..";
-import { Delete } from "..";
-import { Modal } from "..";
+import { Button } from "./button";
+import { Delete } from "./delete";
+import { Modal } from "./modal";
 
 const meta = {
   title: "Modal",

@@ -1,10 +1,10 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Container } from "..";
-import { Hero } from "..";
-import { Subtitle } from "..";
-import { Title } from "..";
+import { Container } from "./container";
+import { Hero } from "./hero";
+import { Subtitle } from "./subtitle";
+import { Title } from "./title";
 
 const meta = {
   title: "Hero",

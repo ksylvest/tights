@@ -1,8 +1,8 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Box } from "..";
-import { Tile } from "..";
+import { Box } from "./box";
+import { Tile } from "./tile";
 
 const meta = {
   title: "Tile",

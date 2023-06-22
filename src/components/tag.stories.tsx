@@ -1,8 +1,8 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Tag } from "..";
-import { Tags } from "..";
+import { Tag } from "./tag";
+import { Tags } from "./tags";
 
 const meta = {
   title: "Tag",

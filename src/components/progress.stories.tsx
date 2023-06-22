@@ -1,17 +1,17 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Box } from "..";
+import { Progress } from "./progress";
 
 const meta = {
-  title: "Box",
-  component: Box,
+  title: "Progress",
+  component: Progress,
   tags: ["autodocs"],
-} satisfies Meta<typeof Box>;
+} satisfies Meta<typeof Progress>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const BasicStory: Story = {
-  render: (args) => <Box {...args}>Greetings!</Box>,
+  render: (args) => <Progress {...args} />,
 };

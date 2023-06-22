@@ -5,10 +5,10 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { Card } from "..";
-import { Column } from "..";
-import { Columns } from "..";
-import { Image } from "..";
+import { Card } from "./card";
+import { Column } from "./column";
+import { Columns } from "./columns";
+import { Image } from "./image";
 
 const meta = {
   title: "Card",

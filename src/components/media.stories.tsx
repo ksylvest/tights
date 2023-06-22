@@ -1,10 +1,10 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Content } from "..";
-import { Delete } from "..";
-import { Image } from "..";
-import { Media } from "..";
+import { Content } from "./content";
+import { Delete } from "./delete";
+import { Image } from "./image";
+import { Media } from "./media";
 
 const meta = {
   title: "Media",
