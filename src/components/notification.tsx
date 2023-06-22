@@ -1,7 +1,7 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import type { Color } from "@src/types/color";
+import type { Color } from "../types/color";
 
 type Props = {
   color?: Color;

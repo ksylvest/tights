@@ -1,7 +1,7 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import type { Size } from "@src/types/size";
+import type { Size } from "../types/size";
 
 type Props = {
   size?: Size;
