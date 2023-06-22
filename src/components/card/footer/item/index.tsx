@@ -1,12 +1,9 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-const DEFAULT_TAG = "p";
+type Element = JSX.IntrinsicElements["a"] | JSX.IntrinsicElements["p"];
 
-export const Item: React.FC<
-  React.HTMLAttributes<HTMLElement> & {
-    tag?: "a" | "p";
-    children?: React.ReactNode;
-  }
-> = ({ tag: Tag = DEFAULT_TAG, ...props }) => (
-  <Tag className="card-footer-item" {...props} />
-);
+export const Item: FC<JSX.IntrinsicElements["a"]> = ({
+  className,
+  ...props
+}) => <a className={cn("card-footer-item", className)} {...props} />;

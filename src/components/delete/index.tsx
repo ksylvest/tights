@@ -1,17 +1,18 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-import { Size } from "../../types";
+import { Size } from "@src/types/size";
 
-export const Delete: React.FC<
-  React.ButtonHTMLAttributes<HTMLButtonElement> & {
-    size?: Size;
-    children?: React.ReactNode;
-  }
-> = ({ size, ...props }) => (
+type Props = {
+  size?: Size;
+};
+
+export const Delete: FC<
+  Omit<JSX.IntrinsicElements["button"], keyof Props> & Props
+> = ({ size, className, ...props }) => (
   <button
     {...props}
     type="button"
-    className={cn("delete", size && `is-${size}`)}
+    className={cn("delete", size && `is-${size}`, className)}
   />
 );

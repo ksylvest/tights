@@ -1,7 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-export const Icon: React.FC<
-  React.HTMLAttributes<HTMLAnchorElement> & {
-    children?: React.ReactNode;
-  }
-> = (props) => <a {...props} className="card-header-icon" />;
+export const Icon: FC<JSX.IntrinsicElements["a"]> = ({
+  className,
+  ...props
+}) => <a {...props} className={cn("card-header-icon", className)} />;

@@ -1,7 +1,7 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-export const Burger: React.FC<
+export const Burger: FC<
   React.AnchorHTMLAttributes<HTMLAnchorElement> & {
     active?: boolean;
   }

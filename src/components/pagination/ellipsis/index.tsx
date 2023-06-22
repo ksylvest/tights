@@ -1,8 +1,6 @@
-import * as React from "react";
+import type { FC } from "react";
 
-export const Ellipsis: React.FC<{
-  children?: React.ReactNode;
-}> = ({ ...props }) => (
+export const Ellipsis: FC<JSX.IntrinsicElements["span"]> = ({ ...props }) => (
   <span {...props} className="pagination-ellipsis">
     …
   </span>

@@ -1,7 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-export const Prev: React.FC<
-  React.AnchorHTMLAttributes<HTMLAnchorElement> & {
-    children?: React.ReactNode;
-  }
-> = ({ ...props }) => <a {...props} className="pagination-previous" />;
+export const Prev: FC<JSX.IntrinsicElements["a"]> = ({
+  className,
+  ...props
+}) => <a {...props} className={cn("pagination-previous", className)} />;

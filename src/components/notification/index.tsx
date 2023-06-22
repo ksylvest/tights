@@ -1,11 +1,17 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-import { Color } from "../../types";
+import type { Color } from "@src/types/color";
 
-export const Notification: React.FC<{
+type Props = {
   color?: Color;
-  children?: React.ReactNode;
-}> = ({ color, ...props }) => (
-  <div {...props} className={cn("notification", color && `is-${color}`)} />
+};
+
+export const Notification: FC<
+  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
+> = ({ color, className, ...props }) => (
+  <div
+    {...props}
+    className={cn("notification", color && `is-${color}`, className)}
+  />
 );

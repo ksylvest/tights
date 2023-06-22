@@ -1,18 +1,28 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
 import { Item } from "./item";
 import { List } from "./list";
 
-import { Alignment, Size, Style } from "../../types";
+import type { Alignment } from "@src/types/alignment";
+import type { Size } from "@src/types/size";
+import type { Style } from "@src/types/style";
 
-const Tabs: React.FC<{
+type Props = {
   alignment?: Alignment;
   size?: Size;
   style?: Style;
   fullwidth?: boolean;
-  children?: React.ReactNode;
-}> = ({ alignment, size, style, fullwidth, ...props }) => (
+};
+
+const Tabs: FC<Omit<JSX.IntrinsicElements["div"], keyof Props> & Props> = ({
+  alignment,
+  size,
+  style,
+  fullwidth,
+  className,
+  ...props
+}) => (
   <div
     {...props}
     className={cn(
@@ -20,7 +30,8 @@ const Tabs: React.FC<{
       alignment && `is-${alignment}`,
       size && `is-${size}`,
       style && `is-${style}`,
-      fullwidth && "is-fullwidth"
+      fullwidth && "is-fullwidth",
+      className
     )}
   />
 );

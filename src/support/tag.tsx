@@ -1,6 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 import { property } from "./property";
 
-export const tag = (Component: React.FC<{ tag?: string }>): void => {
+export const tag = (Component: FC<{ tag?: string }>): void => {
   property("tag", Component, { tag: "p" }, "p");
 };

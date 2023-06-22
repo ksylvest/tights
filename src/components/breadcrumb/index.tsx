@@ -1,19 +1,22 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
 import { Item } from "./item";
 import { List } from "./list";
 
-import { Alignment } from "../../types";
-import { Size } from "../../types";
-import { Separator } from "../../types";
+import { Alignment } from "@src/types/alignment";
+import { Size } from "@src/types/size";
+import { Separator } from "@src/types/separator";
 
-const Breadcrumb: React.FC<{
+type Props = {
   alignment?: Alignment;
   separator?: Separator;
   size?: Size;
-  children?: React.ReactNode;
-}> = ({ alignment, separator, size, ...props }) => (
+};
+
+const Breadcrumb: FC<
+  Omit<JSX.IntrinsicElements["nav"], keyof Props> & Props
+> = ({ alignment, separator, size, ...props }) => (
   <nav
     {...props}
     className={cn(

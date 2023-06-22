@@ -1,9 +1,10 @@
 import { shallow } from "enzyme";
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
 export const property = <T extends Record<string, unknown>>(
   name: string,
-  Component: React.FC<T>,
+  Component: FC<T>,
   props: T,
   selector: string
 ): void => {

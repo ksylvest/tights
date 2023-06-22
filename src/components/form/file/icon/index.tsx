@@ -1,5 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-export const Icon: React.FC<{
-  children?: React.ReactNode;
-}> = (props) => <span {...props} className="file-icon" />;
+export const Icon: FC<JSX.IntrinsicElements["span"]> = ({
+  className,
+  ...props
+}) => <span {...props} className={cn("file-icon", className)} />;

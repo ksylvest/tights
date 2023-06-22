@@ -1,17 +1,21 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-export const Dropdown: React.FC<{
+type Props = {
   boxed?: boolean;
   direction?: "right" | "left";
-  children?: React.ReactNode;
-}> = ({ boxed, direction, ...props }) => (
+};
+
+export const Dropdown: FC<
+  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
+> = ({ boxed, direction, className, ...props }) => (
   <div
     {...props}
     className={cn(
       "navbar-dropdown",
       boxed && "is-boxed",
-      direction && `is-${direction}`
+      direction && `is-${direction}`,
+      className
     )}
   />
 );

@@ -1,5 +1,5 @@
-import * as React from "react";
+import type { FC } from "react";
 
-export const Divider: React.FC<{
-  children?: React.ReactNode;
-}> = () => <hr className="dropdown-divider" />;
+export const Divider: FC<JSX.IntrinsicElements["hr"]> = () => (
+  <hr className="dropdown-divider" />
+);

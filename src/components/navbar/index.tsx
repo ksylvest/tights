@@ -1,5 +1,7 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
+
+import type { Color } from "@src/types/color";
 
 import { Brand } from "./brand";
 import { Burger } from "./burger";
@@ -11,13 +13,16 @@ import { Link } from "./link";
 import { Menu } from "./menu";
 import { Start } from "./start";
 
-import { Color } from "../../types";
-
-const Navbar: React.FC<{
+type Props = {
   color?: Color;
-  children?: React.ReactNode;
-}> = ({ color, ...props }) => (
-  <nav {...props} className={cn("navbar", color && `is-${color}`)} />
+};
+
+const Navbar: FC<Omit<JSX.IntrinsicElements["nav"], keyof Props> & Props> = ({
+  color,
+  className,
+  ...props
+}) => (
+  <nav {...props} className={cn("navbar", color && `is-${color}`, className)} />
 );
 
 const Combined = Object.assign(Navbar, {

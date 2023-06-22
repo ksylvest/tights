@@ -1,7 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-export const Next: React.FC<
-  React.AnchorHTMLAttributes<HTMLAnchorElement> & {
-    children?: React.ReactNode;
-  }
-> = ({ ...props }) => <a {...props} className="pagination-next" />;
+export const Next: FC<JSX.IntrinsicElements["a"]> = ({
+  className,
+  ...props
+}) => <a {...props} className={cn("pagination-next", className)} />;

@@ -1,5 +1,6 @@
 import { storiesOf } from "@storybook/react";
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
 import { Navbar } from "../components";
 

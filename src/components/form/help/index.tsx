@@ -1,11 +1,16 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-import { Color } from "../../../types";
+import type { Color } from "@src/types/color";
 
-export const Help: React.FC<{
+type Props = {
   color?: Color;
-  children?: React.ReactNode;
-}> = ({ color, ...props }) => (
-  <p {...props} className={cn("help", color && `is-${color}`)} />
+};
+
+export const Help: FC<JSX.IntrinsicElements["p"]> = ({
+  color,
+  className,
+  ...props
+}) => (
+  <p {...props} className={cn("help", color && `is-${color}`, className)} />
 );

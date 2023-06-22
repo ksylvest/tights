@@ -1,5 +1,5 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
 import { Content } from "./content";
 import { Divider } from "./divider";
@@ -7,19 +7,27 @@ import { Item } from "./item";
 import { Menu } from "./menu";
 import { Trigger } from "./trigger";
 
-const Dropdown: React.FC<{
+type Props = {
   alignment?: "right" | "left";
   active?: boolean;
   hoverable?: boolean;
-  children?: React.ReactNode;
-}> = ({ alignment, active, hoverable, ...props }) => (
+};
+
+const Dropdown: FC<Omit<JSX.IntrinsicElements["div"], keyof Props> & Props> = ({
+  alignment,
+  active,
+  hoverable,
+  className,
+  ...props
+}) => (
   <div
     {...props}
     className={cn(
       "dropdown",
       active && "is-active",
       hoverable && "is-hoverable",
-      alignment && `is-${alignment}`
+      alignment && `is-${alignment}`,
+      className
     )}
   />
 );

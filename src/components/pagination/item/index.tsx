@@ -1,5 +1,5 @@
-import * as React from "react";
+import type { FC } from "react";
 
-export const Item: React.FC<{
-  children?: React.ReactNode;
-}> = ({ ...props }) => <li {...props} />;
+export const Item: FC<JSX.IntrinsicElements["li"]> = ({ ...props }) => (
+  <li {...props} />
+);

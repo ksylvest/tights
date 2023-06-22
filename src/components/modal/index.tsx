@@ -1,5 +1,5 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
 import { Background } from "./background";
 import { Card } from "./card";
@@ -8,11 +8,16 @@ import { Content } from "./content";
 
 const DEFAULT_ACTIVE = true;
 
-const Modal: React.FC<{
+type Props = {
   active?: boolean;
-  children?: React.ReactNode;
-}> = ({ active = DEFAULT_ACTIVE, ...props }) => (
-  <div {...props} className={cn("modal", active && "is-active")} />
+};
+
+const Modal: FC<Omit<JSX.IntrinsicElements["div"], keyof Props> & Props> = ({
+  active = DEFAULT_ACTIVE,
+  className,
+  ...props
+}) => (
+  <div {...props} className={cn("modal", active && "is-active", className)} />
 );
 
 const Combined = Object.assign(Modal, {

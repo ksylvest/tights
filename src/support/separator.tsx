@@ -1,8 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 import { property } from "./property";
 
-export const separator = (
-  Component: React.FC<{ separator?: string }>
-): void => {
+export const separator = (Component: FC<{ separator?: string }>): void => {
   property("separator", Component, { separator: "dot" }, ".has-dot-separator");
 };

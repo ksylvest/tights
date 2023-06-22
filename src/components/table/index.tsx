@@ -1,15 +1,22 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
 import { Container } from "./container";
 
-const Table: React.FC<{
+type Props = {
   bordered?: boolean;
   fullwidth?: boolean;
   hoverable?: boolean;
   striped?: boolean;
-  children?: React.ReactNode;
-}> = ({ bordered, fullwidth, hoverable, striped, ...props }) => (
+};
+
+const Table: FC<Omit<JSX.IntrinsicElements["table"], keyof Props> & Props> = ({
+  bordered,
+  fullwidth,
+  hoverable,
+  striped,
+  ...props
+}) => (
   <table
     {...props}
     className={cn(

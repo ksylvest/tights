@@ -1,5 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-export const Foot: React.FC<{
-  children?: React.ReactNode;
-}> = (props) => <div {...props} className="modal-card-foot" />;
+export const Foot: FC<JSX.IntrinsicElements["div"]> = ({
+  className,
+  ...props
+}) => <div {...props} className={cn("modal-card-foot", className)} />;

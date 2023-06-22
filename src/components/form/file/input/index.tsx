@@ -1,7 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-export const Input: React.FC<
-  React.InputHTMLAttributes<HTMLInputElement> & {
-    children?: React.ReactNode;
-  }
-> = (props) => <input {...props} type="file" className="file-input" />;
+export const Input: FC<JSX.IntrinsicElements["input"]> = ({
+  className,
+  ...props
+}) => <input {...props} type="file" className={cn("file-input", className)} />;

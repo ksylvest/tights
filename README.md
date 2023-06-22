@@ -23,22 +23,14 @@ npm install tights
 Components for Tights can be easily
 
 ```typescript
-import {
-  Button,
-  Delete,
-  Modal,
-} from "tights";
+import { Button, Delete, Modal } from "tights";
 import { Modal } from "tights";
 
-const Confirmation: React.FC<{
+const Confirmation: FC<{
   onConfirm(): void;
   onCancel(): void;
   onClose(): void;
-}> = ({
-  onConfirm,
-  onCancel,
-  onClose,
-}) => (
+}> = ({ onConfirm, onCancel, onClose }) => (
   <Modal>
     <Modal.Background />
     <Modal.Card>
@@ -46,9 +38,7 @@ const Confirmation: React.FC<{
         <Modal.Card.Title>Modal</Modal.Card.Title>
         <Delete onClick={onClose} />
       </Modal.Card.Head>
-      <Modal.Card.Body>
-        ...
-      </Modal.Card.Body>
+      <Modal.Card.Body>...</Modal.Card.Body>
       <Modal.Card.Foot>
         <Button onClick={onConfirm}>Confirm</Button>
         <Button onClick={onCancel}>Cancel</Button>

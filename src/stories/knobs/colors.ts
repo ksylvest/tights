@@ -1,4 +1,4 @@
-import { Color } from "../../types";
+import { Color } from "@src/types/color";
 
 export const COLORS: Color[] = [
   "white",

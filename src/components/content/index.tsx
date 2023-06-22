@@ -1,5 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-export const Content: React.FC<{
-  children?: React.ReactNode;
-}> = (props) => <div {...props} className="content" />;
+export const Content: FC<JSX.IntrinsicElements["div"]> = ({
+  className,
+  ...props
+}) => <div {...props} className={cn("content", className)} />;

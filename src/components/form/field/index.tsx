@@ -1,9 +1,12 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-export const Field: React.FC<{
+type Props = {
   grouped?: boolean;
-  children?: React.ReactNode;
-}> = ({ grouped, ...props }) => (
-  <div {...props} className={cn("field", grouped && "is-grouped")} />
+};
+
+export const Field: FC<
+  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
+> = ({ grouped, className, ...props }) => (
+  <div {...props} className={cn("field", grouped && "is-grouped", className)} />
 );

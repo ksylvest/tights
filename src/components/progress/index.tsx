@@ -1,17 +1,24 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-import { Color, Size } from "../../types";
+import type { Color } from "@src/types/color";
+import type { Size } from "@src/types/size";
 
-export const Progress: React.FC<
-  React.ProgressHTMLAttributes<HTMLProgressElement> & {
-    color?: Color;
-    size?: Size;
-    children?: React.ReactNode;
-  }
-> = ({ color, size, ...props }) => (
+type Props = {
+  color?: Color;
+  size?: Size;
+};
+
+export const Progress: FC<
+  Omit<JSX.IntrinsicElements["progress"], keyof Props> & Props
+> = ({ color, size, className, ...props }) => (
   <progress
     {...props}
-    className={cn("progress", color && `is-${color}`, size && `is-${size}`)}
+    className={cn(
+      "progress",
+      color && `is-${color}`,
+      size && `is-${size}`,
+      className
+    )}
   />
 );

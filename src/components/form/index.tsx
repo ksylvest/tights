@@ -1,4 +1,4 @@
-import * as React from "react";
+import type { FC } from "react";
 
 import { Control } from "./control";
 import { Field } from "./field";
@@ -8,11 +8,7 @@ import { Input } from "./input";
 import { Label } from "./label";
 import { Textarea } from "./textarea";
 
-const Form: React.FC<
-  React.FormHTMLAttributes<HTMLFormElement> & {
-    children?: React.ReactNode;
-  }
-> = (props) => <form {...props} />;
+const Form: FC<JSX.IntrinsicElements["form"]> = (props) => <form {...props} />;
 
 const Combined = Object.assign(Form, {
   Control,

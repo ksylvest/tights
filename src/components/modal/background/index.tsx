@@ -1,5 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-export const Background: React.FC<React.HTMLAttributes<HTMLElement>> = (
-  props
-) => <div {...props} className="modal-background" />;
+export const Background: FC<JSX.IntrinsicElements["div"]> = ({
+  className,
+  ...props
+}) => <div {...props} className={cn("modal-background", className)} />;

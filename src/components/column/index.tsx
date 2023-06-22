@@ -1,16 +1,19 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
 type Size = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 
-export const Column: React.FC<{
+type Props = {
   size?: Size;
   narrow?: boolean;
   mobile?: Size;
   tablet?: Size;
   desktop?: Size;
-  children?: React.ReactNode;
-}> = ({ size, mobile, tablet, desktop, narrow, ...props }) => (
+};
+
+export const Column: FC<
+  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
+> = ({ size, mobile, tablet, desktop, narrow, className, ...props }) => (
   <div
     {...props}
     className={cn(
@@ -19,7 +22,8 @@ export const Column: React.FC<{
       mobile && `is-${mobile}-mobile`,
       tablet && `is-${tablet}-tablet`,
       desktop && `is-${desktop}-desktop`,
-      narrow && "is-narrow"
+      narrow && "is-narrow",
+      className
     )}
   />
 );

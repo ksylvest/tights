@@ -1,5 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-export const Label: React.FC<{
-  children?: React.ReactNode;
-}> = (props) => <p {...props} className="menu-label" />;
+export const Label: FC<JSX.IntrinsicElements["p"]> = ({
+  className,
+  ...props
+}) => <p {...props} className={cn("menu-label", className)} />;

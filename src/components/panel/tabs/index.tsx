@@ -1,5 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-export const Tabs: React.FC<{
-  children?: React.ReactNode;
-}> = (props) => <p {...props} className="panel-tabs" />;
+export const Tabs: FC<JSX.IntrinsicElements["p"]> = ({
+  className,
+  ...props
+}) => <p {...props} className={cn("panel-tabs", className)} />;

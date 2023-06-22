@@ -1,9 +1,15 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-export const Menu: React.FC<{
+type Props = {
   active?: boolean;
-  children?: React.ReactNode;
-}> = ({ active, ...props }) => (
-  <div {...props} className={cn("navbar-menu", active && "is-active")} />
+};
+
+export const Menu: FC<
+  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
+> = ({ active, className, ...props }) => (
+  <div
+    {...props}
+    className={cn("navbar-menu", active && "is-active", className)}
+  />
 );

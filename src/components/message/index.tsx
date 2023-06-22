@@ -1,19 +1,28 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
 import { Body } from "./body";
 import { Header } from "./header";
 
-import { Color, Size } from "../../types";
+import { Color } from "@src/types/color";
+import { Size } from "@src/types/size";
 
-const Message: React.FC<{
+type Props = {
   color?: Color;
   size?: Size;
-  children?: React.ReactNode;
-}> = ({ color, size, ...props }) => (
+};
+
+const Message: FC<
+  Omit<JSX.IntrinsicElements["article"], keyof Props> & Props
+> = ({ color, size, className, ...props }) => (
   <article
     {...props}
-    className={cn("message", color && `is-${color}`, size && `is-${size}`)}
+    className={cn(
+      "message",
+      color && `is-${color}`,
+      size && `is-${size}`,
+      className
+    )}
   />
 );
 
