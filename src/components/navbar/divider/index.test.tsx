@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Divider } from ".";
+import { NavbarDivider } from "./index";
 
-describe(Divider, () => {
-  renders(Divider, ".navbar-divider");
+describe(NavbarDivider, () => {
+  renders(NavbarDivider, ".navbar-divider");
 });

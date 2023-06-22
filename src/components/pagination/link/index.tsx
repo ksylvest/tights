@@ -5,7 +5,7 @@ type Props = {
   current?: boolean;
 };
 
-export const Link: FC<
+export const PaginationLink: FC<
   Omit<JSX.IntrinsicElements["a"], keyof Props> & Props
 > = ({ current, className, ...props }) => (
   <a

@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Link } from ".";
+import { NavbarLink } from "./index";
 
-describe(Link, () => {
-  renders(Link, ".navbar-link");
+describe(NavbarLink, () => {
+  renders(NavbarLink, ".navbar-link");
 });

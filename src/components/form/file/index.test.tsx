@@ -5,7 +5,7 @@ import { property } from "../../../support";
 import { renders } from "../../../support";
 import { size } from "../../../support";
 
-import { File } from ".";
+import { File } from "./index";
 
 describe(File, () => {
   renders(File, ".file");

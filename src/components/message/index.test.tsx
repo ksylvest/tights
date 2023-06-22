@@ -2,7 +2,7 @@ import { renders } from "../../support";
 import { color } from "../../support";
 import { size } from "../../support";
 
-import { Message } from ".";
+import { Message } from "./index";
 
 describe(Message, () => {
   renders(Message, ".message");

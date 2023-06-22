@@ -1,11 +1,11 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { Content } from "./content";
-import { Divider } from "./divider";
-import { Item } from "./item";
-import { Menu } from "./menu";
-import { Trigger } from "./trigger";
+import { DropdownContent } from "./content";
+import { DropdownDivider } from "./divider";
+import { DropdownItem } from "./item";
+import { DropdownMenu } from "./menu";
+import { DropdownTrigger } from "./trigger";
 
 type Props = {
   alignment?: "right" | "left";
@@ -33,11 +33,11 @@ const Dropdown: FC<Omit<JSX.IntrinsicElements["div"], keyof Props> & Props> = ({
 );
 
 const Combined = Object.assign(Dropdown, {
-  Content,
-  Divider,
-  Item,
-  Menu,
-  Trigger,
+  Content: DropdownContent,
+  Divider: DropdownDivider,
+  Item: DropdownItem,
+  Menu: DropdownMenu,
+  Trigger: DropdownTrigger,
 });
 
 export { Combined as Dropdown };

@@ -1,9 +1,9 @@
 import { renders } from "../../../support";
 import { is } from "../../../support";
 
-import { Menu } from ".";
+import { NavbarMenu } from "./index";
 
-describe(Menu, () => {
-  renders(Menu, ".navbar-menu");
-  is(Menu, "active");
+describe(NavbarMenu, () => {
+  renders(NavbarMenu, ".navbar-menu");
+  is(NavbarMenu, "active");
 });

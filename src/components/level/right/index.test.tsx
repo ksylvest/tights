@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Right } from ".";
+import { LevelRight } from "./index";
 
-describe(Right, () => {
-  renders(Right, ".level-right");
+describe(LevelRight, () => {
+  renders(LevelRight, ".level-right");
 });

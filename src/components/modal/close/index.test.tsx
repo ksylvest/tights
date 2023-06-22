@@ -1,9 +1,9 @@
 import { renders } from "../../../support";
 import { size } from "../../../support";
 
-import { Close } from ".";
+import { ModalClose } from "./index";
 
-describe(Close, () => {
-  renders(Close, ".modal-close");
-  size(Close);
+describe(ModalClose, () => {
+  renders(ModalClose, ".modal-close");
+  size(ModalClose);
 });

@@ -1,7 +1,7 @@
 import { renders } from "../../../../support";
 
-import { Foot } from ".";
+import { ModalCardFoot } from "./index";
 
-describe(Foot, () => {
-  renders(Foot, ".modal-card-foot");
+describe(ModalCardFoot, () => {
+  renders(ModalCardFoot, ".modal-card-foot");
 });

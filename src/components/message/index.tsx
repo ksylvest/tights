@@ -1,8 +1,8 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { Body } from "./body";
-import { Header } from "./header";
+import { MessageBody } from "./body";
+import { MessageHeader } from "./header";
 
 import { Color } from "@src/types/color";
 import { Size } from "@src/types/size";
@@ -27,8 +27,8 @@ const Message: FC<
 );
 
 const Combined = Object.assign(Message, {
-  Body,
-  Header,
+  Body: MessageBody,
+  Header: MessageHeader,
 });
 
 export { Combined as Message };

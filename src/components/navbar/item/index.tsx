@@ -7,7 +7,7 @@ type Props = {
   active?: boolean;
 };
 
-export const Item: FC<
+export const NavbarItem: FC<
   Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
 > = ({ dropdown, hoverable, active, className, ...props }) => (
   <div

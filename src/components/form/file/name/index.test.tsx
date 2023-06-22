@@ -1,7 +1,7 @@
 import { renders } from "../../../../support";
 
-import { Name } from ".";
+import { FileName } from "./index";
 
-describe(Name, () => {
-  renders(Name, ".file-name");
+describe(FileName, () => {
+  renders(FileName, ".file-name");
 });

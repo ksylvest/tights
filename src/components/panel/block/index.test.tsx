@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Block } from ".";
+import { PanelBlock } from "./index";
 
-describe(Block, () => {
-  renders(Block, ".panel-block");
+describe(PanelBlock, () => {
+  renders(PanelBlock, ".panel-block");
 });

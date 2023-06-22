@@ -1,9 +1,9 @@
 import { is } from "../../../support";
 import { renders } from "../../../support";
 
-import { Item } from ".";
+import { BreadcrumbItem } from "./index";
 
-describe(Item, () => {
-  renders(Item, "li");
-  is(Item, "active");
+describe(BreadcrumbItem, () => {
+  renders(BreadcrumbItem, "li");
+  is(BreadcrumbItem, "active");
 });

@@ -3,10 +3,10 @@ import type { FC } from "react";
 
 import type { Color } from "@src/types/color";
 
-import { Block } from "./block";
-import { Heading } from "./heading";
-import { Icon } from "./icon";
-import { Tabs } from "./tabs";
+import { PanelBlock } from "./block";
+import { PanelHeading } from "./heading";
+import { PanelIcon } from "./icon";
+import { PanelTabs } from "./tabs";
 
 type Props = {
   color?: Color;
@@ -21,10 +21,10 @@ const Panel: FC<Omit<JSX.IntrinsicElements["nav"], keyof Props> & Props> = ({
 );
 
 const Combined = Object.assign(Panel, {
-  Block,
-  Heading,
-  Icon,
-  Tabs,
+  Block: PanelBlock,
+  Heading: PanelHeading,
+  Icon: PanelIcon,
+  Tabs: PanelTabs,
 });
 
 export { Combined as Panel };

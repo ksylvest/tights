@@ -5,7 +5,7 @@ type Props = {
   active?: boolean;
 };
 
-export const Item: FC<
+export const DropdownItem: FC<
   Omit<JSX.IntrinsicElements["a"], keyof Props> & Props
 > = ({ active, ...props }) => (
   <a {...props} className={cn("dropdown-item", active && "is-active")} />

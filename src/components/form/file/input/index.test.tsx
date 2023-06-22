@@ -1,7 +1,7 @@
 import { renders } from "../../../../support";
 
-import { Input } from ".";
+import { FileInput } from "./index";
 
-describe(Input, () => {
-  renders(Input, ".file-input");
+describe(FileInput, () => {
+  renders(FileInput, ".file-input");
 });

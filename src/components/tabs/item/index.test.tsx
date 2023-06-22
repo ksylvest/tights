@@ -1,9 +1,9 @@
 import { is } from "../../../support";
 import { renders } from "../../../support";
 
-import { Item } from ".";
+import { TabsItem } from "./index";
 
-describe(Item, () => {
-  renders(Item, "li");
-  is(Item, "active");
+describe(TabsItem, () => {
+  renders(TabsItem, "li");
+  is(TabsItem, "active");
 });

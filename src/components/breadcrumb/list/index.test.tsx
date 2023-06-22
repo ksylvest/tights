@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { List } from ".";
+import { BreadcrumbList } from "./index";
 
-describe(List, () => {
-  renders(List, "ul");
+describe(BreadcrumbList, () => {
+  renders(BreadcrumbList, "ul");
 });

@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Heading } from ".";
+import { PanelHeading } from "./index";
 
-describe(Heading, () => {
-  renders(Heading, ".panel-heading");
+describe(PanelHeading, () => {
+  renders(PanelHeading, ".panel-heading");
 });

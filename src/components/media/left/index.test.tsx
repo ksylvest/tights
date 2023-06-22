@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Left } from ".";
+import { MediaLeft } from "./index";
 
-describe(Left, () => {
-  renders(Left, ".media-left");
+describe(MediaLeft, () => {
+  renders(MediaLeft, ".media-left");
 });

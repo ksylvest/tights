@@ -5,7 +5,7 @@ type Props = {
   active?: boolean;
 };
 
-export const Menu: FC<
+export const NavbarMenu: FC<
   Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
 > = ({ active, className, ...props }) => (
   <div

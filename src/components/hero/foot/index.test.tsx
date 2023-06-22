@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Foot } from ".";
+import { HeroFoot } from "./index";
 
-describe(Foot, () => {
-  renders(Foot, ".hero-foot");
+describe(HeroFoot, () => {
+  renders(HeroFoot, ".hero-foot");
 });

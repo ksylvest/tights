@@ -1,7 +1,7 @@
 import { renders } from "../../../../support";
 
-import { Item } from ".";
+import { CardFooterItem } from "./index";
 
-describe(Item, () => {
-  renders(Item, ".card-footer-item");
+describe(CardFooterItem, () => {
+  renders(CardFooterItem, ".card-footer-item");
 });

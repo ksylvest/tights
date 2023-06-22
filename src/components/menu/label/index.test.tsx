@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Label } from ".";
+import { MenuLabel } from "./index";
 
-describe(Label, () => {
-  renders(Label, ".menu-label");
+describe(MenuLabel, () => {
+  renders(MenuLabel, ".menu-label");
 });

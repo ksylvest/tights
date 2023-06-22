@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Icon } from ".";
+import { PanelIcon } from "./index";
 
-describe(Icon, () => {
-  renders(Icon, ".panel-icon");
+describe(PanelIcon, () => {
+  renders(PanelIcon, ".panel-icon");
 });

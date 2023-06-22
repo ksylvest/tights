@@ -1,16 +1,16 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { Icon } from "./icon";
-import { Title } from "./title";
+import { CardHeaderIcon } from "./icon";
+import { CardHeaderTitle } from "./title";
 
-const Content: FC<JSX.IntrinsicElements["header"]> = ({
+const CardHeader: FC<JSX.IntrinsicElements["header"]> = ({
   className,
   ...props
 }) => <header {...props} className={cn("card-header", className)} />;
 
-const Combined = Object.assign(Content, {
-  Icon,
-  Title,
+const Combined = Object.assign(CardHeader, {
+  Icon: CardHeaderIcon,
+  Title: CardHeaderTitle,
 });
-export { Combined as Header };
+export { Combined as CardHeader };

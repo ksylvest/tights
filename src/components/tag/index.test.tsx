@@ -4,7 +4,7 @@ import { color } from "../../support";
 import { size } from "../../support";
 import { property } from "../../support";
 
-import { Tag } from ".";
+import { Tag } from "./index";
 
 describe(Tag, () => {
   renders(Tag, ".tag");

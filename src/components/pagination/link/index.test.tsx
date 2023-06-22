@@ -1,9 +1,9 @@
 import { renders } from "../../../support";
 import { is } from "../../../support";
 
-import { Link } from ".";
+import { PaginationLink } from "./index";
 
-describe(Link, () => {
-  renders(Link, ".pagination-link");
-  is(Link, "current");
+describe(PaginationLink, () => {
+  renders(PaginationLink, ".pagination-link");
+  is(PaginationLink, "current");
 });

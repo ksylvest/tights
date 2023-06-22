@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Content } from ".";
+import { ModalContent } from "./index";
 
-describe(Content, () => {
-  renders(Content, ".modal-content");
+describe(ModalContent, () => {
+  renders(ModalContent, ".modal-content");
 });

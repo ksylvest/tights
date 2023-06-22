@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { List } from ".";
+import { TabsList } from "./index";
 
-describe(List, () => {
-  renders(List, "ul");
+describe(TabsList, () => {
+  renders(TabsList, "ul");
 });

@@ -2,7 +2,7 @@ import { renders } from "../../support";
 import { tag } from "../../support";
 import { property } from "../../support";
 
-import { Tile } from ".";
+import { Tile } from "./index";
 
 describe(Tile, () => {
   renders(Tile, ".tile");

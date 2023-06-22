@@ -1,7 +1,7 @@
 import { renders } from "../../../../support";
 
-import { Icon } from ".";
+import { FileIcon } from "./index";
 
-describe(Icon, () => {
-  renders(Icon, ".file-icon");
+describe(FileIcon, () => {
+  renders(FileIcon, ".file-icon");
 });

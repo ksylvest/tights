@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Brand } from ".";
+import { NavbarBrand } from "./index";
 
-describe(Brand, () => {
-  renders(Brand, ".navbar-brand");
+describe(NavbarBrand, () => {
+  renders(NavbarBrand, ".navbar-brand");
 });

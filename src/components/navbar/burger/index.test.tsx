@@ -1,9 +1,9 @@
 import { renders } from "../../../support";
 import { is } from "../../../support";
 
-import { Burger } from ".";
+import { NavbarBurger } from "./index";
 
-describe(Burger, () => {
-  renders(Burger, ".navbar-burger");
-  is(Burger, "active");
+describe(NavbarBurger, () => {
+  renders(NavbarBurger, ".navbar-burger");
+  is(NavbarBurger, "active");
 });

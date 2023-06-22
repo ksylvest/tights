@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { End } from ".";
+import { NavbarEnd } from "./index";
 
-describe(End, () => {
-  renders(End, ".navbar-end");
+describe(NavbarEnd, () => {
+  renders(NavbarEnd, ".navbar-end");
 });

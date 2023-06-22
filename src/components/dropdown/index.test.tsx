@@ -2,7 +2,7 @@ import { renders } from "../../support";
 import { is } from "../../support";
 import { alignment } from "../../support";
 
-import { Dropdown } from ".";
+import { Dropdown } from "./index";
 
 describe(Dropdown, () => {
   renders(Dropdown, ".dropdown");

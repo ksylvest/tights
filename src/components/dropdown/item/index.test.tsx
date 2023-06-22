@@ -1,9 +1,9 @@
 import { is } from "../../../support";
 import { renders } from "../../../support";
 
-import { Item } from ".";
+import { DropdownItem } from "./index";
 
-describe(Item, () => {
-  renders(Item, ".dropdown-item");
-  is(Item, "active");
+describe(DropdownItem, () => {
+  renders(DropdownItem, ".dropdown-item");
+  is(DropdownItem, "active");
 });

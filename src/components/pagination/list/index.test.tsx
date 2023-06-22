@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { List } from ".";
+import { PaginationList } from "./index";
 
-describe(List, () => {
-  renders(List, ".pagination-list");
+describe(PaginationList, () => {
+  renders(PaginationList, ".pagination-list");
 });

@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Content } from ".";
+import { MediaContent } from "./index";
 
-describe(Content, () => {
-  renders(Content, ".media-content");
+describe(MediaContent, () => {
+  renders(MediaContent, ".media-content");
 });

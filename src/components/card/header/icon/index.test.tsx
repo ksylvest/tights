@@ -1,7 +1,7 @@
 import { renders } from "../../../../support";
 
-import { Icon } from ".";
+import { CardHeaderIcon } from "./index";
 
-describe(Icon, () => {
-  renders(Icon, ".card-header-icon");
+describe(CardHeaderIcon, () => {
+  renders(CardHeaderIcon, ".card-header-icon");
 });

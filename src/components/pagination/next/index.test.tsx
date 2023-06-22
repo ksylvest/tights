@@ -1,7 +1,7 @@
 import { renders } from "../../../support";
 
-import { Next } from ".";
+import { PaginationNext } from "./index";
 
-describe(Next, () => {
-  renders(Next, ".pagination-next");
+describe(PaginationNext, () => {
+  renders(PaginationNext, ".pagination-next");
 });
