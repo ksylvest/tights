@@ -1,5 +1,5 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
 type Props = {
   bordered?: boolean;
@@ -8,9 +8,13 @@ type Props = {
   striped?: boolean;
 };
 
-export const Table: FC<
-  Omit<JSX.IntrinsicElements["table"], keyof Props> & Props
-> = ({ bordered, fullwidth, hoverable, striped, ...props }) => (
+export const Table: FC<Omit<ComponentProps<"table">, keyof Props> & Props> = ({
+  bordered,
+  fullwidth,
+  hoverable,
+  striped,
+  ...props
+}) => (
   <table
     {...props}
     className={cn(

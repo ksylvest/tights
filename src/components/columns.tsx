@@ -1,5 +1,5 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
 type Props = {
   mobile?: boolean;
@@ -11,9 +11,7 @@ type Props = {
   gap?: "gapless" | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 6 | 7 | 8;
 };
 
-export const Columns: FC<
-  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
-> = ({
+export const Columns: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
   mobile,
   tablet,
   desktop,

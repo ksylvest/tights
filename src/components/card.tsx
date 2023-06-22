@@ -1,7 +1,6 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
-export const Card: FC<JSX.IntrinsicElements["div"]> = ({
-  className,
-  ...props
-}) => <div {...props} className={cn("card", className)} />;
+export const Card: FC<ComponentProps<"div">> = ({ className, ...props }) => (
+  <div {...props} className={cn("card", className)} />
+);

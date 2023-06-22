@@ -1,7 +1,6 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
-export const Menu: FC<JSX.IntrinsicElements["aside"]> = ({
-  className,
-  ...props
-}) => <aside {...props} className={cn("menu", className)} />;
+export const Menu: FC<ComponentProps<"aside">> = ({ className, ...props }) => (
+  <aside {...props} className={cn("menu", className)} />
+);

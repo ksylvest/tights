@@ -1,5 +1,5 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
 import type { Color } from "../types/color";
 import type { Size } from "../types/size";
@@ -10,7 +10,7 @@ type Props = {
 };
 
 export const Message: FC<
-  Omit<JSX.IntrinsicElements["article"], keyof Props> & Props
+  Omit<ComponentProps<"article">, keyof Props> & Props
 > = ({ color, size, className, ...props }) => (
   <article
     {...props}

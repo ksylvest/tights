@@ -1,7 +1,7 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
-export const CardFooterItem: FC<JSX.IntrinsicElements["a"]> = ({
+export const CardFooterItem: FC<ComponentProps<"a">> = ({
   className,
   ...props
 }) => <a className={cn("card-footer-item", className)} {...props} />;

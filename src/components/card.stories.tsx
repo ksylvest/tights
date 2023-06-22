@@ -1,4 +1,3 @@
-import type { FC } from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { faStar } from "@fortawesome/free-solid-svg-icons";

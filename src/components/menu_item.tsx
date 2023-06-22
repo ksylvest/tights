@@ -1,6 +1,4 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
-export const MenuItem: FC<JSX.IntrinsicElements["li"]> = (props) => (
-  <li {...props} />
-);
+export const MenuItem: FC<ComponentProps<"li">> = (props) => <li {...props} />;

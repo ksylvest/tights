@@ -1,5 +1,5 @@
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
-export const DropdownDivider: FC<JSX.IntrinsicElements["hr"]> = () => (
+export const DropdownDivider: FC<ComponentProps<"hr">> = () => (
   <hr className="dropdown-divider" />
 );

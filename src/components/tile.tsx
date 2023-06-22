@@ -1,5 +1,5 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
 type Size = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 
@@ -13,7 +13,7 @@ type Props = {
 
 const x = <h1></h1>;
 
-export const Tile: FC<JSX.IntrinsicElements["div"] & Props> = ({
+export const Tile: FC<ComponentProps<"div"> & Props> = ({
   ancestor,
   parent,
   child,

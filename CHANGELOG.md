@@ -1,3 +1,11 @@
+# v3.2.0
+
+- fixes for polymorphic button usage
+
+# v3.1.0
+
+- fixes for typescript types
+
 # v3.0.0
 
 - refactor to avoid simplify import / export syntax

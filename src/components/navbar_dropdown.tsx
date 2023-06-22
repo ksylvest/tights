@@ -1,5 +1,5 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
 type Props = {
   boxed?: boolean;
@@ -7,7 +7,7 @@ type Props = {
 };
 
 export const NavbarDropdown: FC<
-  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
+  Omit<ComponentProps<"div">, keyof Props> & Props
 > = ({ boxed, direction, className, ...props }) => (
   <div
     {...props}

@@ -1,7 +1,7 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
-export const Media: FC<JSX.IntrinsicElements["article"]> = ({
+export const Media: FC<ComponentProps<"article">> = ({
   className,
   ...props
 }) => <article {...props} className={cn("media", className)} />;

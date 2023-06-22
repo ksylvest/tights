@@ -1,5 +1,5 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
 import type { Size } from "../types/size";
 
@@ -8,7 +8,7 @@ type Props = {
 };
 
 export const Delete: FC<
-  Omit<JSX.IntrinsicElements["button"], keyof Props> & Props
+  Omit<ComponentProps<"button">, keyof Props> & Props
 > = ({ size, className, ...props }) => (
   <button
     {...props}

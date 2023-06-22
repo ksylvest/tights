@@ -1,5 +1,5 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
 type Props = {
   dimensions?: 16 | 24 | 32 | 48 | 64 | 96;
@@ -8,9 +8,15 @@ type Props = {
   ratio?: string;
 };
 
-export const Image: FC<
-  Omit<JSX.IntrinsicElements["img"], keyof Props> & Props
-> = ({ dimensions, rounded, square, ratio, children, className, ...props }) => (
+export const Image: FC<Omit<ComponentProps<"img">, keyof Props> & Props> = ({
+  dimensions,
+  rounded,
+  square,
+  ratio,
+  children,
+  className,
+  ...props
+}) => (
   <figure
     className={cn(
       "image",

@@ -1,5 +1,5 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
 type Size = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 
@@ -11,9 +11,15 @@ type Props = {
   desktop?: Size;
 };
 
-export const Column: FC<
-  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
-> = ({ size, mobile, tablet, desktop, narrow, className, ...props }) => (
+export const Column: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
+  size,
+  mobile,
+  tablet,
+  desktop,
+  narrow,
+  className,
+  ...props
+}) => (
   <div
     {...props}
     className={cn(

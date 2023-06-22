@@ -1,15 +1,11 @@
 import cn from "classnames";
-import type {
-  AnchorHTMLAttributes,
-  ButtonHTMLAttributes,
-  FC,
-  InputHTMLAttributes,
-} from "react";
+import type { ComponentProps, ElementType } from "react";
 
 import type { Color } from "../types/color";
 import type { Size } from "../types/size";
 
-type ComponentProps = {
+type Props<T extends ElementType> = {
+  tag?: T;
   color?: Color;
   size?: Size;
   fullwidth?: boolean;
@@ -20,23 +16,7 @@ type ComponentProps = {
   selected?: boolean;
 };
 
-type AnchorElementProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
-  tag: "a";
-};
-
-type ButtonElementProps = ButtonHTMLAttributes<HTMLButtonElement> & {
-  tag?: "button";
-};
-
-type InputElementProps = InputHTMLAttributes<HTMLInputElement> & {
-  tag: "input";
-};
-
-type ElementProps = ButtonElementProps | AnchorElementProps | InputElementProps;
-
-export const Button: FC<
-  Omit<ElementProps, keyof ComponentProps> & ComponentProps
-> = ({
+export const Button = <T extends ElementType = "button">({
   color,
   size,
   fullwidth,
@@ -46,22 +26,26 @@ export const Button: FC<
   rounded,
   selected,
   className,
-  tag: Tag = "button",
+  tag,
   ...props
-}) => (
-  <Tag
-    {...(props as React.HTMLAttributes<HTMLElement>)}
-    className={cn(
-      "button",
-      color && `is-${color}`,
-      size && `is-${size}`,
-      fullwidth && "is-fullwidth",
-      inverted && "is-inverted",
-      outlined && "is-outlined",
-      loading && "is-loading",
-      rounded && "is-rounded",
-      selected && "is-selected",
-      className
-    )}
-  />
-);
+}: Props<T> & Omit<ComponentProps<T>, keyof Props<T>>) => {
+  const Tag = tag ?? "button";
+
+  return (
+    <Tag
+      {...props}
+      className={cn(
+        "button",
+        color && `is-${color}`,
+        size && `is-${size}`,
+        fullwidth && "is-fullwidth",
+        inverted && "is-inverted",
+        outlined && "is-outlined",
+        loading && "is-loading",
+        rounded && "is-rounded",
+        selected && "is-selected",
+        className
+      )}
+    />
+  );
+};

@@ -1,7 +1,7 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
-export const PaginationPrev: FC<JSX.IntrinsicElements["a"]> = ({
+export const PaginationPrev: FC<ComponentProps<"a">> = ({
   className,
   ...props
 }) => <a {...props} className={cn("pagination-previous", className)} />;

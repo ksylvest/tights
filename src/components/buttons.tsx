@@ -1,5 +1,5 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
 import type { Alignment } from "../types/alignment";
 
@@ -8,9 +8,12 @@ type Props = {
   alignment?: Alignment;
 };
 
-export const Buttons: FC<
-  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
-> = ({ addons, alignment, className, ...props }) => (
+export const Buttons: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
+  addons,
+  alignment,
+  className,
+  ...props
+}) => (
   <div
     {...props}
     className={cn(

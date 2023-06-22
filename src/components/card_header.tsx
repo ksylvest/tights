@@ -1,7 +1,7 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type { ComponentProps, FC } from "react";
 
-export const CardHeader: FC<JSX.IntrinsicElements["header"]> = ({
+export const CardHeader: FC<ComponentProps<"header">> = ({
   className,
   ...props
 }) => <header {...props} className={cn("card-header", className)} />;
