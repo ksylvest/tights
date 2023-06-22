@@ -1,5 +1,4 @@
 import { shallow } from "enzyme";
-import cn from "classnames";
 import type { FC } from "react";
 
 export const property = <T extends Record<string, unknown>>(
