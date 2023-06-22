@@ -1,6 +1,6 @@
-import { renders } from "../../../support";
+import { renders } from "../support";
 
-import { BreadcrumbList } from "./index";
+import { BreadcrumbList } from "./breadcrumb_list";
 
 describe(BreadcrumbList, () => {
   renders(BreadcrumbList, "ul");

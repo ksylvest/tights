@@ -1,11 +1,11 @@
-import { alignment } from "../../../support";
-import { is } from "../../../support";
-import { color } from "../../../support";
-import { property } from "../../../support";
-import { renders } from "../../../support";
-import { size } from "../../../support";
+import { alignment } from "../support";
+import { is } from "../support";
+import { color } from "../support";
+import { property } from "../support";
+import { renders } from "../support";
+import { size } from "../support";
 
-import { File } from "./index";
+import { File } from "./form_file";
 
 describe(File, () => {
   renders(File, ".file");

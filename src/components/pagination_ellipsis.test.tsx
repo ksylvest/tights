@@ -1,6 +1,6 @@
-import { renders } from "../../../support";
+import { renders } from "../support";
 
-import { PaginationEllipsis } from "./index";
+import { PaginationEllipsis } from "./pagination_ellipsis";
 
 describe(PaginationEllipsis, () => {
   renders(PaginationEllipsis, ".pagination-ellipsis");

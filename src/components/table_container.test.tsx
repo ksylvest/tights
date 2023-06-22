@@ -1,7 +1,7 @@
-import { renders } from "../../../support";
+import { renders } from "../support";
 
-import { PanelContainer } from "./index";
+import { TableContainer } from "./table_container";
 
-describe(PanelContainer, () => {
-  renders(PanelContainer, ".table-container");
+describe(TableContainer, () => {
+  renders(TableContainer, ".table-container");
 });

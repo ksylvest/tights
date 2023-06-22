@@ -1,8 +1,8 @@
-import { renders } from "../../support";
-import { property } from "../../support";
-import { size } from "../../support";
+import { renders } from "../support";
+import { property } from "../support";
+import { size } from "../support";
 
-import { Icon } from "./index";
+import { Icon } from "./icon";
 
 describe(Icon, () => {
   renders(Icon, ".icon");

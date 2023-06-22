@@ -1,6 +1,6 @@
-import { renders } from "../../support";
+import { renders } from "../support";
 
-import { Level } from "./index";
+import { Level } from "./level";
 
 describe(Level, () => {
   renders(Level, ".level");

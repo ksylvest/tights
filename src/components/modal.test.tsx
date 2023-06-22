@@ -1,7 +1,7 @@
-import { renders } from "../../support";
-import { is } from "../../support";
+import { renders } from "../support";
+import { is } from "../support";
 
-import { Modal } from "./index";
+import { Modal } from "./modal";
 
 describe(Modal, () => {
   renders(Modal, ".modal");

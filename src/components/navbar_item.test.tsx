@@ -1,8 +1,8 @@
-import { renders } from "../../../support";
-import { has } from "../../../support";
-import { is } from "../../../support";
+import { renders } from "../support";
+import { has } from "../support";
+import { is } from "../support";
 
-import { NavbarItem } from "./index";
+import { NavbarItem } from "./navbar_item";
 
 describe(NavbarItem, () => {
   renders(NavbarItem, ".navbar-item");

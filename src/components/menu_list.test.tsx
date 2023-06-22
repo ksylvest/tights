@@ -1,6 +1,6 @@
-import { renders } from "../../../support";
+import { renders } from "../support";
 
-import { MenuList } from "./index";
+import { MenuList } from "./menu_list";
 
 describe(MenuList, () => {
   renders(MenuList, ".menu-list");

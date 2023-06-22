@@ -1,8 +1,8 @@
-import { renders } from "../../../support";
-import { is } from "../../../support";
-import { direction } from "../../../support";
+import { renders } from "../support";
+import { is } from "../support";
+import { direction } from "../support";
 
-import { NavbarDropdown } from "./index";
+import { NavbarDropdown } from "./navbar_dropdown";
 
 describe(NavbarDropdown, () => {
   renders(NavbarDropdown, ".navbar-dropdown");

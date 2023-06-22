@@ -1,6 +1,6 @@
-import { renders } from "../../../support";
+import { renders } from "../support";
 
-import { PaginationItem } from "./index";
+import { PaginationItem } from "./pagination_item";
 
 describe(PaginationItem, () => {
   renders(PaginationItem, "li");

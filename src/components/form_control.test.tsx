@@ -1,8 +1,8 @@
-import { is } from "../../../support";
-import { property } from "../../../support";
-import { renders } from "../../../support";
+import { is } from "../support";
+import { property } from "../support";
+import { renders } from "../support";
 
-import { Control } from "./index";
+import { Control } from "./form_control";
 
 describe(Control, () => {
   renders(Control, ".control");

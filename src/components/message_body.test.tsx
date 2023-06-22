@@ -1,6 +1,6 @@
-import { renders } from "../../../support";
+import { renders } from "../support";
 
-import { MessageBody } from "./index";
+import { MessageBody } from "./message_body";
 
 describe(MessageBody, () => {
   renders(MessageBody, ".message-body");

@@ -1,8 +1,8 @@
-import { renders } from "../../support";
-import { tag } from "../../support";
-import { property } from "../../support";
+import { renders } from "../support";
+import { tag } from "../support";
+import { property } from "../support";
 
-import { Tile } from "./index";
+import { Tile } from "./tile";
 
 describe(Tile, () => {
   renders(Tile, ".tile");

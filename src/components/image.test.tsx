@@ -1,8 +1,8 @@
-import { renders } from "../../support";
-import { property } from "../../support";
-import { is } from "../../support";
+import { renders } from "../support";
+import { property } from "../support";
+import { is } from "../support";
 
-import { Image } from "./index";
+import { Image } from "./image";
 
 describe(Image, () => {
   renders(Image, ".image");

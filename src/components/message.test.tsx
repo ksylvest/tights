@@ -1,8 +1,8 @@
-import { renders } from "../../support";
-import { color } from "../../support";
-import { size } from "../../support";
+import { renders } from "../support";
+import { color } from "../support";
+import { size } from "../support";
 
-import { Message } from "./index";
+import { Message } from "./message";
 
 describe(Message, () => {
   renders(Message, ".message");

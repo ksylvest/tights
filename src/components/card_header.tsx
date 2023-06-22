@@ -1,8 +1,8 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { CardHeaderIcon } from "./icon";
-import { CardHeaderTitle } from "./title";
+import { CardHeaderIcon } from "./card_header_icon";
+import { CardHeaderTitle } from "./card_header_title";
 
 const CardHeader: FC<JSX.IntrinsicElements["header"]> = ({
   className,

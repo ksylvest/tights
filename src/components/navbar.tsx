@@ -3,15 +3,15 @@ import type { FC } from "react";
 
 import type { Color } from "@src/types/color";
 
-import { NavbarBrand } from "./brand";
-import { NavbarBurger } from "./burger";
-import { NavbarDivider } from "./divider";
-import { NavbarDropdown } from "./dropdown";
-import { NavbarEnd } from "./end";
-import { NavbarItem } from "./item";
-import { NavbarLink } from "./link";
-import { NavbarMenu } from "./menu";
-import { NavbarStart } from "./start";
+import { NavbarBrand } from "./navbar_brand";
+import { NavbarBurger } from "./navbar_burger";
+import { NavbarDivider } from "./navbar_divider";
+import { NavbarDropdown } from "./navbar_dropdown";
+import { NavbarEnd } from "./navbar_end";
+import { NavbarItem } from "./navbar_item";
+import { NavbarLink } from "./navbar_link";
+import { NavbarMenu } from "./navbar_menu";
+import { NavbarStart } from "./navbar_start";
 
 type Props = {
   color?: Color;

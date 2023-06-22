@@ -1,8 +1,8 @@
-import { renders } from "../../support";
-import { is } from "../../support";
-import { alignment } from "../../support";
+import { renders } from "../support";
+import { is } from "../support";
+import { alignment } from "../support";
 
-import { Dropdown } from "./index";
+import { Dropdown } from "./dropdown";
 
 describe(Dropdown, () => {
   renders(Dropdown, ".dropdown");

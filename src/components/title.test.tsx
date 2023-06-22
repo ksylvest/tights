@@ -1,7 +1,7 @@
-import { renders } from "../../support";
-import { tag } from "../../support";
+import { renders } from "../support";
+import { tag } from "../support";
 
-import { Title } from "./index";
+import { Title } from "./title";
 
 describe(Title, () => {
   renders(Title, ".title");

@@ -1,8 +1,8 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { BreadcrumbItem } from "./item";
-import { BreadcrumbList } from "./list";
+import { BreadcrumbItem } from "./breadcrumb_item";
+import { BreadcrumbList } from "./breadcrumb_list";
 
 import { Alignment } from "@src/types/alignment";
 import { Size } from "@src/types/size";

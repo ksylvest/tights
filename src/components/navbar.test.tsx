@@ -1,7 +1,7 @@
-import { renders } from "../../support";
-import { color } from "../../support";
+import { renders } from "../support";
+import { color } from "../support";
 
-import { Navbar } from "./index";
+import { Navbar } from "./navbar";
 
 describe(Navbar, () => {
   renders(Navbar, ".navbar");

@@ -1,10 +1,10 @@
-import { renders } from "../../support";
-import { is } from "../../support";
-import { color } from "../../support";
-import { size } from "../../support";
-import { property } from "../../support";
+import { renders } from "../support";
+import { is } from "../support";
+import { color } from "../support";
+import { size } from "../support";
+import { property } from "../support";
 
-import { Tag } from "./index";
+import { Tag } from "./tag";
 
 describe(Tag, () => {
   renders(Tag, ".tag");

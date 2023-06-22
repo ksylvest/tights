@@ -1,7 +1,7 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { CardFooterItem } from "./item";
+import { CardFooterItem } from "./card_footer_item";
 
 const CardFooter: FC<JSX.IntrinsicElements["footer"]> = ({
   className,
