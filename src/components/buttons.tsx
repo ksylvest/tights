@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 import type { Alignment } from "../types/alignment";
@@ -16,7 +16,7 @@ export const Buttons: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
 }) => (
   <div
     {...props}
-    className={cn(
+    className={clsx(
       "buttons",
       addons && "has-addons",
       alignment && `is-${alignment}`,

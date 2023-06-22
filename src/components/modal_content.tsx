@@ -1,7 +1,7 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 export const ModalContent: FC<ComponentProps<"div">> = ({
   className,
   ...props
-}) => <div {...props} className={cn("modal-content", className)} />;
+}) => <div {...props} className={clsx("modal-content", className)} />;

@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 import type { Alignment } from "../types/alignment";
@@ -22,7 +22,7 @@ export const Tabs: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
 }) => (
   <div
     {...props}
-    className={cn(
+    className={clsx(
       "tabs",
       alignment && `is-${alignment}`,
       size && `is-${size}`,

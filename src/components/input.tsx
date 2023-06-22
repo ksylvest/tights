@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 import type { Color } from "../types/color";
@@ -19,7 +19,7 @@ export const Input: FC<Omit<ComponentProps<"input">, keyof Props> & Props> = ({
 }) => (
   <input
     {...props}
-    className={cn(
+    className={clsx(
       "input",
       color && `is-${color}`,
       size && `is-${size}`,

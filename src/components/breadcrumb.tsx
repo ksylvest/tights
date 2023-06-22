@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 import type { Alignment } from "../types/alignment";
@@ -16,7 +16,7 @@ export const Breadcrumb: FC<
 > = ({ alignment, separator, size, ...props }) => (
   <nav
     {...props}
-    className={cn(
+    className={clsx(
       "breadcrumb",
       alignment && `is-${alignment}`,
       separator && `has-${separator}-separator`,

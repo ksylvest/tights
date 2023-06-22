@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 import type { Alignment } from "../types/alignment";
@@ -32,7 +32,7 @@ export const File: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
 }) => (
   <div
     {...props}
-    className={cn(
+    className={clsx(
       "file",
       boxed && "is-boxed",
       fullwidth && "is-fullwidth",

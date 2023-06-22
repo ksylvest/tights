@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 import type { Color } from "../types/color";
@@ -12,5 +12,5 @@ export const Help: FC<ComponentProps<"p">> = ({
   className,
   ...props
 }) => (
-  <p {...props} className={cn("help", color && `is-${color}`, className)} />
+  <p {...props} className={clsx("help", color && `is-${color}`, className)} />
 );

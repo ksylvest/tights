@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 type Props = {
@@ -8,5 +8,5 @@ type Props = {
 export const DropdownItem: FC<
   Omit<ComponentProps<"a">, keyof Props> & Props
 > = ({ active, ...props }) => (
-  <a {...props} className={cn("dropdown-item", active && "is-active")} />
+  <a {...props} className={clsx("dropdown-item", active && "is-active")} />
 );

@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, ElementType } from "react";
 
 import type { Color } from "../types/color";
@@ -34,7 +34,7 @@ export const Button = <T extends ElementType = "button">({
   return (
     <Tag
       {...props}
-      className={cn(
+      className={clsx(
         "button",
         color && `is-${color}`,
         size && `is-${size}`,

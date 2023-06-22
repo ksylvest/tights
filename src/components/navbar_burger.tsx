@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 export const NavbarBurger: FC<
@@ -6,7 +6,7 @@ export const NavbarBurger: FC<
     active?: boolean;
   }
 > = ({ active, ...props }) => (
-  <a {...props} className={cn("navbar-burger burger", active && "is-active")}>
+  <a {...props} className={clsx("navbar-burger burger", active && "is-active")}>
     <span />
     <span />
     <span />

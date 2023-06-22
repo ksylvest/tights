@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 type Props = {
@@ -10,5 +10,5 @@ export const Tags: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
   className,
   ...props
 }) => (
-  <div {...props} className={cn("tags", addons && "has-addons", className)} />
+  <div {...props} className={clsx("tags", addons && "has-addons", className)} />
 );

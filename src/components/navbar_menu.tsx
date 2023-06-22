@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 type Props = {
@@ -10,6 +10,6 @@ export const NavbarMenu: FC<
 > = ({ active, className, ...props }) => (
   <div
     {...props}
-    className={cn("navbar-menu", active && "is-active", className)}
+    className={clsx("navbar-menu", active && "is-active", className)}
   />
 );

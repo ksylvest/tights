@@ -1,7 +1,7 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 export const ModalBackground: FC<ComponentProps<"div">> = ({
   className,
   ...props
-}) => <div {...props} className={cn("modal-background", className)} />;
+}) => <div {...props} className={clsx("modal-background", className)} />;

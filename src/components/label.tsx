@@ -1,6 +1,6 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 export const Label: FC<ComponentProps<"label">> = ({ className, ...props }) => (
-  <label {...props} className={cn("label", className)} />
+  <label {...props} className={clsx("label", className)} />
 );

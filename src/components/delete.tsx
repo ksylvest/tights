@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 import type { Size } from "../types/size";
@@ -13,6 +13,6 @@ export const Delete: FC<
   <button
     {...props}
     type="button"
-    className={cn("delete", size && `is-${size}`, className)}
+    className={clsx("delete", size && `is-${size}`, className)}
   />
 );

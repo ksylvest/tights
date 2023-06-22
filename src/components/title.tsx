@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, ElementType, FC } from "react";
 
 type Props<T extends ElementType> = {
@@ -11,5 +11,5 @@ export const Title = <T extends ElementType = "p">({
   ...props
 }: Props<T> & Omit<ComponentProps<T>, keyof Props<T>>) => {
   const Tag = tag ?? "p";
-  return <Tag {...props} className={cn("title", className)} />;
+  return <Tag {...props} className={clsx("title", className)} />;
 };

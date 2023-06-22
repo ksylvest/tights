@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 type Props = {
@@ -17,7 +17,7 @@ export const Table: FC<Omit<ComponentProps<"table">, keyof Props> & Props> = ({
 }) => (
   <table
     {...props}
-    className={cn(
+    className={clsx(
       "table",
       bordered && "is-bordered",
       fullwidth && "is-fullwidth",

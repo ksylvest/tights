@@ -1,7 +1,7 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 export const HeroFoot: FC<ComponentProps<"div">> = ({
   className,
   ...props
-}) => <div {...props} className={cn("hero-foot", className)} />;
+}) => <div {...props} className={clsx("hero-foot", className)} />;

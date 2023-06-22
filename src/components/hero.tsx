@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 import type { Color } from "../types/color";
@@ -19,7 +19,7 @@ export const Hero: FC<Omit<ComponentProps<"section">, keyof Props> & Props> = ({
 }) => (
   <section
     {...props}
-    className={cn(
+    className={clsx(
       "hero",
       color && `is-${color}`,
       size && `is-${size}`,

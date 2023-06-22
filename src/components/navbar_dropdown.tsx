@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 type Props = {
@@ -11,7 +11,7 @@ export const NavbarDropdown: FC<
 > = ({ boxed, direction, className, ...props }) => (
   <div
     {...props}
-    className={cn(
+    className={clsx(
       "navbar-dropdown",
       boxed && "is-boxed",
       direction && `is-${direction}`,

@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 import type { Size } from "../types/size";
@@ -13,7 +13,7 @@ export const Pagination: FC<
 > = ({ rounded, size, className, ...props }) => (
   <nav
     {...props}
-    className={cn(
+    className={clsx(
       "pagination",
       rounded && "is-rounded",
       size && `is-${size}`,

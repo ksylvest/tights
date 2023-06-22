@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 const DEFAULT_ACTIVE = true;
@@ -12,5 +12,5 @@ export const Modal: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
   className,
   ...props
 }) => (
-  <div {...props} className={cn("modal", active && "is-active", className)} />
+  <div {...props} className={clsx("modal", active && "is-active", className)} />
 );

@@ -1,7 +1,7 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 export const LevelRight: FC<ComponentProps<"div">> = ({
   className,
   ...props
-}) => <div {...props} className={cn("level-right", className)} />;
+}) => <div {...props} className={clsx("level-right", className)} />;
