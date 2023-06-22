@@ -1,3 +1,4 @@
+import type { FC, ComponentProps } from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { faHeart, faUpload, faUser } from "@fortawesome/free-solid-svg-icons";
@@ -16,11 +17,14 @@ import { Help } from "./help";
 import { Icon } from "./icon";
 import { Input } from "./input";
 import { Label } from "./label";
+import { Select } from "./select";
 import { Textarea } from "./textarea";
+
+const Form: FC<ComponentProps<"form">> = (props) => <form {...props} />;
 
 const meta = {
   title: "Form",
-  component: ({ children }) => <form>{children}</form>,
+  component: Form,
   tags: ["autodocs"],
 } satisfies Meta<typeof Form>;
 
@@ -28,8 +32,8 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const BasicStory: Story = {
-  render: () => (
-    <form>
+  render: (args) => (
+    <Form {...args}>
       <Field>
         <Label>Name:</Label>
         <Control icons="both">
@@ -66,6 +70,16 @@ export const BasicStory: Story = {
           </File>
         </Control>
       </Field>
+      <Field>
+        <Label>Language:</Label>
+        <Control>
+          <Select>
+            <option>English</option>
+            <option>French</option>
+            <option>Spanish</option>
+          </Select>
+        </Control>
+      </Field>
       <Field grouped>
         <Control>
           <Button color="info">Save</Button>
@@ -74,6 +88,6 @@ export const BasicStory: Story = {
           <Button color="text">Cancel</Button>
         </Control>
       </Field>
-    </form>
+    </Form>
   ),
 };
