@@ -1,8 +1,8 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Button } from "..";
-import { Dropdown } from "..";
+import { Button } from "./button";
+import { Dropdown } from "./dropdown";
 
 const meta = {
   title: "Dropdown",

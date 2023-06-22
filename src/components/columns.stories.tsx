@@ -1,9 +1,9 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Columns } from "..";
-import { Column } from "..";
-import { Image } from "..";
+import { Columns } from "./columns";
+import { Column } from "./column";
+import { Image } from "./image";
 
 const meta = {
   title: "Columns",

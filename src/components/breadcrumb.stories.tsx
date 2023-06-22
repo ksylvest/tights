@@ -1,7 +1,7 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Breadcrumb } from "..";
+import { Breadcrumb } from "./breadcrumb";
 
 const meta = {
   title: "Breadcrumb",

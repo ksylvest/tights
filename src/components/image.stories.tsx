@@ -4,21 +4,19 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
 
-import { Icon } from "..";
+import { Image } from "./image";
 
 const meta = {
-  title: "Icon",
-  component: Icon,
+  title: "Image",
+  component: Image,
   tags: ["autodocs"],
-} satisfies Meta<typeof Icon>;
+} satisfies Meta<typeof Image>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+const SAMPLE_URL = "https://source.unsplash.com/4rDCa5hBlCs/96x96";
+
 export const BasicStory: Story = {
-  render: (args) => (
-    <Icon {...args}>
-      <FontAwesomeIcon icon={faRocket} />
-    </Icon>
-  ),
+  render: (args) => <Image src={SAMPLE_URL} dimensions={48} {...args} />,
 };

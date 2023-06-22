@@ -1,8 +1,8 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Message } from "..";
-import { Delete } from "..";
+import { Message } from "./message";
+import { Delete } from "./delete";
 
 const meta = {
   title: "Message",

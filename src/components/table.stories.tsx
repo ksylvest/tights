@@ -1,7 +1,7 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Table } from "..";
+import { Table } from "./table";
 
 const meta = {
   title: "Table",

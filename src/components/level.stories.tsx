@@ -1,7 +1,7 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Level } from "..";
+import { Level } from "./level";
 
 const meta = {
   title: "Level",

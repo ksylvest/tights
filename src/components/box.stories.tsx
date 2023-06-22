@@ -1,17 +1,17 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Delete } from "..";
+import { Box } from "./box";
 
 const meta = {
-  title: "Delete",
-  component: Delete,
+  title: "Box",
+  component: Box,
   tags: ["autodocs"],
-} satisfies Meta<typeof Delete>;
+} satisfies Meta<typeof Box>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const BasicStory: Story = {
-  render: (args) => <Delete {...args} />,
+  render: (args) => <Box {...args}>Greetings!</Box>,
 };

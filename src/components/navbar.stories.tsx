@@ -1,7 +1,7 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Navbar } from "..";
+import { Navbar } from "./navbar";
 
 const meta = {
   title: "Navbar",
