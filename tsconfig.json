@@ -12,8 +12,8 @@
   },
   "include": ["src"],
   "exclude": [
+    "**/*.stories.*",
     "**/*.test.*",
-    "src/stories",
     "src/support",
     "node_modules"
   ]
