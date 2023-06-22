@@ -1,5 +1,10 @@
 import cn from "classnames";
-import type { FC } from "react";
+import type {
+  AnchorHTMLAttributes,
+  ButtonHTMLAttributes,
+  FC,
+  InputHTMLAttributes,
+} from "react";
 
 import type { Color } from "../types/color";
 import type { Size } from "../types/size";
@@ -15,15 +20,15 @@ type ComponentProps = {
   selected?: boolean;
 };
 
-type AnchorElementProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
+type AnchorElementProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
   tag: "a";
 };
 
-type ButtonElementProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+type ButtonElementProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   tag?: "button";
 };
 
-type InputElementProps = React.InputHTMLAttributes<HTMLInputElement> & {
+type InputElementProps = InputHTMLAttributes<HTMLInputElement> & {
   tag: "input";
 };
 
