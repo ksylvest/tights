@@ -5,7 +5,7 @@ import { property } from "../support";
 import { renders } from "../support";
 import { size } from "../support";
 
-import { File } from "./form_file";
+import { File } from "./file";
 
 describe(File, () => {
   renders(File, ".file");

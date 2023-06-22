@@ -20,11 +20,20 @@ npm install tights
 
 ## Usage
 
-Components for Tights can be easily
+Components follow the standard naming convention within Bulma:
 
 ```typescript
-import { Button, Delete, Modal } from "tights";
-import { Modal } from "tights";
+import {
+  Button,
+  Modal,
+  ModalBackground,
+  ModalCard,
+  ModalCardHead,
+  ModalCardBody,
+  ModalCardFoot,
+  ModalCardTitle,
+  ModalCardClose,
+} from "tights";
 
 const Confirmation: FC<{
   onConfirm(): void;
@@ -32,19 +41,19 @@ const Confirmation: FC<{
   onClose(): void;
 }> = ({ onConfirm, onCancel, onClose }) => (
   <Modal>
-    <Modal.Background />
-    <Modal.Card>
-      <Modal.Card.Head>
-        <Modal.Card.Title>Modal</Modal.Card.Title>
+    <ModalBackground />
+    <ModalCard>
+      <ModalCardHead>
+        <ModalCardTitle>Modal</ModalCardTitle>
         <Delete onClick={onClose} />
-      </Modal.Card.Head>
-      <Modal.Card.Body>...</Modal.Card.Body>
-      <Modal.Card.Foot>
+      </ModalCardHead>
+      <ModalCardBody>...</ModalCardBody>
+      <ModalCardFoot>
         <Button onClick={onConfirm}>Confirm</Button>
         <Button onClick={onCancel}>Cancel</Button>
-      </Modal.Card.Foot>
-    </Modal.Card>
-    <Modal.Close size="medium" onClick={onClose} />
+      </ModalCardFoot>
+    </ModalCard>
+    <ModalClose size="medium" onClick={onClose} />
   </Modal>
 );
 ```
@@ -56,4 +65,4 @@ const Confirmation: FC<{
 
 ## Copyright
 
-Copyright (c) 2019 [Kevin Sylvestre](https://ksylvest.com). See LICENSE for details.
+Copyright (c) 2023 [Kevin Sylvestre](https://ksylvest.com). See LICENSE for details.

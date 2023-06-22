@@ -3,7 +3,7 @@ import { color } from "../support";
 import { size } from "../support";
 import { is } from "../support";
 
-import { Input } from "./form_input";
+import { Input } from "./input";
 
 describe(Input, () => {
   renders(Input, ".input");

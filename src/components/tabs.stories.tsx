@@ -1,7 +1,8 @@
-import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { Tabs } from "./tabs";
+import { TabsItem } from "./tabs_item";
+import { TabsList } from "./tabs_list";
 
 const meta = {
   title: "Tabs",
@@ -15,14 +16,14 @@ type Story = StoryObj<typeof meta>;
 export const BasicStory: Story = {
   render: (args) => (
     <Tabs {...args}>
-      <Tabs.List>
-        <Tabs.Item>
+      <TabsList>
+        <TabsItem>
           <a>Photos</a>
-        </Tabs.Item>
-        <Tabs.Item>
+        </TabsItem>
+        <TabsItem>
           <a>Videos</a>
-        </Tabs.Item>
-      </Tabs.List>
+        </TabsItem>
+      </TabsList>
     </Tabs>
   ),
 };

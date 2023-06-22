@@ -1,6 +1,6 @@
 import { renders } from "../support";
 
-import { FileCTA } from "./form_file_cta";
+import { FileCTA } from "./file_cta";
 
 describe(FileCTA, () => {
   renders(FileCTA, ".file-cta");

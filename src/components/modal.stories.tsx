@@ -1,9 +1,15 @@
-import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { Button } from "./button";
 import { Delete } from "./delete";
 import { Modal } from "./modal";
+import { ModalBackground } from "./modal_background";
+import { ModalCard } from "./modal_card";
+import { ModalCardBody } from "./modal_card_body";
+import { ModalCardFoot } from "./modal_card_foot";
+import { ModalCardHead } from "./modal_card_head";
+import { ModalCardTitle } from "./modal_card_title";
+import { ModalClose } from "./modal_close";
 
 const meta = {
   title: "Modal",
@@ -17,19 +23,19 @@ type Story = StoryObj<typeof meta>;
 export const BasicStory: Story = {
   render: (args) => (
     <Modal {...args}>
-      <Modal.Background />
-      <Modal.Card>
-        <Modal.Card.Head>
-          <Modal.Card.Title>Modal</Modal.Card.Title>
+      <ModalBackground />
+      <ModalCard>
+        <ModalCardHead>
+          <ModalCardTitle>Modal</ModalCardTitle>
           <Delete />
-        </Modal.Card.Head>
-        <Modal.Card.Body>Lorem Ipsum</Modal.Card.Body>
-        <Modal.Card.Foot>
+        </ModalCardHead>
+        <ModalCardBody>Lorem Ipsum</ModalCardBody>
+        <ModalCardFoot>
           <Button>Save</Button>
           <Button>Cancel</Button>
-        </Modal.Card.Foot>
-      </Modal.Card>
-      <Modal.Close size="medium" />
+        </ModalCardFoot>
+      </ModalCard>
+      <ModalClose size="medium" />
     </Modal>
   ),
 };

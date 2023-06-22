@@ -1,7 +1,7 @@
 import { renders } from "../support";
 import { property } from "../support";
 
-import { Field } from "./form_field";
+import { Field } from "./field";
 
 describe(Field, () => {
   renders(Field, ".field");

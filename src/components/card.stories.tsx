@@ -1,4 +1,3 @@
-import React from "react";
 import type { FC } from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
@@ -6,6 +5,13 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Card } from "./card";
+import { CardContent } from "./card_content";
+import { CardFooter } from "./card_footer";
+import { CardFooterItem } from "./card_footer_item";
+import { CardHeader } from "./card_header";
+import { CardHeaderIcon } from "./card_header_icon";
+import { CardHeaderTitle } from "./card_header_title";
+import { CardImage } from "./card_image";
 import { Column } from "./column";
 import { Columns } from "./columns";
 import { Image } from "./image";
@@ -36,27 +42,27 @@ export const BasicStory: Story = {
       {UNSPLASH_IDS.map((unsplashID, key) => (
         <Column key={key} mobile={6} tablet={4} desktop={3}>
           <Card {...args}>
-            <Card.Header>
-              <Card.Header.Title>Card</Card.Header.Title>
-              <Card.Header.Icon>
+            <CardHeader>
+              <CardHeaderTitle>Card</CardHeaderTitle>
+              <CardHeaderIcon>
                 <FontAwesomeIcon icon={faStar} />
-              </Card.Header.Icon>
-            </Card.Header>
-            <Card.Image>
+              </CardHeaderIcon>
+            </CardHeader>
+            <CardImage>
               <Image
                 square
                 src={`https://source.unsplash.com/${unsplashID}/800x800`}
               />
-            </Card.Image>
-            <Card.Content>Lorem Ipsum</Card.Content>
-            <Card.Footer>
-              <Card.Footer.Item>
+            </CardImage>
+            <CardContent>Lorem Ipsum</CardContent>
+            <CardFooter>
+              <CardFooterItem>
                 <span>2 Likes</span>
-              </Card.Footer.Item>
-              <Card.Footer.Item>
+              </CardFooterItem>
+              <CardFooterItem>
                 <span>4 Faves</span>
-              </Card.Footer.Item>
-            </Card.Footer>
+              </CardFooterItem>
+            </CardFooter>
           </Card>
         </Column>
       ))}

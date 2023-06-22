@@ -1,6 +1,6 @@
 import { renders } from "../support";
 
-import { FileName } from "./form_file_name";
+import { FileName } from "./file_name";
 
 describe(FileName, () => {
   renders(FileName, ".file-name");

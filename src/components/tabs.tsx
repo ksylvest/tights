@@ -1,9 +1,6 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { TabsItem } from "./tabs_item";
-import { TabsList } from "./tabs_list";
-
 import type { Alignment } from "@src/types/alignment";
 import type { Size } from "@src/types/size";
 import type { Style } from "@src/types/style";
@@ -15,14 +12,9 @@ type Props = {
   fullwidth?: boolean;
 };
 
-const Tabs: FC<Omit<JSX.IntrinsicElements["div"], keyof Props> & Props> = ({
-  alignment,
-  size,
-  style,
-  fullwidth,
-  className,
-  ...props
-}) => (
+export const Tabs: FC<
+  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
+> = ({ alignment, size, style, fullwidth, className, ...props }) => (
   <div
     {...props}
     className={cn(
@@ -35,10 +27,3 @@ const Tabs: FC<Omit<JSX.IntrinsicElements["div"], keyof Props> & Props> = ({
     )}
   />
 );
-
-const Combined = Object.assign(Tabs, {
-  Item: TabsItem,
-  List: TabsList,
-});
-
-export { Combined as Tabs };

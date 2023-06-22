@@ -1,3 +1,11 @@
+# v3.0.0
+
+- refactor to avoid simplify import / export syntax
+
+# v2.0.0
+
+- reorganize components
+
 # v1.9.0
 
 - fix tsc for card

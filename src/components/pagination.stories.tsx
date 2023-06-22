@@ -1,7 +1,12 @@
-import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { Pagination } from "./pagination";
+import { PaginationEllipsis } from "./pagination_ellipsis";
+import { PaginationItem } from "./pagination_item";
+import { PaginationLink } from "./pagination_link";
+import { PaginationList } from "./pagination_list";
+import { PaginationNext } from "./pagination_next";
+import { PaginationPrev } from "./pagination_prev";
 
 const meta = {
   title: "Pagination",
@@ -15,29 +20,29 @@ type Story = StoryObj<typeof meta>;
 export const BasicStory: Story = {
   render: (args) => (
     <Pagination {...args}>
-      <Pagination.Prev>Prev</Pagination.Prev>
-      <Pagination.Next>Next</Pagination.Next>
-      <Pagination.List>
-        <Pagination.Item>
-          <Pagination.Link>1</Pagination.Link>
-        </Pagination.Item>
-        <Pagination.Item>
-          <Pagination.Link current>2</Pagination.Link>
-        </Pagination.Item>
-        <Pagination.Item>
-          <Pagination.Link>3</Pagination.Link>
-        </Pagination.Item>
-        <Pagination.Ellipsis />
-        <Pagination.Item>
-          <Pagination.Link>7</Pagination.Link>
-        </Pagination.Item>
-        <Pagination.Item>
-          <Pagination.Link>8</Pagination.Link>
-        </Pagination.Item>
-        <Pagination.Item>
-          <Pagination.Link>9</Pagination.Link>
-        </Pagination.Item>
-      </Pagination.List>
+      <PaginationPrev>Prev</PaginationPrev>
+      <PaginationNext>Next</PaginationNext>
+      <PaginationList>
+        <PaginationItem>
+          <PaginationLink>1</PaginationLink>
+        </PaginationItem>
+        <PaginationItem>
+          <PaginationLink current>2</PaginationLink>
+        </PaginationItem>
+        <PaginationItem>
+          <PaginationLink>3</PaginationLink>
+        </PaginationItem>
+        <PaginationEllipsis />
+        <PaginationItem>
+          <PaginationLink>7</PaginationLink>
+        </PaginationItem>
+        <PaginationItem>
+          <PaginationLink>8</PaginationLink>
+        </PaginationItem>
+        <PaginationItem>
+          <PaginationLink>9</PaginationLink>
+        </PaginationItem>
+      </PaginationList>
     </Pagination>
   ),
 };
