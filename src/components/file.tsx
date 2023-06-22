@@ -5,11 +5,11 @@ import type { Alignment } from "@src/types/alignment";
 import type { Color } from "@src/types/color";
 import type { Size } from "@src/types/size";
 
-import { FileCTA } from "./form_file_cta";
-import { FileIcon } from "./form_file_icon";
-import { FileInput } from "./form_file_input";
-import { FileLabel } from "./form_file_label";
-import { FileName } from "./form_file_name";
+import { FileCTA } from "./file_cta";
+import { FileIcon } from "./file_icon";
+import { FileInput } from "./file_input";
+import { FileLabel } from "./file_label";
+import { FileName } from "./file_name";
 
 type Props = {
   name?: string;
@@ -20,7 +20,9 @@ type Props = {
   fullwidth?: boolean;
 };
 
-const File: FC<Omit<JSX.IntrinsicElements["div"], keyof Props> & Props> = ({
+export const File: FC<
+  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
+> = ({
   name,
   alignment,
   color,
@@ -44,13 +46,3 @@ const File: FC<Omit<JSX.IntrinsicElements["div"], keyof Props> & Props> = ({
     )}
   />
 );
-
-const Combined = Object.assign(File, {
-  CTA: FileCTA,
-  Icon: FileIcon,
-  Input: FileInput,
-  Label: FileLabel,
-  Name: FileName,
-});
-
-export { Combined as File };

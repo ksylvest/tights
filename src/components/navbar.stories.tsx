@@ -1,7 +1,15 @@
-import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { Navbar } from "./navbar";
+import { NavbarBrand } from "./navbar_brand";
+import { NavbarBurger } from "./navbar_burger";
+import { NavbarDivider } from "./navbar_divider";
+import { NavbarDropdown } from "./navbar_dropdown";
+import { NavbarEnd } from "./navbar_end";
+import { NavbarItem } from "./navbar_item";
+import { NavbarLink } from "./navbar_link";
+import { NavbarMenu } from "./navbar_menu";
+import { NavbarStart } from "./navbar_start";
 
 const meta = {
   title: "Navbar",
@@ -15,31 +23,31 @@ type Story = StoryObj<typeof meta>;
 export const BasicStory: Story = {
   render: (args) => (
     <Navbar {...args}>
-      <Navbar.Brand>
-        <Navbar.Item>
+      <NavbarBrand>
+        <NavbarItem>
           <strong>Navbar</strong>
-        </Navbar.Item>
-      </Navbar.Brand>
-      <Navbar.Burger />
-      <Navbar.Menu>
-        <Navbar.Start>
-          <Navbar.Item>Home</Navbar.Item>
-          <Navbar.Item>Account</Navbar.Item>
-          <Navbar.Item dropdown hoverable>
-            <Navbar.Link>More</Navbar.Link>
-            <Navbar.Dropdown>
-              <Navbar.Item>Terms</Navbar.Item>
-              <Navbar.Item>Press</Navbar.Item>
-              <Navbar.Divider />
-              <Navbar.Item>Issues</Navbar.Item>
-            </Navbar.Dropdown>
-          </Navbar.Item>
-        </Navbar.Start>
-        <Navbar.End>
-          <Navbar.Item>Login</Navbar.Item>
-          <Navbar.Item>Signup</Navbar.Item>
-        </Navbar.End>
-      </Navbar.Menu>
+        </NavbarItem>
+      </NavbarBrand>
+      <NavbarBurger />
+      <NavbarMenu>
+        <NavbarStart>
+          <NavbarItem>Home</NavbarItem>
+          <NavbarItem>Account</NavbarItem>
+          <NavbarItem dropdown hoverable>
+            <NavbarLink>More</NavbarLink>
+            <NavbarDropdown>
+              <NavbarItem>Terms</NavbarItem>
+              <NavbarItem>Press</NavbarItem>
+              <NavbarDivider />
+              <NavbarItem>Issues</NavbarItem>
+            </NavbarDropdown>
+          </NavbarItem>
+        </NavbarStart>
+        <NavbarEnd>
+          <NavbarItem>Login</NavbarItem>
+          <NavbarItem>Signup</NavbarItem>
+        </NavbarEnd>
+      </NavbarMenu>
     </Navbar>
   ),
 };

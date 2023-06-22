@@ -1,8 +1,9 @@
-import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Message } from "./message";
 import { Delete } from "./delete";
+import { Message } from "./message";
+import { MessageBody } from "./message_body";
+import { MessageHeader } from "./message_header";
 
 const meta = {
   title: "Message",
@@ -16,11 +17,11 @@ type Story = StoryObj<typeof meta>;
 export const BasicStory: Story = {
   render: (args) => (
     <Message {...args}>
-      <Message.Header>
+      <MessageHeader>
         Lorem Ipsum
         <Delete />
-      </Message.Header>
-      <Message.Body>Lorem Ipsum</Message.Body>
+      </MessageHeader>
+      <MessageBody>Lorem Ipsum</MessageBody>
     </Message>
   ),
 };

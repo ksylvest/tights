@@ -1,18 +1,15 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { MessageBody } from "./message_body";
-import { MessageHeader } from "./message_header";
-
-import { Color } from "@src/types/color";
-import { Size } from "@src/types/size";
+import type { Color } from "@src/types/color";
+import type { Size } from "@src/types/size";
 
 type Props = {
   color?: Color;
   size?: Size;
 };
 
-const Message: FC<
+export const Message: FC<
   Omit<JSX.IntrinsicElements["article"], keyof Props> & Props
 > = ({ color, size, className, ...props }) => (
   <article
@@ -25,10 +22,3 @@ const Message: FC<
     )}
   />
 );
-
-const Combined = Object.assign(Message, {
-  Body: MessageBody,
-  Header: MessageHeader,
-});
-
-export { Combined as Message };

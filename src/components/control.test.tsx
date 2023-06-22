@@ -2,7 +2,7 @@ import { is } from "../support";
 import { property } from "../support";
 import { renders } from "../support";
 
-import { Control } from "./form_control";
+import { Control } from "./control";
 
 describe(Control, () => {
   renders(Control, ".control");

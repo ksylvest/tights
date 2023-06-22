@@ -1,12 +1,25 @@
-import React from "react";
+import type { FC } from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { faHeart, faUpload, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { Form } from "./form";
-import { Icon } from "./icon";
+const Form: FC = (props) => <form {...props} />;
+
 import { Button } from "./button";
+import { Control } from "./control";
+import { Field } from "./field";
+import { File } from "./file";
+import { FileCTA } from "./file_cta";
+import { FileIcon } from "./file_icon";
+import { FileInput } from "./file_input";
+import { FileLabel } from "./file_label";
+import { FileName } from "./file_name";
+import { Help } from "./help";
+import { Icon } from "./icon";
+import { Input } from "./input";
+import { Label } from "./label";
+import { Textarea } from "./textarea";
 
 const meta = {
   title: "Form",
@@ -18,52 +31,52 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const BasicStory: Story = {
-  render: (args) => (
-    <Form {...args}>
-      <Form.Field>
-        <Form.Label>Name:</Form.Label>
-        <Form.Control icons="both">
-          <Form.Input type="text" />
+  render: () => (
+    <form>
+      <Field>
+        <Label>Name:</Label>
+        <Control icons="both">
+          <Input type="text" />
           <Icon alignment="left">
             <FontAwesomeIcon icon={faUser} />
           </Icon>
           <Icon alignment="right">
             <FontAwesomeIcon icon={faHeart} />
           </Icon>
-        </Form.Control>
-        <Form.Help>Lorem Ipsum</Form.Help>
-      </Form.Field>
-      <Form.Field>
-        <Form.Label>About:</Form.Label>
-        <Form.Control>
-          <Form.Textarea />
-        </Form.Control>
-      </Form.Field>
-      <Form.Field>
-        <Form.Label>Avatar:</Form.Label>
-        <Form.Control>
-          <Form.File name="File.zip">
-            <Form.File.Label>
-              <Form.File.Input />
-              <Form.File.CTA>
-                <Form.File.Icon>
+        </Control>
+        <Help>Lorem Ipsum</Help>
+      </Field>
+      <Field>
+        <Label>About:</Label>
+        <Control>
+          <Textarea />
+        </Control>
+      </Field>
+      <Field>
+        <Label>Avatar:</Label>
+        <Control>
+          <File name="File.zip">
+            <FileLabel>
+              <FileInput />
+              <FileCTA>
+                <FileIcon>
                   <FontAwesomeIcon icon={faUpload} />
-                </Form.File.Icon>
+                </FileIcon>
                 Choose
-              </Form.File.CTA>
-              <Form.File.Name>File.zip</Form.File.Name>
-            </Form.File.Label>
-          </Form.File>
-        </Form.Control>
-      </Form.Field>
-      <Form.Field grouped>
-        <Form.Control>
+              </FileCTA>
+              <FileName>File.zip</FileName>
+            </FileLabel>
+          </File>
+        </Control>
+      </Field>
+      <Field grouped>
+        <Control>
           <Button color="info">Save</Button>
-        </Form.Control>
-        <Form.Control>
+        </Control>
+        <Control>
           <Button color="text">Cancel</Button>
-        </Form.Control>
-      </Form.Field>
-    </Form>
+        </Control>
+      </Field>
+    </form>
   ),
 };

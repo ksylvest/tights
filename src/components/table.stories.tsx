@@ -1,7 +1,7 @@
-import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { Table } from "./table";
+import { TableContainer } from "./table_container";
 
 const meta = {
   title: "Table",
@@ -14,7 +14,7 @@ type Story = StoryObj<typeof meta>;
 
 export const BasicStory: Story = {
   render: (args) => (
-    <Table.Container>
+    <TableContainer>
       <Table bordered fullwidth hoverable striped {...args}>
         <thead>
           <tr>
@@ -36,6 +36,6 @@ export const BasicStory: Story = {
           </tr>
         </tbody>
       </Table>
-    </Table.Container>
+    </TableContainer>
   ),
 };

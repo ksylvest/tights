@@ -3,7 +3,7 @@ import { color } from "../support";
 import { size } from "../support";
 import { is } from "../support";
 
-import { Textarea } from "./form_textarea";
+import { Textarea } from "./textarea";
 
 describe(Textarea, () => {
   renders(Textarea, ".textarea");

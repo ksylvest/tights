@@ -1,7 +1,8 @@
-import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { Breadcrumb } from "./breadcrumb";
+import { BreadcrumbList } from "./breadcrumb_list";
+import { BreadcrumbItem } from "./breadcrumb_item";
 
 const meta = {
   title: "Breadcrumb",
@@ -15,14 +16,14 @@ type Story = StoryObj<typeof meta>;
 export const BasicStory: Story = {
   render: (args) => (
     <Breadcrumb {...args}>
-      <Breadcrumb.List>
-        <Breadcrumb.Item>
+      <BreadcrumbList>
+        <BreadcrumbItem>
           <a href="#">Documentation</a>
-        </Breadcrumb.Item>
-        <Breadcrumb.Item active>
+        </BreadcrumbItem>
+        <BreadcrumbItem active>
           <a href="#">Components</a>
-        </Breadcrumb.Item>
-      </Breadcrumb.List>
+        </BreadcrumbItem>
+      </BreadcrumbList>
     </Breadcrumb>
   ),
 };

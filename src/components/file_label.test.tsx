@@ -1,6 +1,6 @@
 import { renders } from "../support";
 
-import { FileLabel } from "./form_file_label";
+import { FileLabel } from "./file_label";
 
 describe(FileLabel, () => {
   renders(FileLabel, ".file-label");

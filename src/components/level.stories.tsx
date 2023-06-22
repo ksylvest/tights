@@ -1,7 +1,9 @@
-import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { Level } from "./level";
+import { LevelLeft } from "./level_left";
+import { LevelItem } from "./level_item";
+import { LevelRight } from "./level_right";
 
 const meta = {
   title: "Level",
@@ -15,12 +17,12 @@ type Story = StoryObj<typeof meta>;
 export const BasicStory: Story = {
   render: (args) => (
     <Level {...args}>
-      <Level.Left>
-        <Level.Item>Lorem Ipsum</Level.Item>
-      </Level.Left>
-      <Level.Right>
-        <Level.Item>Lorem Ipsum</Level.Item>
-      </Level.Right>
+      <LevelLeft>
+        <LevelItem>Lorem Ipsum</LevelItem>
+      </LevelLeft>
+      <LevelRight>
+        <LevelItem>Lorem Ipsum</LevelItem>
+      </LevelRight>
     </Level>
   ),
 };

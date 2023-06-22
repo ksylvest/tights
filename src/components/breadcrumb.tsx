@@ -1,12 +1,9 @@
 import cn from "classnames";
 import type { FC } from "react";
 
-import { BreadcrumbItem } from "./breadcrumb_item";
-import { BreadcrumbList } from "./breadcrumb_list";
-
-import { Alignment } from "@src/types/alignment";
-import { Size } from "@src/types/size";
-import { Separator } from "@src/types/separator";
+import type { Alignment } from "@src/types/alignment";
+import type { Size } from "@src/types/size";
+import type { Separator } from "@src/types/separator";
 
 type Props = {
   alignment?: Alignment;
@@ -14,7 +11,7 @@ type Props = {
   size?: Size;
 };
 
-const Breadcrumb: FC<
+export const Breadcrumb: FC<
   Omit<JSX.IntrinsicElements["nav"], keyof Props> & Props
 > = ({ alignment, separator, size, ...props }) => (
   <nav
@@ -27,10 +24,3 @@ const Breadcrumb: FC<
     )}
   />
 );
-
-const Combined = Object.assign(Breadcrumb, {
-  Item: BreadcrumbItem,
-  List: BreadcrumbList,
-});
-
-export { Combined as Breadcrumb };
