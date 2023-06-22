@@ -7,7 +7,7 @@ type Props = {
   color?: Color;
 };
 
-export const Help: FC<ComponentProps<"p">> = ({
+export const Help: FC<Omit<ComponentProps<"p">, keyof Props> & Props> = ({
   color,
   className,
   ...props
