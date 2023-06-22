@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 type Props = {
@@ -18,7 +18,7 @@ export const Image: FC<Omit<ComponentProps<"img">, keyof Props> & Props> = ({
   ...props
 }) => (
   <figure
-    className={cn(
+    className={clsx(
       "image",
       ratio && `is-${ratio}`,
       square && "is-square",
@@ -28,7 +28,7 @@ export const Image: FC<Omit<ComponentProps<"img">, keyof Props> & Props> = ({
   >
     <picture>
       {children}
-      <img {...props} className={cn(rounded && "is-rounded")} />
+      <img {...props} className={clsx(rounded && "is-rounded")} />
     </picture>
   </figure>
 );

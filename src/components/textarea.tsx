@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 type Color = "primary" | "info" | "success" | "warning" | "danger";
@@ -15,7 +15,7 @@ export const Textarea: FC<
 > = ({ color, size, rounded, className, ...props }) => (
   <textarea
     {...props}
-    className={cn(
+    className={clsx(
       "textarea",
       color && `is-${color}`,
       size && `is-${size}`,

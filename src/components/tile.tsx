@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 type Size = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
@@ -24,7 +24,7 @@ export const Tile: FC<ComponentProps<"div"> & Props> = ({
 }) => (
   <div
     {...props}
-    className={cn(
+    className={clsx(
       "tile",
       ancestor && "is-ancestor",
       parent && "is-parent",

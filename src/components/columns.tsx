@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 type Props = {
@@ -24,7 +24,7 @@ export const Columns: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
 }) => (
   <div
     {...props}
-    className={cn(
+    className={clsx(
       "columns",
       gap && `is-variable is-${gap}`,
       mobile && "is-mobile",

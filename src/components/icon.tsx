@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import { ComponentProps, FC } from "react";
 
 import type { Alignment } from "../types/alignment";
@@ -20,7 +20,7 @@ export const Icon: FC<Omit<ComponentProps<"span">, keyof Props> & Props> = ({
 }) => (
   <span
     {...props}
-    className={cn(
+    className={clsx(
       "icon",
       alignment && `is-${alignment}`,
       color && `has-text-${color}`,

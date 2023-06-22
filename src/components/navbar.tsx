@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 import type { Color } from "../types/color";
@@ -12,5 +12,8 @@ export const Navbar: FC<Omit<ComponentProps<"nav">, keyof Props> & Props> = ({
   className,
   ...props
 }) => (
-  <nav {...props} className={cn("navbar", color && `is-${color}`, className)} />
+  <nav
+    {...props}
+    className={clsx("navbar", color && `is-${color}`, className)}
+  />
 );

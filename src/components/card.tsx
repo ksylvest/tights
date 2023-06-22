@@ -1,6 +1,6 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 export const Card: FC<ComponentProps<"div">> = ({ className, ...props }) => (
-  <div {...props} className={cn("card", className)} />
+  <div {...props} className={clsx("card", className)} />
 );

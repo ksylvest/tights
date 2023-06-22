@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 type Props = {
@@ -8,5 +8,5 @@ type Props = {
 export const BreadcrumbItem: FC<
   Omit<ComponentProps<"li">, keyof Props> & Props
 > = ({ active, className, ...props }) => (
-  <li {...props} className={cn(active && "is-active", className)} />
+  <li {...props} className={clsx(active && "is-active", className)} />
 );

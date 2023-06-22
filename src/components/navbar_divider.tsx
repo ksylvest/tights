@@ -1,7 +1,7 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 export const NavbarDivider: FC<ComponentProps<"hr">> = ({
   className,
   ...props
-}) => <hr className={cn("navbar-divider", className)} />;
+}) => <hr className={clsx("navbar-divider", className)} />;

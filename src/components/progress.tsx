@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 import type { Color } from "../types/color";
@@ -14,7 +14,7 @@ export const Progress: FC<
 > = ({ color, size, className, ...props }) => (
   <progress
     {...props}
-    className={cn(
+    className={clsx(
       "progress",
       color && `is-${color}`,
       size && `is-${size}`,

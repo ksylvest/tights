@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 type Props = {
@@ -10,6 +10,6 @@ export const PaginationLink: FC<
 > = ({ current, className, ...props }) => (
   <a
     {...props}
-    className={cn("pagination-link", current && "is-current", className)}
+    className={clsx("pagination-link", current && "is-current", className)}
   />
 );

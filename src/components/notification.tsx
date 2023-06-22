@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 import type { Color } from "../types/color";
@@ -12,6 +12,6 @@ export const Notification: FC<
 > = ({ color, className, ...props }) => (
   <div
     {...props}
-    className={cn("notification", color && `is-${color}`, className)}
+    className={clsx("notification", color && `is-${color}`, className)}
   />
 );

@@ -1,7 +1,7 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 export const CardFooterItem: FC<ComponentProps<"a">> = ({
   className,
   ...props
-}) => <a className={cn("card-footer-item", className)} {...props} />;
+}) => <a className={clsx("card-footer-item", className)} {...props} />;

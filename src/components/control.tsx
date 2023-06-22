@@ -1,4 +1,4 @@
-import cn from "classnames";
+import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
 
 type Icons = "left" | "right" | "both";
@@ -16,7 +16,7 @@ export const Control: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
 }) => (
   <div
     {...props}
-    className={cn(
+    className={clsx(
       "control",
       expanded && "is-expanded",
       (icons === "left" || icons === "both") && "has-icons-left",
