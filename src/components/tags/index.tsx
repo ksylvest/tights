@@ -1,9 +1,12 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-export const Tags: React.FC<{
+type Props = {
   addons?: boolean;
-  children?: React.ReactNode;
-}> = ({ addons, ...props }) => (
-  <div {...props} className={cn("tags", addons && "has-addons")} />
+};
+
+export const Tags: FC<
+  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
+> = ({ addons, className, ...props }) => (
+  <div {...props} className={cn("tags", addons && "has-addons", className)} />
 );

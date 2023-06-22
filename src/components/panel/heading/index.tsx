@@ -1,5 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-export const Heading: React.FC<{
-  children?: React.ReactNode;
-}> = (props) => <p {...props} className="panel-heading" />;
+export const Heading: FC<JSX.IntrinsicElements["p"]> = ({
+  className,
+  ...props
+}) => <p {...props} className={cn("panel-heading", className)} />;

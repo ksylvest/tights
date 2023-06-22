@@ -1,5 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-export const Title: React.FC<{
-  children?: React.ReactNode;
-}> = (props) => <p {...props} className="modal-card-title" />;
+export const Title: FC<JSX.IntrinsicElements["p"]> = ({
+  className,
+  ...props
+}) => <p {...props} className={cn("modal-card-title", className)} />;

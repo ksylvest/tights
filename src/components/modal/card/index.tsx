@@ -1,13 +1,14 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
 import { Body } from "./body";
 import { Foot } from "./foot";
 import { Head } from "./head";
 import { Title } from "./title";
 
-const Card: React.FC<{
-  children?: React.ReactNode;
-}> = (props) => <div {...props} className="modal-card" />;
+const Card: FC<JSX.IntrinsicElements["div"]> = ({ className, ...props }) => (
+  <div {...props} className={cn("modal-card", className)} />
+);
 
 const Combined = Object.assign(Card, {
   Body,

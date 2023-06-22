@@ -1,12 +1,12 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-export const Item: React.FC<
-  {
-    active?: boolean;
-    tag?: "a" | "div";
-    children?: React.ReactNode;
-  } & React.HTMLAttributes<HTMLElement>
-> = ({ active, tag: Tag = "div", ...props }) => (
-  <Tag {...props} className={cn("dropdown-item", active && "is-active")} />
+type Props = {
+  active?: boolean;
+};
+
+export const Item: FC<
+  Omit<JSX.IntrinsicElements["a"], keyof Props> & Props
+> = ({ active, ...props }) => (
+  <a {...props} className={cn("dropdown-item", active && "is-active")} />
 );

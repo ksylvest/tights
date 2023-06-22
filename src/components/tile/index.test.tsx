@@ -6,7 +6,6 @@ import { Tile } from ".";
 
 describe(Tile, () => {
   renders(Tile, ".tile");
-  tag(Tile);
   property("ancestor", Tile, { ancestor: true }, ".is-ancestor");
   property("ancestor", Tile, { ancestor: false }, ":not(.is-ancestor)");
   property("parent", Tile, { parent: true }, ".is-parent");

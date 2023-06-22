@@ -1,9 +1,19 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-import { Color, Size } from "../../types";
+import type { Color } from "@src/types/color";
+import type { Size } from "@src/types/size";
 
-const DEFAULT_TAG = "button";
+type ComponentProps = {
+  color?: Color;
+  size?: Size;
+  fullwidth?: boolean;
+  inverted?: boolean;
+  loading?: boolean;
+  outlined?: boolean;
+  rounded?: boolean;
+  selected?: boolean;
+};
 
 type AnchorElementProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   tag: "a";
@@ -17,18 +27,10 @@ type InputElementProps = React.InputHTMLAttributes<HTMLInputElement> & {
   tag: "input";
 };
 
-export const Button: React.FC<
-  {
-    color?: Color;
-    size?: Size;
-    fullwidth?: boolean;
-    inverted?: boolean;
-    loading?: boolean;
-    outlined?: boolean;
-    rounded?: boolean;
-    selected?: boolean;
-    children?: React.ReactNode;
-  } & (ButtonElementProps | AnchorElementProps | InputElementProps)
+type ElementProps = ButtonElementProps | AnchorElementProps | InputElementProps;
+
+export const Button: FC<
+  Omit<ElementProps, keyof ComponentProps> & ComponentProps
 > = ({
   color,
   size,
@@ -39,7 +41,7 @@ export const Button: React.FC<
   rounded,
   selected,
   className,
-  tag: Tag = DEFAULT_TAG,
+  tag: Tag = "button",
   ...props
 }) => (
   <Tag

@@ -1,6 +1,22 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-export const Subtitle: React.FC<{
-  tag?: React.FC<{ className?: string }>;
-  children?: React.ReactNode;
-}> = ({ tag: T = "p", ...props }) => <T {...props} className="subtitle" />;
+type Props = {
+  tag?: "div" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p";
+};
+
+type Element =
+  | JSX.IntrinsicElements["div"]
+  | JSX.IntrinsicElements["h1"]
+  | JSX.IntrinsicElements["h2"]
+  | JSX.IntrinsicElements["h3"]
+  | JSX.IntrinsicElements["h4"]
+  | JSX.IntrinsicElements["h5"]
+  | JSX.IntrinsicElements["h6"]
+  | JSX.IntrinsicElements["p"];
+
+export const Subtitle: FC<Omit<Element, keyof Props> & Props> = ({
+  tag: Tag = "p",
+  className,
+  ...props
+}) => <Tag {...props} className={cn("subtitle", className)} />;

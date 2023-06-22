@@ -1,5 +1,5 @@
-import * as React from "react";
+import type { FC } from "react";
 
-export const List: React.FC<{
-  children?: React.ReactNode;
-}> = (props) => <ul {...props} />;
+export const List: FC<JSX.IntrinsicElements["ul"]> = (props) => (
+  <ul {...props} />
+);

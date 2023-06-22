@@ -1,7 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-export const Link: React.FC<
-  React.AnchorHTMLAttributes<HTMLAnchorElement> & {
-    children?: React.ReactNode;
-  }
-> = (props) => <a {...props} className="navbar-link" />;
+export const Link: FC<JSX.IntrinsicElements["a"]> = ({
+  className,
+  ...props
+}) => <a {...props} className={cn("navbar-link", className)} />;

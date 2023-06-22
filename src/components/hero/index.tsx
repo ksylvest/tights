@@ -1,25 +1,34 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
+
+import type { Color } from "@src/types/color";
+import type { Size } from "@src/types/size";
 
 import { Body } from "./body";
 import { Foot } from "./foot";
 import { Head } from "./head";
 
-import { Color, Size } from "../../types";
-
-const Hero: React.FC<{
+type Props = {
   color?: Color;
   size?: Size;
   bold?: boolean;
-  children?: React.ReactNode;
-}> = ({ color, size, bold, ...props }) => (
+};
+
+const Hero: FC<Omit<JSX.IntrinsicElements["section"], keyof Props> & Props> = ({
+  color,
+  size,
+  bold,
+  className,
+  ...props
+}) => (
   <section
     {...props}
     className={cn(
       "hero",
       color && `is-${color}`,
       size && `is-${size}`,
-      bold && "is-bold"
+      bold && "is-bold",
+      className
     )}
   />
 );

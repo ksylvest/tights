@@ -1,5 +1,5 @@
-import * as React from "react";
+import type { FC } from "react";
 
-export const CTA: React.FC<{
-  children?: React.ReactNode;
-}> = (props) => <span {...props} className="file-cta" />;
+export const CTA: FC<JSX.IntrinsicElements["span"]> = (props) => (
+  <span {...props} className="file-cta" />
+);

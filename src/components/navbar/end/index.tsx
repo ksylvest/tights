@@ -1,5 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-export const End: React.FC<{
-  children?: React.ReactNode;
-}> = (props) => <div {...props} className="navbar-end" />;
+export const End: FC<JSX.IntrinsicElements["div"]> = ({
+  className,
+  ...props
+}) => <div {...props} className={cn("navbar-end", className)} />;

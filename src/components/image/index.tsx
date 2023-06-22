@@ -1,14 +1,15 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-export const Image: React.FC<
-  React.ImgHTMLAttributes<HTMLImageElement> & {
-    dimensions?: 16 | 24 | 32 | 48 | 64 | 96;
-    rounded?: boolean;
-    square?: boolean;
-    ratio?: string;
-    children?: React.ReactNode;
-  }
+type Props = {
+  dimensions?: 16 | 24 | 32 | 48 | 64 | 96;
+  rounded?: boolean;
+  square?: boolean;
+  ratio?: string;
+};
+
+export const Image: FC<
+  Omit<JSX.IntrinsicElements["img"], keyof Props> & Props
 > = ({ dimensions, rounded, square, ratio, children, className, ...props }) => (
   <figure
     className={cn(

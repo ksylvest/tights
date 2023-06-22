@@ -1,12 +1,14 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
 import { Content } from "./content";
 import { Left } from "./left";
 import { Right } from "./right";
 
-const Media: React.FC<{
-  children?: React.ReactNode;
-}> = (props) => <article {...props} className="media" />;
+const Media: FC<JSX.IntrinsicElements["article"]> = ({
+  className,
+  ...props
+}) => <article {...props} className={cn("media", className)} />;
 
 const Combined = Object.assign(Media, {
   Content,

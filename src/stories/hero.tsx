@@ -1,6 +1,7 @@
 import { boolean, select, text } from "@storybook/addon-knobs";
 import { storiesOf } from "@storybook/react";
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
 import { Container } from "../components";
 import { Hero } from "../components";

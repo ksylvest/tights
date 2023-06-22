@@ -1,23 +1,26 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-import { Color, Size } from "../../../types";
+import type { Color } from "@src/types/color";
+import type { Size } from "@src/types/size";
 
-export const Input: React.FC<
-  React.InputHTMLAttributes<HTMLInputElement> & {
-    color?: Color;
-    size?: Size;
-    rounded?: boolean;
-    children?: React.ReactNode;
-  }
-> = ({ color, size, rounded, ...props }) => (
+type Props = {
+  color?: Color;
+  size?: Size;
+  rounded?: boolean;
+};
+
+export const Input: FC<
+  Omit<JSX.IntrinsicElements["input"], keyof Props> & Props
+> = ({ color, size, rounded, className, ...props }) => (
   <input
     {...props}
     className={cn(
       "input",
       color && `is-${color}`,
       size && `is-${size}`,
-      rounded && "is-rounded"
+      rounded && "is-rounded",
+      className
     )}
   />
 );

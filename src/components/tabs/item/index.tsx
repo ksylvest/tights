@@ -1,9 +1,12 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-export const Item: React.FC<{
+type Props = {
   active?: boolean;
-  children?: React.ReactNode;
-}> = ({ active, ...props }) => (
-  <li {...props} className={cn(active && "is-active")} />
+};
+
+export const Item: FC<
+  Omit<JSX.IntrinsicElements["li"], keyof Props> & Props
+> = ({ active, className, ...props }) => (
+  <li {...props} className={cn(active && "is-active", className)} />
 );

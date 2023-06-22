@@ -1,11 +1,15 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-export const Link: React.FC<
-  React.AnchorHTMLAttributes<HTMLAnchorElement> & {
-    current?: boolean;
-    children?: React.ReactNode;
-  }
-> = ({ current, ...props }) => (
-  <a {...props} className={cn("pagination-link", current && "is-current")} />
+type Props = {
+  current?: boolean;
+};
+
+export const Link: FC<
+  Omit<JSX.IntrinsicElements["a"], keyof Props> & Props
+> = ({ current, className, ...props }) => (
+  <a
+    {...props}
+    className={cn("pagination-link", current && "is-current", className)}
+  />
 );

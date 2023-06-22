@@ -1,15 +1,19 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-import { Color, Size } from "../../types";
+import { Color } from "@src/types/color";
+import { Size } from "@src/types/size";
 
-export const Tag: React.FC<{
+type Props = {
   delete?: boolean;
   rounded?: boolean;
   color?: Color;
   size?: Size;
-  children?: React.ReactNode;
-}> = ({ delete: deleting, rounded, color, size, ...props }) => (
+};
+
+export const Tag: FC<
+  Omit<JSX.IntrinsicElements["span"], keyof Props> & Props
+> = ({ delete: deleting, rounded, color, size, className, ...props }) => (
   <span
     {...props}
     className={cn(
@@ -17,7 +21,8 @@ export const Tag: React.FC<{
       color && `is-${color}`,
       size && `is-${size}`,
       rounded && "is-rounded",
-      deleting && "is-delete"
+      deleting && "is-delete",
+      className
     )}
   />
 );

@@ -1,5 +1,9 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
+
+import type { Alignment } from "@src/types/alignment";
+import type { Color } from "@src/types/color";
+import type { Size } from "@src/types/size";
 
 import { CTA } from "./cta";
 import { Icon } from "./icon";
@@ -7,17 +11,25 @@ import { Input } from "./input";
 import { Label } from "./label";
 import { Name } from "./name";
 
-import { Alignment, Color, Size } from "../../../types";
-
-const File: React.FC<{
+type Props = {
   name?: string;
   alignment?: Alignment;
   color?: Color;
   size?: Size;
   boxed?: boolean;
   fullwidth?: boolean;
-  children?: React.ReactNode;
-}> = ({ name, alignment, color, size, boxed, fullwidth, ...props }) => (
+};
+
+const File: FC<Omit<JSX.IntrinsicElements["div"], keyof Props> & Props> = ({
+  name,
+  alignment,
+  color,
+  size,
+  boxed,
+  fullwidth,
+  className,
+  ...props
+}) => (
   <div
     {...props}
     className={cn(
@@ -27,7 +39,8 @@ const File: React.FC<{
       name && "has-name",
       alignment && `is-${alignment}`,
       color && `is-${color}`,
-      size && `is-${size}`
+      size && `is-${size}`,
+      className
     )}
   />
 );

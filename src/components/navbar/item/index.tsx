@@ -1,19 +1,23 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-export const Item: React.FC<{
+type Props = {
   dropdown?: boolean;
   hoverable?: boolean;
   active?: boolean;
-  children?: React.ReactNode;
-}> = ({ dropdown, hoverable, active, ...props }) => (
+};
+
+export const Item: FC<
+  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
+> = ({ dropdown, hoverable, active, className, ...props }) => (
   <div
     {...props}
     className={cn(
       "navbar-item",
       hoverable && "is-hoverable",
       active && "is-active",
-      dropdown && "has-dropdown"
+      dropdown && "has-dropdown",
+      className
     )}
   />
 );

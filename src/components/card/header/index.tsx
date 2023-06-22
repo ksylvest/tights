@@ -1,11 +1,13 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
 import { Icon } from "./icon";
 import { Title } from "./title";
 
-const Content: React.FC<{
-  children?: React.ReactNode;
-}> = (props) => <header {...props} className="card-header" />;
+const Content: FC<JSX.IntrinsicElements["header"]> = ({
+  className,
+  ...props
+}) => <header {...props} className={cn("card-header", className)} />;
 
 const Combined = Object.assign(Content, {
   Icon,

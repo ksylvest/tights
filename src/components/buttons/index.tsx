@@ -1,19 +1,23 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-import { Alignment } from "../../types";
+import type { Alignment } from "@src/types/alignment";
 
-export const Buttons: React.FC<{
+type Props = {
   addons?: boolean;
   alignment?: Alignment;
-  children?: React.ReactNode;
-}> = ({ addons, alignment, ...props }) => (
+};
+
+export const Buttons: FC<
+  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
+> = ({ addons, alignment, className, ...props }) => (
   <div
     {...props}
     className={cn(
       "buttons",
       addons && "has-addons",
-      alignment && `is-${alignment}`
+      alignment && `is-${alignment}`,
+      className
     )}
   />
 );

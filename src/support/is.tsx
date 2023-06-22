@@ -1,4 +1,5 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 import { property } from "./property";
 
 type Name =
@@ -18,6 +19,6 @@ type Name =
   | "square"
   | "bordered";
 
-export const is = (Component: React.FC, name: Name): void => {
+export const is = (Component: FC, name: Name): void => {
   property(name, Component, { [name]: !!name }, `.is-${name}`);
 };

@@ -1,9 +1,7 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-export const Box: React.FC<{
-  className?: string;
-  children?: React.ReactNode;
-}> = ({ className, ...props }) => (
-  <div {...props} className={cn("box", className)} />
-);
+export const Box: FC<JSX.IntrinsicElements["div"]> = ({
+  className,
+  ...props
+}) => <div {...props} className={cn("box", className)} />;

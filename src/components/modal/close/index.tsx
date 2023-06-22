@@ -1,17 +1,18 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-import { Size } from "../../../types";
+import type { Size } from "@src/types/size";
 
-export const Close: React.FC<
-  React.ButtonHTMLAttributes<HTMLButtonElement> & {
-    size?: Size;
-    children?: React.ReactNode;
-  }
-> = ({ size, ...props }) => (
+type Props = {
+  size?: Size;
+};
+
+export const Close: FC<
+  Omit<JSX.IntrinsicElements["button"], keyof Props> & Props
+> = ({ size, className, ...props }) => (
   <button
     {...props}
     type="button"
-    className={cn("modal-close", size && `is-${size}`)}
+    className={cn("modal-close", size && `is-${size}`, className)}
   />
 );

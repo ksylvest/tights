@@ -1,5 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-export const Trigger: React.FC<{
-  children?: React.ReactNode;
-}> = (props) => <div {...props} className="dropdown-trigger" />;
+export const Trigger: FC<JSX.IntrinsicElements["div"]> = ({
+  className,
+  ...props
+}) => <div {...props} className={cn("dropdown-trigger", className)} />;

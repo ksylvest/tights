@@ -1,7 +1,7 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
-export const Columns: React.FC<{
+type Props = {
   mobile?: boolean;
   tablet?: boolean;
   desktop?: boolean;
@@ -9,8 +9,11 @@ export const Columns: React.FC<{
   vcentered?: boolean;
   multiline?: boolean;
   gap?: "gapless" | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 6 | 7 | 8;
-  children?: React.ReactNode;
-}> = ({
+};
+
+export const Columns: FC<
+  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
+> = ({
   mobile,
   tablet,
   desktop,
@@ -18,6 +21,7 @@ export const Columns: React.FC<{
   vcentered,
   multiline,
   gap,
+  className,
   ...props
 }) => (
   <div
@@ -30,7 +34,8 @@ export const Columns: React.FC<{
       desktop && "is-desktop",
       multiline && "is-multiline",
       centered && "is-centered",
-      vcentered && "is-vcentered"
+      vcentered && "is-vcentered",
+      className
     )}
   />
 );

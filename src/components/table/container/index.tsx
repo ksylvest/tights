@@ -1,5 +1,7 @@
-import * as React from "react";
+import cn from "classnames";
+import type { FC } from "react";
 
-export const Container: React.FC<{
-  children?: React.ReactNode;
-}> = (props) => <div className="table-container" {...props} />;
+export const Container: FC<JSX.IntrinsicElements["div"]> = ({
+  className,
+  ...props
+}) => <div {...props} className={cn("table-container", className)} />;

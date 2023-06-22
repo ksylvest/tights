@@ -1,20 +1,24 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
 
 type Icons = "left" | "right" | "both";
 
-export const Control: React.FC<{
+type Props = {
   expanded?: boolean;
   icons?: Icons;
-  children?: React.ReactNode;
-}> = ({ expanded, icons, ...props }) => (
+};
+
+export const Control: FC<
+  Omit<JSX.IntrinsicElements["div"], keyof Props> & Props
+> = ({ expanded, icons, className, ...props }) => (
   <div
     {...props}
     className={cn(
       "control",
       expanded && "is-expanded",
       (icons === "left" || icons === "both") && "has-icons-left",
-      (icons === "right" || icons === "both") && "has-icons-right"
+      (icons === "right" || icons === "both") && "has-icons-right",
+      className
     )}
   />
 );

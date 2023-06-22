@@ -1,5 +1,7 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
+
+import type { Size } from "@src/types/size";
 
 import { Ellipsis } from "./ellipsis";
 import { Item } from "./item";
@@ -8,16 +10,22 @@ import { List } from "./list";
 import { Next } from "./next";
 import { Prev } from "./prev";
 
-import { Size } from "../../types";
-
-const Pagination: React.FC<{
+type Props = {
   rounded?: boolean;
   size?: Size;
-  children?: React.ReactNode;
-}> = ({ rounded, size, ...props }) => (
+};
+
+const Pagination: FC<
+  Omit<JSX.IntrinsicElements["nav"], keyof Props> & Props
+> = ({ rounded, size, className, ...props }) => (
   <nav
     {...props}
-    className={cn("pagination", rounded && "is-rounded", size && `is-${size}`)}
+    className={cn(
+      "pagination",
+      rounded && "is-rounded",
+      size && `is-${size}`,
+      className
+    )}
     role="navigation"
   />
 );

@@ -1,18 +1,23 @@
 import cn from "classnames";
-import * as React from "react";
+import type { FC } from "react";
+
+import type { Color } from "@src/types/color";
 
 import { Block } from "./block";
 import { Heading } from "./heading";
 import { Icon } from "./icon";
 import { Tabs } from "./tabs";
 
-import { Color } from "../../types";
-
-const Panel: React.FC<{
+type Props = {
   color?: Color;
-  children?: React.ReactNode;
-}> = ({ color, ...props }) => (
-  <nav {...props} className={cn("panel", color && `is-${color}`)} />
+};
+
+const Panel: FC<Omit<JSX.IntrinsicElements["nav"], keyof Props> & Props> = ({
+  color,
+  className,
+  ...props
+}) => (
+  <nav {...props} className={cn("panel", color && `is-${color}`, className)} />
 );
 
 const Combined = Object.assign(Panel, {
