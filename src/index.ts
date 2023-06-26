@@ -103,4 +103,4 @@ export * from "./tags";
 export * from "./textarea";
 export * from "./tile";
 export * from "./title";
-export * from "./typgraphy";
+export * from "./typography";
