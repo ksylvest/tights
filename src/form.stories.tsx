@@ -1,3 +1,4 @@
+import React from "react";
 import type { FC, ComponentProps } from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 
@@ -6,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Button } from "./button";
 import { Control } from "./control";
+import { Checkbox } from "./checkbox";
 import { Field } from "./field";
 import { File } from "./file";
 import { FileCTA } from "./file_cta";
@@ -17,6 +19,7 @@ import { Help } from "./help";
 import { Icon } from "./icon";
 import { Input } from "./input";
 import { Label } from "./label";
+import { Radio } from "./radio";
 import { Select } from "./select";
 import { Textarea } from "./textarea";
 
@@ -47,12 +50,14 @@ export const BasicStory: Story = {
         </Control>
         <Help>Lorem Ipsum</Help>
       </Field>
+
       <Field>
         <Label>About:</Label>
         <Control>
           <Textarea />
         </Control>
       </Field>
+
       <Field>
         <Label>Avatar:</Label>
         <Control>
@@ -70,6 +75,7 @@ export const BasicStory: Story = {
           </File>
         </Control>
       </Field>
+
       <Field>
         <Label>Language:</Label>
         <Control>
@@ -80,6 +86,22 @@ export const BasicStory: Story = {
           </Select>
         </Control>
       </Field>
+
+      <Field>
+        <Control>
+          <Checkbox>
+            I agree to the <a href="#">terms</a>.
+          </Checkbox>
+        </Control>
+      </Field>
+
+      <Field>
+        <Label>Language:</Label>
+        <Control>
+          <Radio>Yes</Radio>
+        </Control>
+      </Field>
+
       <Field grouped>
         <Control>
           <Button color="info">Save</Button>
