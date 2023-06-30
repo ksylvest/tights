@@ -5,13 +5,19 @@ import type { Color } from "./types/color";
 
 type Props = {
   color?: Color;
+  light?: boolean;
 };
 
 export const Notification: FC<
   Omit<ComponentProps<"div">, keyof Props> & Props
-> = ({ color, className, ...props }) => (
+> = ({ color, light, className, ...props }) => (
   <div
     {...props}
-    className={clsx("notification", color && `is-${color}`, className)}
+    className={clsx(
+      "notification",
+      color && `is-${color}`,
+      light && "is-light",
+      className
+    )}
   />
 );
