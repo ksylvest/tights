@@ -3,20 +3,21 @@ import { property } from "./property";
 
 type Name =
   | "active"
-  | "boxed"
   | "bold"
-  | "expanded"
-  | "selected"
-  | "fullwidth"
-  | "inverted"
-  | "loading"
-  | "striped"
-  | "outlined"
-  | "hoverable"
+  | "bordered"
+  | "boxed"
   | "current"
+  | "expanded"
+  | "fullwidth"
+  | "hoverable"
+  | "inverted"
+  | "light"
+  | "loading"
+  | "outlined"
   | "rounded"
+  | "selected"
   | "square"
-  | "bordered";
+  | "striped";
 
 export const is = (Component: FC, name: Name): void => {
   property(name, Component, { [name]: !!name }, `.is-${name}`);

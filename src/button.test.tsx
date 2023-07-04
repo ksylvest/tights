@@ -11,6 +11,7 @@ describe(Button, () => {
   size(Button);
   is(Button, "fullwidth");
   is(Button, "inverted");
+  is(Button, "light");
   is(Button, "loading");
   is(Button, "outlined");
   is(Button, "rounded");
