@@ -14,6 +14,7 @@ describe(Button, () => {
   is(Button, "light");
   is(Button, "loading");
   is(Button, "outlined");
+  is(Button, "responsive");
   is(Button, "rounded");
   is(Button, "selected");
 });
