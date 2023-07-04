@@ -4,9 +4,6 @@
   "description": "A component library for React.",
   "main": "lib/index.js",
   "types": "lib/index.d.js",
-  "files": [
-    "lib/**/*"
-  ],
   "repository": "https://github.com/ksylvest/tights",
   "scripts": {
     "build": "tsc",
