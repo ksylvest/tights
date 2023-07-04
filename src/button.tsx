@@ -12,6 +12,7 @@ type Props<T extends ElementType> = {
   light?: boolean;
   loading?: boolean;
   outlined?: boolean;
+  responsive?: boolean;
   rounded?: boolean;
   selected?: boolean;
   size?: Size;
@@ -25,6 +26,7 @@ export const Button = <T extends ElementType = "button">({
   light,
   loading,
   outlined,
+  responsive,
   rounded,
   selected,
   size,
@@ -45,6 +47,7 @@ export const Button = <T extends ElementType = "button">({
         light && "is-light",
         loading && "is-loading",
         outlined && "is-outlined",
+        responsive && "is-responsive",
         rounded && "is-rounded",
         selected && "is-selected",
         className

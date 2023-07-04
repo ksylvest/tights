@@ -14,6 +14,7 @@ type Name =
   | "light"
   | "loading"
   | "outlined"
+  | "responsive"
   | "rounded"
   | "selected"
   | "square"
