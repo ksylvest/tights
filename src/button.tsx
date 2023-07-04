@@ -7,26 +7,28 @@ import type { Size } from "./types/size";
 type Props<T extends ElementType> = {
   tag?: T;
   color?: Color;
-  size?: Size;
   fullwidth?: boolean;
   inverted?: boolean;
+  light?: boolean;
   loading?: boolean;
   outlined?: boolean;
   rounded?: boolean;
   selected?: boolean;
+  size?: Size;
 };
 
 export const Button = <T extends ElementType = "button">({
+  tag,
   color,
-  size,
   fullwidth,
   inverted,
-  outlined,
+  light,
   loading,
+  outlined,
   rounded,
   selected,
+  size,
   className,
-  tag,
   ...props
 }: Props<T> & Omit<ComponentProps<T>, keyof Props<T>>) => {
   const Tag = tag ?? "button";
@@ -40,8 +42,9 @@ export const Button = <T extends ElementType = "button">({
         size && `is-${size}`,
         fullwidth && "is-fullwidth",
         inverted && "is-inverted",
-        outlined && "is-outlined",
+        light && "is-light",
         loading && "is-loading",
+        outlined && "is-outlined",
         rounded && "is-rounded",
         selected && "is-selected",
         className
