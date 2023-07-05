@@ -1,18 +1,30 @@
 import { clsx } from "clsx";
-import type { ComponentProps, FC } from "react";
+import type { ComponentProps, ElementType } from "react";
 
-export const NavbarBurger: FC<
-  React.AnchorHTMLAttributes<HTMLAnchorElement> & {
-    active?: boolean;
-  }
-> = ({ active, ...props }) => (
-  <a
-    role="button"
-    {...props}
-    className={clsx("navbar-burger burger", active && "is-active")}
-  >
-    <span />
-    <span />
-    <span />
-  </a>
-);
+type Props<T extends ElementType> = {
+  tag?: T;
+  active?: boolean;
+};
+
+export const NavbarBurger = <T extends ElementType = "a">({
+  active,
+  tag,
+  className,
+  ...props
+}: Omit<ComponentProps<T>, keyof Props<T>> & Props<T>) => {
+  const Tag = tag ?? "a";
+
+  return (
+    <Tag
+      role="button"
+      aria-label="menu"
+      aria-expanded={active}
+      className={clsx("navbar-burger", active && "is-active", className)}
+      {...props}
+    >
+      <span />
+      <span />
+      <span />
+    </Tag>
+  );
+};
