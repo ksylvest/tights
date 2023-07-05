@@ -6,7 +6,11 @@ export const NavbarBurger: FC<
     active?: boolean;
   }
 > = ({ active, ...props }) => (
-  <a {...props} className={clsx("navbar-burger burger", active && "is-active")}>
+  <a
+    role="button"
+    {...props}
+    className={clsx("navbar-burger burger", active && "is-active")}
+  >
     <span />
     <span />
     <span />
