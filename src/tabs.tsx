@@ -28,7 +28,7 @@ export const Tabs: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
       size && `is-${size}`,
       style && `is-${style}`,
       fullwidth && "is-fullwidth",
-      className
+      className,
     )}
   />
 );

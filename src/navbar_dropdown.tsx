@@ -15,7 +15,7 @@ export const NavbarDropdown: FC<
       "navbar-dropdown",
       boxed && "is-boxed",
       direction && `is-${direction}`,
-      className
+      className,
     )}
   />
 );

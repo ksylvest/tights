@@ -18,7 +18,7 @@ export const Progress: FC<
       "progress",
       color && `is-${color}`,
       size && `is-${size}`,
-      className
+      className,
     )}
   />
 );

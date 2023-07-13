@@ -17,7 +17,7 @@ export const Notification: FC<
       "notification",
       color && `is-${color}`,
       light && "is-light",
-      className
+      className,
     )}
   />
 );

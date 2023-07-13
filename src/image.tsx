@@ -23,7 +23,7 @@ export const Image: FC<Omit<ComponentProps<"img">, keyof Props> & Props> = ({
       ratio && `is-${ratio}`,
       square && "is-square",
       dimensions && `is-${dimensions}x${dimensions}`,
-      className
+      className,
     )}
   >
     <picture>

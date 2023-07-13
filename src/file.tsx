@@ -40,7 +40,7 @@ export const File: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
       alignment && `is-${alignment}`,
       color && `is-${color}`,
       size && `is-${size}`,
-      className
+      className,
     )}
   />
 );

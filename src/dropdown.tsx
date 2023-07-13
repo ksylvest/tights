@@ -21,7 +21,7 @@ export const Dropdown: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
       active && "is-active",
       hoverable && "is-hoverable",
       alignment && `is-${alignment}`,
-      className
+      className,
     )}
   />
 );

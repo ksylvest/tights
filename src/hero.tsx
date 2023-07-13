@@ -24,7 +24,7 @@ export const Hero: FC<Omit<ComponentProps<"section">, keyof Props> & Props> = ({
       color && `is-${color}`,
       size && `is-${size}`,
       bold && "is-bold",
-      className
+      className,
     )}
   />
 );

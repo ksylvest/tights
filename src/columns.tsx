@@ -33,7 +33,7 @@ export const Columns: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
       multiline && "is-multiline",
       centered && "is-centered",
       vcentered && "is-vcentered",
-      className
+      className,
     )}
   />
 );

@@ -25,7 +25,7 @@ export const Icon: FC<Omit<ComponentProps<"span">, keyof Props> & Props> = ({
       alignment && `is-${alignment}`,
       color && `has-text-${color}`,
       size && `is-${size}`,
-      className
+      className,
     )}
   />
 );

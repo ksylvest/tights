@@ -29,7 +29,7 @@ export const Column: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
       tablet && `is-${tablet}-tablet`,
       desktop && `is-${desktop}-desktop`,
       narrow && "is-narrow",
-      className
+      className,
     )}
   />
 );

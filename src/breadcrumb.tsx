@@ -20,7 +20,7 @@ export const Breadcrumb: FC<
       "breadcrumb",
       alignment && `is-${alignment}`,
       separator && `has-${separator}-separator`,
-      size && `is-${size}`
+      size && `is-${size}`,
     )}
   />
 );

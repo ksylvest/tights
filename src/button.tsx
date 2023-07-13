@@ -50,7 +50,7 @@ export const Button = <T extends ElementType = "button">({
         responsive && "is-responsive",
         rounded && "is-rounded",
         selected && "is-selected",
-        className
+        className,
       )}
     />
   );

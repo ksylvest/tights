@@ -22,7 +22,7 @@ export const Table: FC<Omit<ComponentProps<"table">, keyof Props> & Props> = ({
       bordered && "is-bordered",
       fullwidth && "is-fullwidth",
       hoverable && "is-hoverable",
-      striped && "is-striped"
+      striped && "is-striped",
     )}
   />
 );

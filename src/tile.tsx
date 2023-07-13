@@ -31,7 +31,7 @@ export const Tile: FC<ComponentProps<"div"> & Props> = ({
       child && "is-child",
       size && `is-${size}`,
       vertical && "is-vertical",
-      className
+      className,
     )}
   />
 );

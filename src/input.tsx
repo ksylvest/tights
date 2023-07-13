@@ -24,7 +24,7 @@ export const Input: FC<Omit<ComponentProps<"input">, keyof Props> & Props> = ({
       color && `is-${color}`,
       size && `is-${size}`,
       rounded && "is-rounded",
-      className
+      className,
     )}
   />
 );

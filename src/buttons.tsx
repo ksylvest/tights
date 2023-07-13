@@ -20,7 +20,7 @@ export const Buttons: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
       "buttons",
       addons && "has-addons",
       alignment && `is-${alignment}`,
-      className
+      className,
     )}
   />
 );
