@@ -11,6 +11,6 @@ describe(Control, () => {
     "icons",
     Control,
     { icons: "both" },
-    ".has-icons-left.has-icons-right"
+    ".has-icons-left.has-icons-right",
   );
 });

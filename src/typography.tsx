@@ -44,7 +44,7 @@ export const Typography = <T extends ElementType = "p">({
         italic && "is-italic",
         underlined && "is-underlined",
         textweight && `has-text-weight-${textweight}`,
-        className
+        className,
       )}
     />
   );

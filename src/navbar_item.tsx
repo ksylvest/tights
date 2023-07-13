@@ -26,7 +26,7 @@ export const NavbarItem = <T extends ElementType = "div">({
         hoverable && "is-hoverable",
         active && "is-active",
         dropdown && "has-dropdown",
-        className
+        className,
       )}
     />
   );

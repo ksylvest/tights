@@ -7,7 +7,7 @@ describe(Typography, () => {
     "alignment",
     Typography,
     { alignment: "justified" },
-    ".has-text-justified"
+    ".has-text-justified",
   );
   property("size", Typography, { size: 2 }, ".is-size-2");
   property("capitalized", Typography, { capitalized: true }, ".is-capitalized");
@@ -15,21 +15,21 @@ describe(Typography, () => {
     "capitalized",
     Typography,
     { capitalized: false },
-    ":not(.is-capitalized)"
+    ":not(.is-capitalized)",
   );
   property("lowercase", Typography, { lowercase: true }, ".is-lowercase");
   property(
     "lowercase",
     Typography,
     { lowercase: false },
-    ":not(.is-lowercase)"
+    ":not(.is-lowercase)",
   );
   property("uppercase", Typography, { uppercase: true }, ".is-uppercase");
   property(
     "uppercase",
     Typography,
     { uppercase: false },
-    ":not(.is-uppercase)"
+    ":not(.is-uppercase)",
   );
   property("italic", Typography, { italic: true }, ".is-italic");
   property("italic", Typography, { italic: false }, ":not(.is-italic)");
@@ -38,6 +38,6 @@ describe(Typography, () => {
     "underlined",
     Typography,
     { underlined: false },
-    ":not(.is-underlined)"
+    ":not(.is-underlined)",
   );
 });

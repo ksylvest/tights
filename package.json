@@ -10,7 +10,7 @@
   "repository": "https://github.com/ksylvest/tights",
   "scripts": {
     "build": "tsc",
-    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx && prettier --check ./src",
     "test": "jest",
     "vercel-build": "storybook build -o public"
   },
@@ -46,11 +46,10 @@
     "enzyme-adapter-react-16": "^1.15.7",
     "eslint": "^8.43.0",
     "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.12",
     "jest": "^29.5.0",
-    "prettier": "^2.8.8",
+    "prettier": "^3.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

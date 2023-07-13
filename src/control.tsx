@@ -21,7 +21,7 @@ export const Control: FC<Omit<ComponentProps<"div">, keyof Props> & Props> = ({
       expanded && "is-expanded",
       (icons === "left" || icons === "both") && "has-icons-left",
       (icons === "right" || icons === "both") && "has-icons-right",
-      className
+      className,
     )}
   />
 );

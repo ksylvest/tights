@@ -20,7 +20,7 @@ export const Textarea: FC<
       color && `is-${color}`,
       size && `is-${size}`,
       rounded && "is-rounded",
-      className
+      className,
     )}
   />
 );

@@ -27,7 +27,7 @@ export const Tag: FC<Omit<ComponentProps<"span">, keyof Props> & Props> = ({
       size && `is-${size}`,
       rounded && "is-rounded",
       deleting && "is-delete",
-      className
+      className,
     )}
   />
 );

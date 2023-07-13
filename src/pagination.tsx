@@ -17,7 +17,7 @@ export const Pagination: FC<
       "pagination",
       rounded && "is-rounded",
       size && `is-${size}`,
-      className
+      className,
     )}
     role="navigation"
   />

@@ -18,7 +18,7 @@ export const Message: FC<
       "message",
       color && `is-${color}`,
       size && `is-${size}`,
-      className
+      className,
     )}
   />
 );
