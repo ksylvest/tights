@@ -58,6 +58,6 @@
     "typescript": "^5.1.3"
   },
   "dependencies": {
-    "clsx": "^1.2.1"
+    "clsx": "^2.0.0"
   }
 }
