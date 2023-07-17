@@ -38,6 +38,7 @@ export * from "./hero_foot";
 export * from "./hero_head";
 export * from "./hero";
 export * from "./icon";
+export * from "./icon_text";
 export * from "./image";
 export * from "./input";
 export * from "./label";
