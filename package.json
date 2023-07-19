@@ -1,5 +1,6 @@
 {
   "name": "tights",
+  "type": "module",
   "version": "4.0.1",
   "description": "A component library for React.",
   "main": "lib/index.js",
