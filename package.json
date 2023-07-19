@@ -8,6 +8,7 @@
   "files": [
     "lib/**/*"
   ],
+  "exports": "./lib/index.js",
   "repository": "https://github.com/ksylvest/tights",
   "scripts": {
     "build": "tsc",
