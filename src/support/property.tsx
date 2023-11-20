@@ -1,4 +1,5 @@
-import { shallow } from "enzyme";
+import { render, screen } from "@testing-library/react";
+import React from "react";
 import type { FC } from "react";
 
 export const property = <T extends Record<string, unknown>>(
@@ -8,7 +9,7 @@ export const property = <T extends Record<string, unknown>>(
   selector: string,
 ): void => {
   it(`renders with '${name}' using '${props}'`, () => {
-    const wrapper = shallow(<Component {...props} />);
-    expect(wrapper.exists(selector)).toBe(true);
+    const { container } = render(<Component {...props} />);
+    expect(container.querySelector(selector)).not.toBe(null);
   });
 };
