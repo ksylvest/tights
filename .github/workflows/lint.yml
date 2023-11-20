@@ -8,9 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: actions/setup-node@master
-      -
-        name: Install
+      - name: Install
         run: yarn install
-      -
-        name: Lint
+      - name: Lint
         run: yarn lint
