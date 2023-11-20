@@ -1,3 +1,4 @@
-module.exports = {
-  setupFiles: ["./enzyme.config.js"],
-};
+/** @type {import('jest').Config} */
+const config = { testEnvironment: "jsdom" };
+
+module.exports = config;
