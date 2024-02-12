@@ -41,7 +41,7 @@
     "@types/jest": "^29.5.8",
     "@types/node": "^20.9.2",
     "@types/react-fontawesome": "^1.6.8",
-    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^6.12.0",
     "babel-jest": "^29.7.0",
     "babel-loader": "^9.1.2",
