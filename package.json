@@ -39,7 +39,7 @@
     "@storybook/react-vite": "^8.0.0",
     "@storybook/test": "^8.0.0",
     "@storybook/testing-library": "^0.2.2",
-    "@testing-library/react": "^15.0.0",
+    "@testing-library/react": "^16.0.0",
     "@types/jest": "^29.5.8",
     "@types/node": "^20.9.2",
     "@types/react-fontawesome": "^1.6.8",
