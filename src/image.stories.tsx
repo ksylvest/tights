@@ -1,8 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRocket } from "@fortawesome/free-solid-svg-icons";
-
 import { Image } from "./image";
 
 const meta = {

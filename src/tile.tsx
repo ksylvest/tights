@@ -11,8 +11,6 @@ type Props = {
   vertical?: boolean;
 };
 
-const x = <h1></h1>;
-
 export const Tile: FC<ComponentProps<"div"> & Props> = ({
   ancestor,
   parent,

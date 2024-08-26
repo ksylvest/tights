@@ -5,12 +5,6 @@ import type { Alignment } from "./types/alignment";
 import type { Color } from "./types/color";
 import type { Size } from "./types/size";
 
-import { FileCTA } from "./file_cta";
-import { FileIcon } from "./file_icon";
-import { FileInput } from "./file_input";
-import { FileLabel } from "./file_label";
-import { FileName } from "./file_name";
-
 type Props = {
   name?: string;
   alignment?: Alignment;
