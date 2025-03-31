@@ -41,7 +41,7 @@
     "@storybook/test": "^8.6.11",
     "@storybook/testing-library": "^0.2.1",
     "@testing-library/react": "^16.2.0",
-    "@types/eslint__js": "^8.42.3",
+    "@types/eslint__js": "^9.14.0",
     "@types/jest": "^29.5.8",
     "@types/node": "^22.13.14",
     "@types/react-fontawesome": "^1.6.8",
