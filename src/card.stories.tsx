@@ -25,14 +25,14 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const UNSPLASH_IDS = [
-  "ACt8ycSzpdE",
-  "dqXiw7nCb9Q",
-  "fMUIVein7Ng",
-  "PzYiCWOHtfU",
-  "Ld5yiQggpS0",
-  "pbrQvuKJQf8",
-  "uVdOLNJpxA0",
-  "VjmlDjePHjE",
+  "1720042710169-d56037e5489e",
+  "1703915339790-6be05d65aa87",
+  "1738760965517-21c9599c8d6d",
+  "1684138293678-039c46b1d582",
+  "1732813963186-f03b882873e6",
+  "1730305949099-9f67a9461187",
+  "1631793945537-b8a496b97edf",
+  "1707003839733-5b2dcf332c91",
 ];
 
 export const BasicStory: Story = {
@@ -50,7 +50,7 @@ export const BasicStory: Story = {
             <CardImage>
               <Image
                 square
-                src={`https://source.unsplash.com/${unsplashID}/800x800`}
+                src={`https://images.unsplash.com/photo-${unsplashID}?auto=format&q=80&fit=crop&w=800&h=800`}
               />
             </CardImage>
             <CardContent>Lorem Ipsum</CardContent>
