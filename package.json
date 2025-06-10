@@ -45,7 +45,7 @@
     "@types/jest": "^29.5.8",
     "@types/node": "^22.13.14",
     "@types/react-fontawesome": "^1.6.8",
-    "babel-jest": "^29.7.0",
+    "babel-jest": "^30.0.0",
     "babel-loader": "^10.0.0",
     "bulma": "^1.0.3",
     "eslint": "^9.23.0",
