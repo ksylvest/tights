@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { Button } from "./button";
 
@@ -22,14 +22,6 @@ export const AnchorStory: Story = {
 export const ButtonStory: Story = {
   render: (args) => (
     <Button tag="button" type="button" {...args}>
-      Lorem Ipsum
-    </Button>
-  ),
-};
-
-export const BrokenStory: Story = {
-  render: (args) => (
-    <Button tag="p" type="button" {...args}>
       Lorem Ipsum
     </Button>
   ),
