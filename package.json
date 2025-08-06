@@ -29,7 +29,7 @@
     "@babel/types": "^7.27.0",
     "@eslint/js": "^9.23.0",
     "@fortawesome/fontawesome-svg-core": "^7.0.0",
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^7.0.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@storybook/addon-links": "^9.0.12",
     "@storybook/react-vite": "^9.0.12",
