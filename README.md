@@ -58,11 +58,6 @@ const Confirmation: FC<{
 );
 ```
 
-## Status
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/c6045e533438f4e08b02/maintainability)](https://codeclimate.com/github/ksylvest/tights/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/c6045e533438f4e08b02/test_coverage)](https://codeclimate.com/github/ksylvest/tights/test_coverage)
-
 ## Copyright
 
-Copyright (c) 2023 [Kevin Sylvestre](https://ksylvest.com). See LICENSE for details.
+Copyright (c) 2025 [Kevin Sylvestre](https://ksylvest.com). See LICENSE for details.
