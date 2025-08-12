@@ -51,7 +51,7 @@
     "ts-loader": "^9.5.2",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.28.0",
-    "eslint-plugin-storybook": "9.1.1",
+    "eslint-plugin-storybook": "9.1.2",
     "@storybook/addon-docs": "^9.0.12"
   },
   "dependencies": {
