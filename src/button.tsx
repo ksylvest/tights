@@ -1,5 +1,6 @@
-import { clsx } from "clsx";
 import type { ComponentProps, ElementType } from "react";
+
+import { clsx } from "clsx";
 
 import type { Color } from "./types/color";
 import type { Size } from "./types/size";

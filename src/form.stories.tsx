@@ -1,13 +1,14 @@
 import React from "react";
-import type { FC, ComponentProps } from "react";
+import type { ComponentProps, FC } from "react";
+
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { faHeart, faUpload, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Button } from "./button";
-import { Control } from "./control";
 import { Checkbox } from "./checkbox";
+import { Control } from "./control";
 import { Field } from "./field";
 import { File } from "./file";
 import { FileCTA } from "./file_cta";

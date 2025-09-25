@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
-import { Columns } from "./columns";
 import { Column } from "./column";
+import { Columns } from "./columns";
 import { Image } from "./image";
 
 const meta = {

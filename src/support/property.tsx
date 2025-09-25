@@ -1,6 +1,9 @@
-import { render } from "@testing-library/react";
 import React from "react";
 import type { FC } from "react";
+
+import { expect, it } from "vitest";
+
+import { render } from "@testing-library/react";
 
 export const property = <T extends Record<string, unknown>>(
   name: string,

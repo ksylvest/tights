@@ -1,3 +1,5 @@
+import { describe } from "vitest";
+
 import { renders } from "./support";
 
 import { CardFooter } from "./card_footer";

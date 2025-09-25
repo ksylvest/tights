@@ -1,23 +1,22 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-    "target": "es2022",
-    "lib": ["es2022", "dom"],
-    "module": "es2022",
-    "moduleResolution": "node",
-    "outDir": "./lib",
-    "declaration": true,
-    "strict": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "types": [],
     "skipLibCheck": true,
+
+    "moduleResolution": "bundler",
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "erasableSyntaxOnly": true
   },
-  "include": ["src"],
-  "exclude": [
-    "**/*.stories.*",
-    "**/*.test.*",
-    "src/support",
-    "node_modules"
-  ]
+  "include": ["vite.config.ts"]
 }

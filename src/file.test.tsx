@@ -1,3 +1,5 @@
+import { describe } from "vitest";
+
 import { alignment } from "./support";
 import { is } from "./support";
 import { color } from "./support";

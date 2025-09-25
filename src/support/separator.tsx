@@ -1,4 +1,5 @@
 import type { FC } from "react";
+
 import { property } from "./property";
 
 export const separator = (Component: FC<{ separator?: string }>): void => {

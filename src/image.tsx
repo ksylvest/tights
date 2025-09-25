@@ -1,5 +1,6 @@
-import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
+
+import { clsx } from "clsx";
 
 type Props = {
   dimensions?: 16 | 24 | 32 | 48 | 64 | 96;

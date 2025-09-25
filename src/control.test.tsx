@@ -1,3 +1,5 @@
+import { describe } from "vitest";
+
 import { is } from "./support";
 import { property } from "./support";
 import { renders } from "./support";

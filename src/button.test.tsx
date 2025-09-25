@@ -1,3 +1,5 @@
+import { describe } from "vitest";
+
 import { color } from "./support";
 import { is } from "./support";
 import { renders } from "./support";

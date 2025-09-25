@@ -1,3 +1,5 @@
+import { describe } from "vitest";
+
 import { renders } from "./support";
 
 import { FileCTA } from "./file_cta";

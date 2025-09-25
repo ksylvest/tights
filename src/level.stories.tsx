@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import { Level } from "./level";
-import { LevelLeft } from "./level_left";
 import { LevelItem } from "./level_item";
+import { LevelLeft } from "./level_left";
 import { LevelRight } from "./level_right";
 
 const meta = {
