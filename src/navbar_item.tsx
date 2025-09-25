@@ -1,5 +1,6 @@
-import { clsx } from "clsx";
 import type { ComponentProps, ElementType } from "react";
+
+import { clsx } from "clsx";
 
 type Props<T extends ElementType> = {
   tag?: T;

@@ -1,3 +1,5 @@
+import { describe } from "vitest";
+
 import { renders } from "./support";
 import { is } from "./support";
 import { alignment } from "./support";

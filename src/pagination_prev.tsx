@@ -1,5 +1,6 @@
-import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
+
+import { clsx } from "clsx";
 
 export const PaginationPrev: FC<ComponentProps<"a">> = ({
   className,

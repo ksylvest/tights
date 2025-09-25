@@ -1,5 +1,6 @@
+import type { ComponentProps, FC } from "react";
+
 import { clsx } from "clsx";
-import { ComponentProps, FC } from "react";
 
 import type { Alignment } from "./types/alignment";
 import type { Color } from "./types/color";

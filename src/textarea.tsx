@@ -1,5 +1,6 @@
-import { clsx } from "clsx";
 import type { ComponentProps, FC } from "react";
+
+import { clsx } from "clsx";
 
 type Color = "primary" | "info" | "success" | "warning" | "danger";
 type Size = "small" | "medium" | "large";

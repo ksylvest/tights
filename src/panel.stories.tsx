@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { Panel } from "./panel";
-import { PanelHeading } from "./panel_heading";
-import { PanelTabs } from "./panel_tabs";
 import { PanelBlock } from "./panel_block";
+import { PanelHeading } from "./panel_heading";
 import { PanelIcon } from "./panel_icon";
+import { PanelTabs } from "./panel_tabs";
 
 const meta = {
   title: "Panel",
