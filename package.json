@@ -1,7 +1,7 @@
 {
   "name": "tights",
   "type": "module",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "A component library for React.",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
