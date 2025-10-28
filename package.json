@@ -28,7 +28,7 @@
     "@fortawesome/react-fontawesome": "^3.0.0",
     "@storybook/addon-docs": "^9.0.12",
     "@storybook/addon-links": "^9.0.12",
-    "@storybook/react-vite": "^9.0.12",
+    "@storybook/react-vite": "^10.0.0",
     "@testing-library/react": "^16.2.0",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/node": "^24.0.3",
